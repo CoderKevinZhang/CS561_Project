@@ -25,7 +25,7 @@
       <div class="wrap-login100">
         <div class="login100-form-title" style="background-image: url(../../images/bg-01.jpg);">
           <span class="login100-form-title-1">
-            Sign In
+            Sign Up
           </span>
         </div>
 
@@ -38,8 +38,23 @@
 
           <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
             <span class="label-input100">Password</span>
-            <input class="input100" type="password" name="pass" placeholder="Enter password">
+            <input class="input100" type="password" name="psw" placeholder="Enter password">
             <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+            <span class="label-input100">Repeat Password</span>
+            <input class="input100" type="password" name="psw-repeat" placeholder="Repeat password">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-18" style="width:200px;">
+            <span class="label-input100">Select Roles</span>
+            <select>
+              <option value="0">Select A Role:</option>
+              <option value="1">Seller</option>
+              <option value="2">Buyer</option>
+            </select>
           </div>
 
           <div class="flex-sb-m w-full p-b-30">
@@ -53,7 +68,10 @@
 
           <div class="container-login100-form-btn">
             <button class="login100-form-btn">
-              Login
+              Cancel 
+            </button>
+            <button class="login100-form-btn">
+              Sign Up
             </button>
           </div>
         </form>
