@@ -18,6 +18,7 @@
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
+    var select_option = $('.select-options');
 
     $('.validate-form').on('submit',function(){
         var check = true;
@@ -27,6 +28,14 @@
                 showValidate(input[i]);
                 check=false;
             }
+        }
+
+        if (select_option.val() == 0) {
+            showValidate(select_option);
+            check=false;
+        }
+        else{
+            hideValidate(select_option);
         }
 
         return check;
