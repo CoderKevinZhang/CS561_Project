@@ -22,20 +22,78 @@
 
     $('.validate-form').on('submit',function(){
         var check = true;
+        var user_name;
+        var password;
+        var repassword;
 
         for(var i=0; i<input.length; i++) {
+
+            if ($(input[i]).attr('type') == 'text' && $(input[i]).attr('name') == 'username') {
+                user_name = $(input[i]).val();
+            }
+
+            if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw') {
+                password = $(input[i]).val();
+            }
+
+            if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw-repeat') {
+                repassword = $(input[i]).val();
+            }
+
             if(validate(input[i]) == false){
                 showValidate(input[i]);
-                check=false;
+                check = false;
+            }
+        }
+
+        if (password != null && repassword != null) {
+            if (user_name == null || user_name == '') {
+                check = false;
+                alert("Please Fill Out Your Username!");
+            }
+            else{
+                if (password != repassword) {
+                    check = false;
+                    alert("Repeated Password Is Different From Your Password!");
+                }
+            }
+        }
+        else{
+            if (password == null) {
+                check = false;
+                alert("Please Fill Out Your Password!");
+            }
+            else{
+                check = false;
+                alert("Please Repeat Your Password!");
             }
         }
 
         if (select_option.val() == 0) {
             showValidate(select_option);
-            check=false;
+            check = false;
         }
         else{
             hideValidate(select_option);
+        }
+
+        if (check == true) {
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: "" , //url
+                data: $('#signUpForm').serialize(),
+                success: function (result) {
+                    console.log(result);
+                    if (result.resultCode == 200) {
+                        alert("SUCCESS");
+                    }
+                    ;
+                },
+                error : function() {
+                    alert("Error!");
+                }
+            });
         }
 
         return check;
