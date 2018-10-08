@@ -1,23 +1,21 @@
 <?php 
-	
     include 'dbConnection.php';
     $userServiceLog = Logger::getLogger("myLogger");
     
-	$db = new db;
-	$connection_state = db->dbConnect();
+	$db = new db();
+	$connection_state = $db->dbConnect();
 	$connection_state = json_decode($connection_state);
 	$response->status = 0;
     $response->msg = '';
     
-	if (!$connection_state->status){
+	if ($connection_state->status !=0){
 		$userServiceLog->error('userService :: Database Connection Failed');
         $response->status = 406;
-		$response->msg = "Database Coneection Failed";
-        
+		$response->msg = "Database Coneection Failed";    
 	}
 	else {
         
-        if (isset($_POST['userService'])){
+        if (!isset($_POST['userService'])){
             $userServiceLog->warn('userService :: No Service Selected');
             $response->status = 400;
             $response->msg = "No Service Selected";
@@ -38,7 +36,7 @@
                     
                     $response->status = 200;
                     $response->msg = 'Service: signUp Service Called';
-                    break:
+                    break;
                 default:
                     $userServiceLog->warn('userService :: ' + $service + ' Not Found');
                     

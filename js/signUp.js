@@ -20,7 +20,7 @@
     var input = $('.validate-input .input100');
     var select_option = $('.select-options');
 
-    $('.validate-form').on('submit',function(){
+    $('.validate-form').on('submit',function(e){
         var check = true;
         var user_name;
         var password;
@@ -80,23 +80,18 @@
         if (check == true) {
             $.ajax({
                 type: "POST",
-                dataType: "json",
-                url: "" , //url
-                data: $('#signUpForm').serialize(),
+                url: "../php/userActionHandler.php" , //url
+                data: {'userService': 'signUp'},
                 success: function (result) {
                     console.log(result);
-                    if (result.resultCode == 200) {
-                        alert("SUCCESS");
-                    }
-                    ;
                 },
-                error : function() {
-                    alert("Error!");
+                error : function(error) {
+                    
                 }
             });
         }
 
-        return check;
+      e.preventDefault();  
     });
 
 
