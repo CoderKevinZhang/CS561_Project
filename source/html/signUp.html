@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Login</title>
+  <title>Sign Up</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
   <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
@@ -15,6 +15,7 @@
   <link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" type="text/css" href="../../css/util.css">
   <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
 </head>
 <body>
   
@@ -27,7 +28,7 @@
           </span>
         </div>
 
-        <form style="padding-bottom: 50px;" class="login100-form validate-form">
+        <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
           <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
             <span class="label-input100">Username</span>
             <input class="input100" type="text" name="username" placeholder="Enter username">
@@ -55,20 +56,11 @@
             </select>
           </div>
 
-<!--           <div class="flex-sb-m w-full p-b-30">
-            <div class="contact100-form-checkbox">
-              <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-              <label class="label-checkbox100" for="ckb1">
-                Remember me
-              </label>
-            </div>
-          </div> -->
-
           <div style="margin-top: 30px;" class="container-login100-form-btn">
-            <button style="margin-right: 10px;" class="login100-form-btn">
-              Cancel 
+            <button type="button" style="margin-right: 10px;" class="login100-form-btn" onclick="{location.href='login.html'}">
+              Cancel
             </button>
-            <button class="login100-form-btn" onclick="">
+            <button id="signUp" class="login100-form-btn">
               Sign Up
             </button>
           </div>
@@ -85,7 +77,7 @@
   <script src="../../vendor/daterangepicker/moment.min.js"></script>
   <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
   <script src="../../vendor/countdowntime/countdowntime.js"></script>
-  <script src="../../js/main.js"></script>
+  <script src="../../js/signUp.js"></script>
 
 </body>
 </html>
