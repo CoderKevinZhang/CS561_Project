@@ -19,20 +19,35 @@
     [ Validate ]*/
     var input = $('.validate-input .input100');
     var select_option = $('.select-options');
+    var password = -1;
+    var repassword = -1;
 
     $('.validate-form').on('submit',function(){
         var check = true;
 
         for(var i=0; i<input.length; i++) {
+
+            if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw') {
+                password = input[i];
+            }
+
+            if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw-repeat') {
+                repassword = input[i];
+            }
+
             if(validate(input[i]) == false){
                 showValidate(input[i]);
-                check=false;
+                check = false;
             }
+        }
+
+        if (password != repassword) {
+            check = false;
         }
 
         if (select_option.val() == 0) {
             showValidate(select_option);
-            check=false;
+            check = false;
         }
         else{
             hideValidate(select_option);
