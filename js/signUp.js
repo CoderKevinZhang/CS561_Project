@@ -25,47 +25,56 @@
         var user_name;
         var password;
         var repassword;
+        var email;
+        var phone;
 
         for(var i=0; i<input.length; i++) {
 
             if ($(input[i]).attr('type') == 'text' && $(input[i]).attr('name') == 'username') {
                 user_name = $(input[i]).val();
+                if(validate(input[i]) == false){
+                    showValidate(input[i]);
+                    check = false;
+                }
             }
 
             if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw') {
                 password = $(input[i]).val();
+                if(validate(input[i]) == false){
+                    showValidate(input[i]);
+                    check = false;
+                }
             }
 
             if ($(input[i]).attr('type') == 'password' && $(input[i]).attr('name') == 'psw-repeat') {
                 repassword = $(input[i]).val();
-            }
-
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check = false;
-            }
-        }
-
-        if (password != null && repassword != null || password != '' && repassword != '') {
-            if (user_name == null || user_name == '') {
-                check = false;
-                alert("Please Fill Out Your Username!");
-            }
-            else{
-                if (password != repassword) {
+                if(validate(input[i]) == false){
+                    showValidate(input[i]);
                     check = false;
-                    alert("Repeated Password Is Different From Your Password!");
                 }
             }
-        }
-        else{
-            if (password == null) {
-                check = false;
-                alert("Please Fill Out Your Password!");
+
+            if ($(input[i]).attr('type') == 'email' && $(input[i]).attr('name') == 'email') {
+                email = $(input[i]).val();
             }
-            else{
+
+            if ($(input[i]).attr('type') == 'tel' && $(input[i]).attr('name') == 'phone') {
+                phone = $(input[i]).val();
+            }
+        }
+
+        if (email != '') {
+            email.trim().match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/);
+        }
+
+        if (phone != '') {
+            phone.trim().match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/);
+        }
+
+        if (user_name != '' && email != '' && phone != '' && password != '' && repassword != '') {
+            if (password != repassword) {
                 check = false;
-                alert("Please Repeat Your Password!");
+                alert("Your repeat password doesn't match your password!");
             }
         }
 
@@ -102,15 +111,8 @@
     });
 
     function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
+        if($(input).val().trim() == ''){
+            return false;
         }
     }
 

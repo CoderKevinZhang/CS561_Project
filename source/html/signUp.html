@@ -30,7 +30,7 @@
 
         <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
           <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-            <span class="label-input100">Username</span>
+            <span class="label-input100">Username<span style="color: red;">*</span></span>
             <input class="input100" type="text" name="username" placeholder="Enter username">
             <span class="focus-input100"></span>
           </div>
@@ -41,26 +41,26 @@
             <span class="focus-input100"></span>
           </div>
 
-          <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is required">
+          <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is invalid">
             <span class="label-input100">Phone</span>
-            <input class="input100" type="tel" name="phone" placeholder="Enter phone number">
+            <input class="input100" type="tel" name="phone" placeholder="123-456-7890">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-            <span class="label-input100">Password</span>
+            <span class="label-input100">Password<span style="color: red;">*</span></span>
             <input class="input100" type="password" name="psw" placeholder="Enter password">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-            <span class="label-input100">Repeat Password</span>
+            <span class="label-input100">Repeat Password<span style="color: red;">*</span></span>
             <input class="input100" type="password" name="psw-repeat" placeholder="Repeat password">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "Role is required">
-            <span class="label-input100">Select Roles</span>
+            <span class="label-input100">Select Roles<span style="color: red;">*</span></span>
             <select style="margin-top: 15px;" class="select-options">
               <option value="0" selected>Select A Role:</option>
               <option value="1">Seller</option>
