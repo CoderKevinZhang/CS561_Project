@@ -20,6 +20,13 @@
     var input = $('.validate-input .input100');
     var select_option = $('.select-options');
 
+    $('#username').focusout(function(){
+        var name = $('#username').val();
+        if (name != null && name != '') {
+            checkName(name);
+        }
+    });
+
     $('.validate-form').on('submit',function(e){
         var check = true;
         var user_name;
@@ -27,6 +34,7 @@
         var repassword;
         var email;
         var phone;
+        var user_role;
 
         for(var i=0; i<input.length; i++) {
 
@@ -64,7 +72,7 @@
         }
 
         if (email != '') {
-            email.trim().match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/);
+            email.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/);
         }
 
         if (phone != '') {
@@ -83,6 +91,7 @@
             check = false;
         }
         else{
+            user_role = select_option.val()
             hideValidate(select_option);
         }
 
@@ -90,7 +99,8 @@
             $.ajax({
                 type: "POST",
                 url: "../php/userActionHandler.php" , //url
-                data: {'userService': 'signUp'},
+                dataType : 'JSON',
+                data: {'userService' : 'signUp', 'servicePara': {'userName':user_name, 'userPass':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email}},
                 success: function (result) {
                     console.log(result);
                 },
@@ -109,6 +119,22 @@
            hideValidate(this);
         });
     });
+
+    function checkName(name){
+        $.ajax({
+            type: "POST",
+            url: "../php/userActionHandler.php" , //url
+            data: {'userService' : 'isDuplicate ', 'servicePara': user_name},
+            success: function (result) {
+                if (result == true) {
+                    alert("Your username has been used!");
+                }
+            },
+            error : function(error) {
+                
+            }
+        })
+    }
 
     function validate (input) {
         if($(input).val().trim() == ''){
