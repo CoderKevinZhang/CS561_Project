@@ -7,6 +7,7 @@
 		private $dbUser;
 		private $dbPassword;
 		private $dbConnection;
+        private $dbResponse;
 		private $backEndLog;
         
 		public $dbReturn;
@@ -39,24 +40,18 @@
 			return json_encode($this->dbReturn);
 		}
 		
-		public function dbExecute ($statement) {
-            $this->backEndLog->info('Estiblishing Query ::' + $statement);
-			$this->dbReturn = mysqli_querry($this->dbConnection, $statement);
-			if (!$this->dbReturn){
-				$this->dbReturn->status = -1;
-				$this->dbReturn->msg = mysqli_error($this->dbConnection);
-                
-                $this->backEndLog->error('Query Failed :: ' + $this->dbReturn->msg );
-			}
-			else {
-				$this->dbReturn->status = 0;
-				$queryResult = 0;
-				$this->dbReturn->msg = $queryResult;
-                
-                $this->backEndLog->info('Query Success ::' + $queryResult);
-			}
-			return json_encode($this->dbReturn);
-		}
+		 public function dbExecute ($statement) {
+             $this->backEndLog->info('Estiblishing Query ::' + $statement);
+             $this->dbResponse = $this->dbConnection->query($statement);
+             if ($this->dbResponse) {    
+                 $this->backEndLog->info('Query Success :: statement--'.$statement);
+             }
+             else {
+                 $this->backEndLog->warn('Query Fail :: statement--'.$statement.
+                                         '||Error Info'.$this->dbConnection->error);
+             }
+			 return $this->dbResponse;
+        }
 	}
 
 ?>

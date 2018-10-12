@@ -90,3 +90,254 @@
 2018-10-07 23:58:31 db::dbConnect [INFO] - Estiblishing Database Connection.
 2018-10-07 23:58:31 db::dbConnect [INFO] - Database Connection Estiblished.
 2018-10-07 23:58:31 main::main [INFO] - userService :: signUp Called
+2018-10-12 14:03:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:03:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:03:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:03:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:08:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:08:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:09:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:09:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:09:10 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:09:10 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:09:10 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:09:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:09:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:09:20 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:09:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:09:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:09:28 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:10:41 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:10:41 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:10:41 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:11:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:11:25 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:11:25 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:11:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:11:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:11:34 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:11:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:11:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:11:43 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:13:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:13:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:13:02 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:13:22 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:13:22 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:13:22 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:13:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:13:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:13:32 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:13:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:13:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:13:46 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:13:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:13:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:13:57 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:14:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:14:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:14:20 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:14:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:14:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:14:23 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:14:30 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:14:30 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:14:30 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:15:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:15:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:15:03 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:15:50 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:15:50 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:15:50 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:16:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:16:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:16:17 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:16:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:16:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:16:44 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:17:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:17:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:17:46 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:17:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:17:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:17:53 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:21:45 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:21:45 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:21:45 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:23:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:23:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:23:26 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:23:36 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:23:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:23:37 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:24:06 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:24:06 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:24:06 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:25:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:25:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:25:42 main::main [WARN] - userService :: No Service Selected
+2018-10-12 14:26:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:26:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:27:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:27:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:28:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:28:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:29:58 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:29:58 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:30:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:30:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:31:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:31:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:31:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:31:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:31:56 main::main [WARN] - 0
+2018-10-12 14:32:16 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:32:16 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:32:16 main::main [WARN] - 0
+2018-10-12 14:32:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 14:32:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 14:32:42 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 14:32:42 main::main [WARN] - userService ::isDuplicate Called Failed. No userName passed back via POST
+2018-10-12 15:44:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:44:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:44:31 main::main [INFO] - userService :: signUp Called
+2018-10-12 15:44:31 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 15:44:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:44:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:44:37 main::main [INFO] - userService :: signUp Called
+2018-10-12 15:44:37 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 15:45:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:45:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:45:11 main::main [INFO] - userService :: signUp Called
+2018-10-12 15:45:11 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 15:46:22 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:46:22 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:46:22 main::main [INFO] - userService :: signUp Called
+2018-10-12 15:46:22 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 15:46:47 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:46:47 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:46:47 main::main [WARN] - 0
+2018-10-12 15:47:40 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:47:40 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:47:40 main::main [WARN] - userService :: signUpasd Not Found
+2018-10-12 15:47:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 15:47:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 15:47:54 main::main [WARN] - userService :: signUpasd Not Found
+2018-10-12 16:18:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:18:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:18:26 main::main [WARN] - userService :: No Service Selected
+2018-10-12 16:18:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:18:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:18:39 main::main [WARN] - userService :: No Service Selected
+2018-10-12 16:18:51 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:18:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:18:51 main::main [WARN] - userService :: No Service Selected
+2018-10-12 16:20:04 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:20:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:20:04 main::main [WARN] - userService :: No Service Selected
+2018-10-12 16:20:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:20:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:20:23 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:20:23 db::dbExecute [INFO] - 0
+2018-10-12 16:20:23 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw ')||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+2018-10-12 16:20:23 main::main [WARN] - userService ::isDuplicate fail in database
+2018-10-12 16:21:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:21:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:21:07 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:21:07 db::dbExecute [INFO] - 0
+2018-10-12 16:21:07 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '||Error Info
+2018-10-12 16:22:24 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:22:24 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:22:24 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:22:24 db::dbExecute [INFO] - 0
+2018-10-12 16:22:24 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '||Error Info
+2018-10-12 16:22:24 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-12 16:23:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:23:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:23:02 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:23:02 db::dbExecute [INFO] - 0
+2018-10-12 16:23:02 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '||Error Info
+2018-10-12 16:23:02 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-12 16:27:10 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:27:10 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:27:10 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:27:10 db::dbExecute [INFO] - 0
+2018-10-12 16:27:10 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '||Error Info
+2018-10-12 16:27:10 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-12 16:28:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:28:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:28:02 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:28:02 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 16:28:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:28:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:28:14 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:28:14 db::dbExecute [INFO] - 0
+2018-10-12 16:31:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:31:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:31:03 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:31:03 db::dbExecute [INFO] - 0
+2018-10-12 16:31:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:31:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:31:33 main::main [WARN] - userService :: No Service Selected
+2018-10-12 16:31:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:31:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:31:39 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:31:39 db::dbExecute [INFO] - 0
+2018-10-12 16:31:39 db::dbExecute [WARN] - Query Fail :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '||Error Info
+2018-10-12 16:31:39 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-12 16:34:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:34:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:34:20 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:34:20 db::dbExecute [INFO] - 0
+2018-10-12 16:34:20 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '
+2018-10-12 16:34:20 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-12 16:37:40 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:37:40 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:37:40 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:38:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:38:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:38:07 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:38:51 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:38:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:38:51 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:38:51 db::dbExecute [INFO] - 0
+2018-10-12 16:38:51 db::dbExecute [WARN] - Query Fail :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                               VALUSES ('123asdw', AES_ENCRYPT('1234', UNHEX(SHA2(`My secret key`,512))), 
+                                               'buyer','1234@qsdasd.com', '123123123124124')||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUSES ('123asdw', AES_ENCRYPT('1234', UNHEX(SHA2(`My secret key`,512))), 
+   ' at line 2
+2018-10-12 16:38:51 main::main [WARN] - userService ::signUp fail in database
+2018-10-12 16:40:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:40:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:40:46 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:40:46 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-12 16:41:38 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:41:38 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:41:38 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:41:38 db::dbExecute [INFO] - 0
+2018-10-12 16:41:38 db::dbExecute [WARN] - Query Fail :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                               VALUSES ('123asdw', '1234', 
+                                               'buyer','1234@qsdasd.com', '123123123124124')||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VALUSES ('123asdw', '1234', 
+                                               'bu' at line 2
+2018-10-12 16:41:38 main::main [WARN] - userService ::signUp fail in database
+2018-10-12 16:42:06 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:42:06 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:42:06 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:42:06 db::dbExecute [INFO] - 0
+2018-10-12 16:42:06 db::dbExecute [WARN] - Query Fail :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                               VALUES ('123asdw', AES_ENCRYPT('1234', UNHEX(SHA2(`My secret key`,512))), 
+                                               'buyer','1234@qsdasd.com', '123123123124124')||Error InfoUnknown column 'My secret key' in 'field list'
+2018-10-12 16:42:06 main::main [WARN] - userService ::signUp fail in database
+2018-10-12 16:42:48 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:42:48 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:42:48 main::main [INFO] - userService :: signUp Called
+2018-10-12 16:42:48 db::dbExecute [INFO] - 0
+2018-10-12 16:42:48 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                               VALUES ('123asdw', '1234', 
+                                               'buyer','1234@qsdasd.com', '123123123124124')
+2018-10-12 16:42:48 main::main [INFO] - userService ::signUp Success
+2018-10-12 16:43:10 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-12 16:43:10 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-12 16:43:10 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-12 16:43:10 db::dbExecute [INFO] - 0
+2018-10-12 16:43:10 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '
+2018-10-12 16:43:10 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
