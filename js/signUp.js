@@ -19,16 +19,16 @@
     [ Validate ]*/
     var input = $('.validate-input .input100');
     var select_option = $('.select-options');
+    var check = true;
 
     $('#username').focusout(function(){
         var name = $('#username').val();
         if (name != null && name != '') {
-            checkName(name);
+            check = checkName(name);
         }
     });
 
     $('.validate-form').on('submit',function(e){
-        var check = true;
         var user_name;
         var password;
         var repassword;
@@ -120,19 +120,24 @@
     });
 
     function checkName(name){
+        var check = true;
         $.ajax({
+            async: false,
             type: "POST",
             url: "../php/userActionHandler.php" , //url
             data: {'userService' : 'isDuplicate', 'userName': name},
             success: function (result) {
-                if (result.msg == true) {
-                    alert("Username has been used!");
+                if (JSON.parse(result).msg == true) {
+                    check = false;
+                    alert("Username has beed used!");
                 }
             },
             error : function(error) {
                 
             }
         })
+        return check;
+
     }
 
     function validate (input) {
