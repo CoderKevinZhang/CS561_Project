@@ -99,12 +99,7 @@
             $.ajax({
                 type: "POST",
                 url: "../php/userActionHandler.php" , //url
-<<<<<<< HEAD
-                data: {'userService' : 'signUp', 'userName':user_name, 'userPass':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
-=======
-    
                 data: {'userService' : 'signUp','userName':user_name, 'userPassword':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
->>>>>>> 763494fe3903bd92941ceecf9fb8cee17b251ff1
                 success: function (result) {
                     console.log(result);
                 },
@@ -128,17 +123,11 @@
         $.ajax({
             type: "POST",
             url: "../php/userActionHandler.php" , //url
-<<<<<<< HEAD
-            data: {'userService' : 'isDuplicate ', 'servicePara': name},
-            success: function (result) {
-                console.log(result);
-=======
             data: {'userService' : 'isDuplicate', 'userName': name},
             success: function (result) {
                 if (result) {
                     console.log(result);
                 }
->>>>>>> 763494fe3903bd92941ceecf9fb8cee17b251ff1
             },
             error : function(error) {
                 
