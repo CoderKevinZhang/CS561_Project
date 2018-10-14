@@ -108,6 +108,9 @@
                 }
             });
         }
+        else{
+            alert("Fail in signing up!");
+        }
 
       e.preventDefault();  
     });
