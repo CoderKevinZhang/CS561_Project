@@ -11,7 +11,7 @@
 	if ($connection_state->status !=0){
     /*Report Error if the database connecation is failed*/
 		$userServiceLog->error('userService :: Database Connection Failed');
-        $response->status = 406;
+        $response->status = 600;
 		$response->msg = "Database Coneection Failed";    
 	}
 	else {
@@ -46,7 +46,7 @@
                        else {
                            /*Report error back if the query is failed*/
                            //COVERED
-                           $response->status   = 600;
+                           $response->status   = 601;
                            $response->msg      = 'Unknown error in database';
                            $userServiceLog->warn('userService ::isDuplicate fail in database');
                         }
@@ -76,8 +76,10 @@
                         $userPhone          = $_POST['userPhone'];
                         $userEmail          = $_POST['userEmail'];
                         $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
-                                               VALUES ('$userName', '$userPassword', 
-                                               '$userRole','$userEmail', '$userPhone')";
+                                                VALUES ('$userName', 
+                                                AES_ENCRYPT('$userPassword', UNHEX(SHA2('My secret passphrase',512))), 
+                                                '$userRole',
+                                                '$userEmail', '$userPhone');";
                         $dbResult           =$db->dbExecute($statement);
                          if ($dbResult){
                              /*Return message back if the query is succeed*/
@@ -89,7 +91,7 @@
                          else {
                              /*Return error back if the query is failed*/
                              //COVERED
-                             $response->status       = 600;
+                             $response->status       = 601;
                              $response->msg          = 'Unknown error in database';
                              $userServiceLog->warn('userService ::signUp fail in database');
                          } 
