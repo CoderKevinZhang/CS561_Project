@@ -109,7 +109,7 @@
             });
         }
         else{
-            alert("Fail in signing up!");
+            alert("Fail in signing up! Please review your information again.");
         }
 
       e.preventDefault();  
