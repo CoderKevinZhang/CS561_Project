@@ -1,5 +1,5 @@
 <?php  
-  
+
     include('dbConnection.php');
     $userServiceLog = Logger::getLogger("myLogger");
     $db = new db();
@@ -77,7 +77,7 @@
                         $userEmail          = $_POST['userEmail'];
                         $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
                                                 VALUES ('$userName', 
-                                                AES_ENCRYPT('$userPassword', UNHEX(SHA2('My secret passphrase',512))), 
+                                               '$userPassword', 
                                                 '$userRole',
                                                 '$userEmail', '$userPhone');";
                         $dbResult           =$db->dbExecute($statement);
