@@ -341,3 +341,52 @@
 2018-10-12 16:43:10 db::dbExecute [INFO] - 0
 2018-10-12 16:43:10 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw '
 2018-10-12 16:43:10 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-14 14:01:27 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:01:27 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:01:27 main::main [INFO] - userService :: signUp Called
+2018-10-14 14:01:27 db::dbExecute [INFO] - 0
+2018-10-14 14:01:27 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                                VALUES ('123asdw123', 
+                                                AES_ENCRYPT('1234', UNHEX(SHA2('My secret passphrase',512))), 
+                                                'buyer',
+                                                '1234@qsdasd.com', '123123123124124');
+2018-10-14 14:01:27 main::main [INFO] - userService ::signUp Success
+2018-10-14 14:26:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:26:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:26:20 main::main [WARN] - userService :: isDuplicate  Not Found
+2018-10-14 14:27:48 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:27:48 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:27:48 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-14 14:27:48 db::dbExecute [INFO] - 0
+2018-10-14 14:27:48 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = '123asdw123 '
+2018-10-14 14:27:48 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-14 14:28:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:28:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:28:18 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-14 14:28:18 db::dbExecute [INFO] - 0
+2018-10-14 14:28:18 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = 'asd '
+2018-10-14 14:28:18 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-14 14:29:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:29:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:29:15 main::main [INFO] - userService :: signUp Called
+2018-10-14 14:29:15 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-14 14:29:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:29:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:29:54 main::main [INFO] - userService :: signUp Called
+2018-10-14 14:29:54 main::main [WARN] - userService ::signUp Called Failed. No enough data
+2018-10-14 14:30:12 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:30:12 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:30:12 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-14 14:30:12 db::dbExecute [INFO] - 0
+2018-10-14 14:30:12 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = 'asd '
+2018-10-14 14:30:12 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-14 14:30:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-14 14:30:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-14 14:30:39 main::main [INFO] - userService :: signUp Called
+2018-10-14 14:30:39 db::dbExecute [INFO] - 0
+2018-10-14 14:30:39 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                                VALUES ('asd', 
+                                               '12345', 
+                                                '1',
+                                                '12345@qq.com', '123-123-3424');
+2018-10-14 14:30:39 main::main [INFO] - userService ::signUp Success

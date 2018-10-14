@@ -11,23 +11,9 @@
 //   }
 // });
 
-
-QUnit.module( "validate-form submit with Nothing" );
-
-QUnit.test( "-- username", function( assert ) {
- // $( "p" ).after( "<div class=\"wrap-input100 validate-input m-b-18\"> <input class=\"input100\" type=\"text\" name=\"username\"> </div>");
-  var fixture = $( "#qunit-fixture" );
-  fixture.append("<form class=\"validate-form\"> <div class=\"validate-input\"> <span> </span><input class=\"input100\" type=\"text\" name=\"username\"> </div> </form>");
-  var input = $('.validate-input .input100');
-  $(input).val("Hello World!");
-  var thisAlert = $(input).parent();
-
-  // $('.validate-form').trigger('submit');
-  $('.validate-form').submit();
-  assert.ok($(thisAlert).hasClass('alert-validate'), "Passed!" );
-  // assert.ok($(input).parent().hasClass('alert-validate'), "Passed!" );
-
-  // e.preventDefault(); 
+QUnit.test("test form submission", function(assert) {
+  $(".validate-form").submit();
+  assert.ok( $(thisAlert).hasClass( 'alert-validate')== false, "Passed!" );
 });
 
 
