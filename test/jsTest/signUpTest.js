@@ -11,9 +11,22 @@
 //   }
 // });
 
+var fixture = $( "#qunit-fixture" );
+QUnit.module("form tests", {
+  beforeEach: function() {
+    fixture.html("<form><input id=\"username\" class=\"input100\" type=\"text\" name=\"username\"></form>");
+  },
+  afterEach: function() {
+    fixture.find("form").remove();
+    // any other cleanup (events maybe?)
+  }
+});
+
 QUnit.test("test form submission", function(assert) {
-  $(".validate-form").submit();
-  assert.ok( $(thisAlert).hasClass( 'alert-validate')== false, "Passed!" );
+  // $("form").submit();
+  assert.ok( square(2) == 4 , "Passed!" );
+  // maybe make sure an Ajax call was made?
+  // or that there is an error on the page?
 });
 
 

@@ -160,6 +160,11 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
 
+    function square(x){
+        return x*x;
+    }
+    
+    
 })(jQuery);
+
