@@ -13,9 +13,7 @@
 
 QUnit.test("test form submission", function(assert) {
   $(".validate-form").submit();
-  // maybe make sure an Ajax call was made?
-  // or that there is an error on the page?
-  $('#username')
+  assert.ok( $(thisAlert).hasClass( 'alert-validate')== false, "Passed!" );
 });
 
 
