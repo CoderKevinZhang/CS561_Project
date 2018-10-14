@@ -125,8 +125,8 @@
             url: "../php/userActionHandler.php" , //url
             data: {'userService' : 'isDuplicate', 'userName': name},
             success: function (result) {
-                if (result) {
-                    console.log(result);
+                if (result.msg == true) {
+                    alert("Username has been used!");
                 }
             },
             error : function(error) {
