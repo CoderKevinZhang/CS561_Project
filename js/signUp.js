@@ -99,7 +99,6 @@
             $.ajax({
                 type: "POST",
                 url: "../php/userActionHandler.php" , //url
-    
                 data: {'userService' : 'signUp','userName':user_name, 'userPassword':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
                 success: function (result) {
                     console.log(result);
@@ -126,8 +125,8 @@
             url: "../php/userActionHandler.php" , //url
             data: {'userService' : 'isDuplicate', 'userName': name},
             success: function (result) {
-                if (result) {
-                    console.log(result);
+                if (result.msg == true) {
+                    alert("Username has been used!");
                 }
             },
             error : function(error) {
