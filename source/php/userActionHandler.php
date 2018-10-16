@@ -59,6 +59,40 @@
                        $response->msg      = 'userService: isDuplicate requires variable [userName]';
                     }
                     break;
+
+                case "logIn":   /*Perform Service -logIn- if it is called*/
+                    
+                    $userServiceLog->info('userService :: logIn Called.');
+                    if (isset($_POST['userName']) && isset($_POST['userPassword'])){
+                        /*Get all required data ---> Query Databaes ---> Return callback*/
+                        $userName           = $_POST['userName'];
+                        $userPassword           = $_POST['userPassword'];
+                        $statement = "SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '$userName' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '$userPassword' ";
+                        $dbResult           =$db->dbExecute($statement);
+                        $dbResult = mysqli_fetch_assoc($dbResult);
+                        if ($dbResult){
+                            /*Return message back if the query is succeed*/
+                            //COVERED
+                           $response->status   = 200;
+                           $response->msg      =!!($dbResult['dbResult']);
+                           $userServiceLog->info('userService :: logIn Send dbResponse back.');
+                        }
+                       else {
+                           /*Report error back if the query is failed*/
+                           //COVERED
+                           $response->status   = 601;
+                           $response->msg      = !!($dbResult['dbResult']);
+                           $userServiceLog->warn('userService ::logIn fail in database');
+                        }
+                   }
+                    else {
+                        /*No enough data ---> Return callback*/
+                        // COVERED
+                       $userServiceLog->warn('userService ::logIn Called Failed. No userName and userPassword back via POST');
+                       $response->status   = 406;
+                       $response->msg      = 'userService: logIn requires variable [userName][userPassword]';
+                    }
+                    break;
 /*----------------------------------------------------------------------------------------------------------*/    
                  case "signUp":       /*Perform Service -signUp- if it is called*/
                     
