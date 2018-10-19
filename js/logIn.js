@@ -20,13 +20,13 @@
     var input = $('.validate-input .input100');
     var select_option = $('.select-options');
     var check = true;
-
     // catch the input from userName and check if it's existing 
     $('#username').focusout(function(){
         var name = $('#username').val();
-        if (name != null && name != '') {
-            check = checkName(name);
-        }
+	check = true;
+        // if (name != null && name != '') {
+        //     check = checkName(name);
+        // }
     });
 
     // check whether the validation of the sign in form
@@ -60,15 +60,35 @@
        //          alert("Your repeat password doesn't match your password!");
        //      }
        //  }
-
+	console.log("before the AJAX");
         // if user meet all requirement of sign in , then post to server 
         if (check == true) {
-            $.ajax({
+	    $.ajax({
                 type: "POST",
                 url: "../php/userActionHandler.php" , //url
-                data: {'userService' : 'signUp','userName':user_name, 'userPassword':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
+                data: {'userService' : 'logIn', 'userName':user_name, 'userPassword':password},
+
+                // data: {'userService' : 'signUp','userName':user_name, 'userPassword':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
                 success: function (result) {
-                    console.log(result);
+                    if (JSON.parse(result).msg == true) {
+                        //check = false;
+                        alert("Log In successful");
+                        // redirect to the index.html if log in successful
+			            var pageURL = window.location.pathname;
+            			console.log(pageURL);
+            			var elements = String(pageURL).split("/");i
+            			var len = elements.length;
+            			elements[elements.length - 1] = "index.html";
+            			var newURL = elements.join("/");
+            			console.log(newURL);	
+            			window.location.replace(newURL);
+            			// var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+            			
+            			// console.log(lastURLSegment);
+                    }
+                    else{
+                        alert("Incorrect user name or password. Please try again.");
+                    }
                 },
                 error : function(error) {
                     
