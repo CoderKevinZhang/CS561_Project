@@ -101,9 +101,26 @@
                 url: "../php/userActionHandler.php" , //url
                 data: {'userService' : 'signUp','userName':user_name, 'userPassword':password, 'userRole':user_role, 'userPhone': phone, 'userEmail': email},
                 success: function (result) {
-                    console.log(result);
+                    if (JSON.parse(result).msg == "SUCCESS") {
+                        //check = false;
+                        alert("sign up successful, directing to home page");
+                        // redirect to the index.html if log in successful
+                        var pageURL = window.location.pathname;
+                        console.log(pageURL);
+                        var elements = String(pageURL).split("/");i
+                        var len = elements.length;
+                        elements[elements.length - 1] = "index.html";
+                        var newURL = elements.join("/");
+                        console.log(newURL);    
+                        window.location.replace(newURL);
+                        // var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+                        
+                        // console.log(lastURLSegment);
+                    }
                 },
                 error : function(error) {
+                    alert("sign up failed, please review your information and try again");
+
                     
                 }
             });
