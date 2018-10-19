@@ -109,7 +109,7 @@
                         console.log(pageURL);
                         var elements = String(pageURL).split("/");i
                         var len = elements.length;
-                        elements[elements.length - 1] = "index.html";
+                        elements[elements.length - 1] = "login.html";
                         var newURL = elements.join("/");
                         console.log(newURL);    
                         window.location.replace(newURL);
