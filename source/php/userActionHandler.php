@@ -3,18 +3,18 @@
     include('dbConnection.php');
     $userServiceLog = Logger::getLogger("myLogger");
     $db = new db();
-	$connection_state = $db->dbConnect();
-	$connection_state = json_decode($connection_state);
-	$response->status = 0;
+  $connection_state = $db->dbConnect();
+  $connection_state = json_decode($connection_state);
+  $response->status = 0;
     $response->msg = '';
     /*Check if the database connection is set or not*/
-	if ($connection_state->status !=0){
+  if ($connection_state->status !=0){
     /*Report Error if the database connecation is failed*/
-		$userServiceLog->error('userService :: Database Connection Failed');
+    $userServiceLog->error('userService :: Database Connection Failed');
         $response->status = 600;
-		$response->msg = "Database Coneection Failed";    
-	}
-	else {
+    $response->msg = "Database Coneection Failed";    
+  }
+  else {
     /*Process user acation services if the database connection is successed*/
         /*Check if front-end pass service name to server side*/
         if (!isset($_POST['userService'])){
@@ -109,11 +109,13 @@
                         $userRole           = $_POST['userRole'];
                         $userPhone          = $_POST['userPhone'];
                         $userEmail          = $_POST['userEmail'];
-                        $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                        /*$statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
                                                 VALUES ('$userName', 
-                                               '$userPassword', 
+                                                AES_ENCRYPT('$userPassword', UNHEX(SHA2(`My secret key`,512))), 
                                                 '$userRole',
-                                                '$userEmail', '$userPhone');";
+                                                '$userEmail', '$userPhone');";*/
+                        $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                                VALUES ('$userName', AES_ENCRYPT('$userPassword', UNHEX(SHA2('My secret passphrase',512))),'$userRole','$userEmail', '$userPhone');";
                         $dbResult           =$db->dbExecute($statement);
                          if ($dbResult){
                              /*Return message back if the query is succeed*/
@@ -144,7 +146,7 @@
                     $response->msg =$service." Not Found";
             }
         }         
-	}
-	echo(json_encode($response));
-	
+  }
+  echo(json_encode($response));
+  
 ?>
