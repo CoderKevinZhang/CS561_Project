@@ -109,11 +109,13 @@
                         $userRole           = $_POST['userRole'];
                         $userPhone          = $_POST['userPhone'];
                         $userEmail          = $_POST['userEmail'];
-                        $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                        /*$statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
                                                 VALUES ('$userName', 
-                                               '$userPassword', 
+                                                AES_ENCRYPT('$userPassword', UNHEX(SHA2(`My secret key`,512))), 
                                                 '$userRole',
-                                                '$userEmail', '$userPhone');";
+                                                '$userEmail', '$userPhone');";*/
+                        $statement          = "INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                                VALUES ('$userName', AES_ENCRYPT('$userPassword', UNHEX(SHA2('My secret passphrase',512))),'$userRole','$userEmail', '$userPhone');";
                         $dbResult           =$db->dbExecute($statement);
                          if ($dbResult){
                              /*Return message back if the query is succeed*/
