@@ -1,3 +1,5 @@
+// The Unit Test for the javascript 
+
 QUnit.module( "Test Syntax of Email" );
 function checkEmailSyntax(email){
     if (email != '') {
