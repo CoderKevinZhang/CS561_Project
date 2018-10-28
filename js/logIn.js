@@ -77,9 +77,9 @@
             			console.log(pageURL);
             			var elements = String(pageURL).split("/");i
             			var len = elements.length;
-            			elements[elements.length - 1] = "index.html";
+            			elements[elements.length - 1] = "index_success.html";
             			var newURL = elements.join("/");
-            			console.log(newURL);	
+            			// console.log(newURL);
             			window.location.replace(newURL);
             			// var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
             			
