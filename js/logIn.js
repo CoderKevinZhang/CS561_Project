@@ -60,7 +60,6 @@
        //          alert("Your repeat password doesn't match your password!");
        //      }
        //  }
-	console.log("before the AJAX");
         // if user meet all requirement of sign in , then post to server 
         if (check == true) {
 	    $.ajax({
@@ -72,6 +71,7 @@
                 success: function (result) {
                     if (JSON.parse(result).msg == true) {
                         //check = false;
+			checkCookie(user_name);
                         alert("Log In successful");
                         // redirect to the index.html if log in successful
 			            var pageURL = window.location.pathname;
@@ -85,6 +85,7 @@
             			// var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
             			
             			// console.log(lastURLSegment);
+
                     }
                     else{
                         alert("Incorrect user name or password. Please try again.");
@@ -98,6 +99,7 @@
 
       e.preventDefault();  
     });
+
 
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
@@ -126,6 +128,7 @@
         return check;
     }
 
+
     function validate (input) {
         if($(input).val().trim() == ''){
             return false;
@@ -143,6 +146,51 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
+
+    // deal with cookie
+    function setCookie(cname,cvalue,exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        var expires = "expires=" + d.toGMTString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function checkCookie(user_name) {
+        var user = getCookie("username");
+        if (user != "") {
+            alert("Welcome again " + user);
+        } else {
+            user = user_name
+           if (user != "" && user != null) {
+               setCookie("username", user, 30);
+           }
+        }
+    }
+
     
 
 })(jQuery);
+
+
+
+
+
+
+
