@@ -71,7 +71,6 @@
                 success: function (result) {
                     if (JSON.parse(result).msg == true) {
                         //check = false;
-			checkCookie(user_name);
                         checkCookie(user_name);
                         // redirect to the index.html if log in successful
 			            var pageURL = window.location.pathname;
