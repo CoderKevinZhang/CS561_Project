@@ -1,11 +1,10 @@
-
 (function ($) {
     "use strict";
 
     var user = getCookie("username");
 
     if (user != "") {
-        alert("Welcome" + user);
+        $('#user_name').text(user);
     }
 
     function getCookie(cname) {

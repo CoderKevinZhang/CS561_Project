@@ -174,7 +174,7 @@
     function checkCookie(user_name) {
         var user = getCookie("username");
         if (user != "") {
-            alert("Welcome" + user);
+            alert("Welcome " + user);
         } else {
             user = user_name
            if (user != "" && user != null) {
