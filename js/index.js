@@ -37,7 +37,7 @@ function closeAddPhotoModal() {
  */
 function clearPhotoInputValues() {
 
-  var inputElems = document.getElementsByClassName('item-input-element');
+  var inputElems = document.getElementsByClassName('wrap-input100 validate-input m-b-26');
   for (var i = 0; i < inputElems.length; i++) {
     var input = inputElems[i].querySelector('input, textarea');
     input.value = '';
