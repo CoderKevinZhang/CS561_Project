@@ -71,8 +71,7 @@
                 success: function (result) {
                     if (JSON.parse(result).msg == true) {
                         //check = false;
-			checkCookie(user_name);
-                        alert("Log In successful");
+                        checkCookie(user_name);
                         // redirect to the index.html if log in successful
 			            var pageURL = window.location.pathname;
             			console.log(pageURL);
@@ -175,7 +174,7 @@
     function checkCookie(user_name) {
         var user = getCookie("username");
         if (user != "") {
-            alert("Welcome again " + user);
+            alert("Welcome" + user);
         } else {
             user = user_name
            if (user != "" && user != null) {
@@ -183,8 +182,6 @@
            }
         }
     }
-
-    
 
 })(jQuery);
 
