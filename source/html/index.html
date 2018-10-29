@@ -15,6 +15,21 @@
 
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
 
+    <!-- template -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
+
+<!--     <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css"> 
+    <link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css"> 
+    <link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css"> -->
+    <link rel="stylesheet" type="text/css" href="../../css/util.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+
   </head>
   <body>
     <header>
@@ -41,26 +56,154 @@
   </header>
 
   <section class="share-container">
-        <div class="share-content">
-          <p >Got a House Information?    Share With Us</p>
-        </div>
-        <div class="share-button">
-          <button type="button" id="create-item-button"><i class="fa fa-plus-square-o"></i></button>
-        </div>
-    </section> 
+    <div class="share-content">
+      <p >Got a House Information?    Share With Us</p>
+    </div>
+
+
+
+
+
+    <div class="share-button">
+      <button type="button" id="create-item-button"><i class="fa fa-plus-square-o"></i></button>
+    </div>
+  </section> 
 
   <div id="modal-backdrop" class="hidden"></div>
     <div id="create-item-modal" class="hidden">
       <div class="modal-dialog">
 
-        <div class="modal-header">
-          <h3>Share A House Info That Only You Knew</h3>
+<!--         <div class="modal-header">
+          <h3>Share A House Info :)</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div> -->
+
+        <!-- <div class="modal-header" style="background-image: url(../../images/bg-02.jpg);"> -->
+        <div class="modal-header" style="background-color: #319df6;">        
+          <span class="login100-form-title-1">
+            House Information
+          </span>
           <button type="button" class="modal-close-button">&times;</button>
         </div>
 
-        <div class="modal-body">
-          <div class="item-input-element styled-select">
-            <label for="item-text-input">House Type</label>
+        <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
+          <div class="wrap-input100 validate-input m-b-26" data-validate="address is required">
+            <span class="label-input100">Street Address<span style="color: red;">*</span></span>
+            <input id="username" class="input100" type="text" name="address" placeholder="Enter a street address">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="City is required">
+            <span class="label-input100">City<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="city" placeholder="Enter a city">
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
+            <span class="label-input100">State<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="state" placeholder="Enter a state">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is invalid">
+            <span class="label-input100">Price <span style="color: red;">*</span></span>
+            <input class="input100" type="number" name="price" placeholder="100000">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Living Space <span style="color: red;">*</span></span>
+            <input class="input100" type="number" name="livingSpace" placeholder="xxxx">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "#Bedroom #Bathroom is required">
+            <span class="label-input100">More Info<span style="color: red;">*</span></span>
+            <select style="margin-top: 15px;" >
+              <option value="0" selected>#Bedroom:</option>
+              <option value="1">1 Bedroom</option>
+              <option value="2">2 Bedroom</option>
+              <option value="3">2 Bedroom</option>
+              <option value="4">4+ Bedroom</option>
+            </select>
+            <select style="margin-top: 15px;" >
+              <option value="0" selected>#Bathroom:</option>
+              <option value="1">1 Bathroom</option>
+              <option value="2">2 Bathroom</option>
+              <option value="3">2 Bathroom</option>
+              <option value="4">4+ Bathroom</option>
+            </select>
+          </div>
+
+
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="When house built?">
+            <span class="label-input100">Built Year</span>
+            <input class="input100" type="number" name="builtYear" placeholder="xxxx">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Lot space</span>
+            <input class="input100" type="number" name="lotSpace" placeholder="Enter email">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input m-b-18" data-validate = "Description is required">
+            <span class="label-input100">Description<span style="color: red;">*</span></span>
+
+            <textarea rows="4" cols="50"  name="description" placeholder="say something about your house"></textarea>
+            <span class="focus-input100"></span>
+          </div>
+
+
+        </form>        
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Create Item</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <main class="item-container">
+
+
+
+  </main>
+
+  </body>
+
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
+  <script src="/itemTemplate.js"></script>
+  <script src="/itemPhotoTemplate.js"></script> -->
+  <script src="../../js/index.js"></script>
+
+</html>
+
+
+
+<!-- 
+<div class="modal-body">
+          <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
+
+            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+            <span class="label-input100">Username<span style="color: red;">*</span></span>
+            <input id="username" class="input100" type="text" name="username" placeholder="Enter username">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="item-input-element styled-select wrap-input100 validate-input m-b-26">
+            <label for="item-text-input" class="label-input100">House Type</label>
             <select style="margin-top: 15px;" >
               <option value="0" selected>#Bedroom:</option>
               <option value="1">1 Bedroom</option>
@@ -97,29 +240,4 @@
           <div class="item-input-element">
             <label for="item-text-input">Description</label>
             <textarea id="item-description-input"></textarea>
-          </div>
-
-
-        <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Create Item</button>
-        </div>
-
-      </div>
-    </div>
- </div>
-
-  <main class="item-container">
-
-
-
-  </main>
-
-  </body>
-
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
-  <script src="/itemTemplate.js"></script>
-  <script src="/itemPhotoTemplate.js"></script> -->
-  <script src="../../js/index.js"></script>
-
-</html>
+          </div> -->
