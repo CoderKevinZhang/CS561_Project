@@ -526,3 +526,46 @@
 2018-10-18 18:04:11 db::dbExecute [INFO] - 0
 2018-10-18 18:04:11 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
 2018-10-18 18:04:12 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-10-28 16:58:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 16:58:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 16:58:56 main::main [INFO] - userService :: logIn Called.
+2018-10-28 16:58:56 db::dbExecute [INFO] - 0
+2018-10-28 16:58:56 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
+2018-10-28 16:58:56 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-10-28 17:00:27 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:00:27 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:00:27 main::main [INFO] - userService :: logIn Called.
+2018-10-28 17:00:27 db::dbExecute [INFO] - 0
+2018-10-28 17:00:27 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
+2018-10-28 17:00:27 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-10-28 17:03:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:03:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:03:44 main::main [INFO] - userService :: logIn Called.
+2018-10-28 17:03:44 db::dbExecute [INFO] - 0
+2018-10-28 17:03:44 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = 'yangz' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-10-28 17:03:44 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-10-28 17:03:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:03:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:03:56 main::main [INFO] - userService :: isDuplicate Called.
+2018-10-28 17:03:56 db::dbExecute [INFO] - 0
+2018-10-28 17:03:56 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM User_info WHERE `User_name` = 'yangz4 '
+2018-10-28 17:03:56 main::main [INFO] - userService :: isDuplicate Send dbResponse back.
+2018-10-28 17:04:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:04:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:04:26 main::main [INFO] - userService :: signUp Called
+2018-10-28 17:04:26 db::dbExecute [INFO] - 0
+2018-10-28 17:04:26 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO User_info (User_name, Password, User_role, Email, Phone) 
+                                                VALUES ('yangz4', AES_ENCRYPT('123', UNHEX(SHA2('My secret passphrase',512))),'1','912353540@qq.com', '');
+2018-10-28 17:04:26 main::main [INFO] - userService ::signUp Success
+2018-10-28 17:04:35 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:04:35 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:04:35 main::main [INFO] - userService :: logIn Called.
+2018-10-28 17:04:35 db::dbExecute [INFO] - 0
+2018-10-28 17:04:35 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = 'yangz4' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-10-28 17:04:35 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-10-28 17:06:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-10-28 17:06:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-10-28 17:06:42 main::main [INFO] - userService :: logIn Called.
+2018-10-28 17:06:42 db::dbExecute [INFO] - 0
+2018-10-28 17:06:42 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
+2018-10-28 17:06:42 main::main [INFO] - userService :: logIn Send dbResponse back.
