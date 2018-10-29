@@ -125,6 +125,9 @@
                 }
             });
         }
+        else{
+            alert("Fail in signing up! Please review your information again.");
+        }
 
       e.preventDefault();  
     });
@@ -174,6 +177,11 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
 
+    function square(x){
+        return x*x;
+    }
+    
+    
 })(jQuery);
+
