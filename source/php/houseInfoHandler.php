@@ -67,26 +67,16 @@
                             }
                             else{
                                 $response->status   = 601;
-<<<<<<< HEAD
-                                $response->msg      = 'Unknown error 01 in database';
-                                $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
-=======
                                 $response->msg      = 'Unknown error in database';
                                 $houseServiceLog->warn('houseService ::uploadHouseInfo fail in database');
->>>>>>> 39eb1bfd643d6f001c62b1c9293ddd978b8ff69b
                             }
                         }
                        else {
                            /*Report error back if the query is failed*/
                            //COVERED
                            $response->status   = 601;
-<<<<<<< HEAD
-                           $response->msg      = 'Unknown error 02 in database';
-                           $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
-=======
                            $response->msg      = 'Unknown error in database';
                            $houseServiceLog->warn('houseService ::uploadHouseInfo fail in database');
->>>>>>> 39eb1bfd643d6f001c62b1c9293ddd978b8ff69b
                         }
                    }
                     else {
