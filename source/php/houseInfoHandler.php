@@ -1,7 +1,7 @@
 <?php  
 
     include('dbConnection.php');
-    $userServiceLog = Logger::getLogger("myLogger");
+    $houseServiceLog = Logger::getLogger("myLogger");
     $db = new db();
 	$connection_state = $db->dbConnect();
 	$connection_state = json_decode($connection_state);
@@ -10,25 +10,25 @@
     /*Check if the database connection is set or not*/
 	if ($connection_state->status !=0){
     /*Report Error if the database connecation is failed*/
-		$userServiceLog->error('userService :: Database Connection Failed');
+		$houseServiceLog->error('houseService :: Database Connection Failed');
         $response->status = 600;
 		$response->msg = "Database Coneection Failed";    
 	}
 	else {
     /*Process user acation services if the database connection is successed*/
         /*Check if front-end pass service name to server side*/
-        if (!isset($_POST['userService'])){
+        if (!isset($_POST['houseService'])){
             /*Report Error wheno no service name is sent via POST*/
-            $userServiceLog->warn('userService :: No Service Selected');
+            $houseServiceLog->warn('houseService :: No Service Selected');
             $response->status = 400;
             $response->msg = "No Service Selected";
         }
         else {
             /*Get service name and match it with service if service name is sent via POST*/
-            $service = $_POST['userService'];
+            $service = $_POST['houseService'];
             switch($service) {
                 case "uploadHouseInfo":   /*Perform Service -uploadHouseInfo- if it is called*/                   
-                    $userServiceLog->info('userService :: uploadHouseInfo Called.');
+                    $houseServiceLog->info('houseService :: uploadHouseInfo Called.');
                     if (isset($_POST['userName']) && isset($_POST['address'])
                     && isset($_POST['city']) && isset($_POST['state'])
                     && isset($_POST['bath']) && isset($_POST['bed'])
@@ -63,33 +63,43 @@
                             if($dbResult){
                                 $response->status   = 200;
                                 $response->msg      ='SUCCESS';
-                                $userServiceLog->info('userService :: uploadHouseInfo Send dbResponse back.');
+                                $houseServiceLog->info('houseService :: uploadHouseInfo Send dbResponse back.');
                             }
                             else{
                                 $response->status   = 601;
+<<<<<<< HEAD
                                 $response->msg      = 'Unknown error 01 in database';
                                 $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
+=======
+                                $response->msg      = 'Unknown error in database';
+                                $houseServiceLog->warn('houseService ::uploadHouseInfo fail in database');
+>>>>>>> 39eb1bfd643d6f001c62b1c9293ddd978b8ff69b
                             }
                         }
                        else {
                            /*Report error back if the query is failed*/
                            //COVERED
                            $response->status   = 601;
+<<<<<<< HEAD
                            $response->msg      = 'Unknown error 02 in database';
                            $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
+=======
+                           $response->msg      = 'Unknown error in database';
+                           $houseServiceLog->warn('houseService ::uploadHouseInfo fail in database');
+>>>>>>> 39eb1bfd643d6f001c62b1c9293ddd978b8ff69b
                         }
                    }
                     else {
                         /*No enough data ---> Return callback*/
                         // COVERED
-                       $userServiceLog->warn('userService ::uploadHouseInfo Called Failed. No enought info passed back via POST');
+                       $houseServiceLog->warn('houseService ::uploadHouseInfo Called Failed. No enought info passed back via POST');
                        $response->status   = 406;
-                       $response->msg      = 'userService: uploadHouseInfo requires enough variable';
+                       $response->msg      = 'houseService: uploadHouseInfo requires enough variable';
                     }
                     break;
 
                default: //COVERED
-                    $userServiceLog->warn('userService :: '.$service.' Not Found');
+                    $houseServiceLog->warn('houseService :: '.$service.' Not Found');
                     $response->status = 404;
                     $response->msg =$service." Not Found";
             }
