@@ -57,8 +57,8 @@
                         
 
                         if ($dbResult){
-                           $statement = "INSERT INTO `Houses_image` (`House_id`, `Url`) 
-                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'$imageUrl')";
+                           $statement = "INSERT INTO `Houses_image` (`House_id`,`User_id`, `Url`) 
+                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'$imageUrl')";
                            $dbResult =$db->dbExecute($statement);
                             if($dbResult){
                                 $response->status   = 200;
@@ -67,7 +67,7 @@
                             }
                             else{
                                 $response->status   = 601;
-                                $response->msg      = 'Unknown error in database';
+                                $response->msg      = 'Unknown error 01 in database';
                                 $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
                             }
                         }
@@ -75,7 +75,7 @@
                            /*Report error back if the query is failed*/
                            //COVERED
                            $response->status   = 601;
-                           $response->msg      = 'Unknown error in database';
+                           $response->msg      = 'Unknown error 02 in database';
                            $userServiceLog->warn('userService ::uploadHouseInfo fail in database');
                         }
                    }
