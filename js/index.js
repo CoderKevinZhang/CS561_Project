@@ -18,19 +18,18 @@ function displayAddPhotoModal() {
  * This function closes the modal for adding a photo to a user page, clearing
  * the values in its input elements.
  */
-function closeAddPhotoModal() {
+// function closeAddPhotoModal() {
 
-  var backdropElem = document.getElementById('modal-backdrop');
-  var addPhotoModalElem = document.getElementById('create-item-modal');
+//   var backdropElem = document.getElementById('modal-backdrop');
+//   var addPhotoModalElem = document.getElementById('create-item-modal');
 
-  // Hide the modal and its backdrop.
-  backdropElem.classList.add('hidden');
-  addPhotoModalElem.classList.add('hidden');
+//   // Hide the modal and its backdrop.
+//   backdropElem.classList.add('hidden');
+//   addPhotoModalElem.classList.add('hidden');
 
-  clearPhotoInputValues();
+//   clearPhotoInputValues();
 
-}
-
+// }
 
 /*
  * This function clears the values of all input elements in the photo modal.
@@ -44,6 +43,27 @@ function clearPhotoInputValues() {
   }
 
 }
+
+
+/* 
+ * This JQuery function deal with the house information upload 
+ */ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // /*
@@ -195,39 +215,39 @@ function clearPhotoInputValues() {
 // Wait until the DOM content is loaded to hook up UI interactions, etc.
 window.addEventListener('DOMContentLoaded', function (event) {
 
-  var itemElemsCollection = document.getElementsByClassName('item');
-  for (var i = 0; i < itemElemsCollection.length; i++) {
-    allItemElems.push(itemElemsCollection[i]);
-  }
+  // var itemElemsCollection = document.getElementsByClassName('item');
+  // for (var i = 0; i < itemElemsCollection.length; i++) {
+  //   allItemElems.push(itemElemsCollection[i]);
+  // }
 
   var addPhotoButton = document.getElementById('create-item-button');
   if (addPhotoButton) {
     addPhotoButton.addEventListener('click', displayAddPhotoModal);
   }
 
-  var modalCloseButton = document.querySelector('#create-item-modal .modal-close-button');
-  if (modalCloseButton) {
-    modalCloseButton.addEventListener('click', closeAddPhotoModal);
-  }
+  // var modalCloseButton = document.querySelector('#create-item-modal .modal-close-button');
+  // if (modalCloseButton) {
+  //   modalCloseButton.addEventListener('click', closeAddPhotoModal);
+  // }
 
-  var modalCancalButton = document.querySelector('#create-item-modal .modal-cancel-button');
-  if (modalCancalButton) {
-    modalCancalButton.addEventListener('click', closeAddPhotoModal);
-  }
+  // var modalCancalButton = document.querySelector('#create-item-modal .modal-cancel-button');
+  // if (modalCancalButton) {
+  //   modalCancalButton.addEventListener('click', closeAddPhotoModal);
+  // }
 
-  var modalAcceptButton = document.querySelector('#create-item-modal .modal-accept-button');
-  if (modalAcceptButton) {
-    modalAcceptButton.addEventListener('click', insertNewPhoto);
-  }
+  // var modalAcceptButton = document.querySelector('#create-item-modal .modal-accept-button');
+  // if (modalAcceptButton) {
+  //   modalAcceptButton.addEventListener('click', insertNewPhoto);
+  // }
 
-  var modalSearchButton = document.getElementById('navbar-search-button');
-  if (modalSearchButton) {
-    modalSearchButton.addEventListener('click', doSearch);
-  }
+  // var modalSearchButton = document.getElementById('navbar-search-button');
+  // if (modalSearchButton) {
+  //   modalSearchButton.addEventListener('click', doSearch);
+  // }
 
-  var modalSearchInput = document.getElementById('navbar-search-input');
-  if (modalSearchInput) {
-    modalSearchInput.addEventListener('input', doSearch);
-  }
+  // var modalSearchInput = document.getElementById('navbar-search-input');
+  // if (modalSearchInput) {
+  //   modalSearchInput.addEventListener('input', doSearch);
+  // }
 
 });
