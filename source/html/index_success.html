@@ -125,14 +125,14 @@
 
           <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "#Bedroom #Bathroom is required">
             <span class="label-input100">More Info<span style="color: red;">*</span></span>
-            <select style="margin-top: 15px;" >
+            <select style="margin-top: 15px;" class="bed-num">
               <option value="0" selected>#Bedroom:</option>
               <option value="1">1 Bedroom</option>
               <option value="2">2 Bedroom</option>
               <option value="3">2 Bedroom</option>
               <option value="4">4+ Bedroom</option>
             </select>
-            <select style="margin-top: 15px;" >
+            <select style="margin-top: 15px;" class="bath-num">
               <option value="0" selected>#Bathroom:</option>
               <option value="1">1 Bathroom</option>
               <option value="2">2 Bathroom</option>
@@ -159,31 +159,20 @@
           <div class="wrap-input100 validate-input m-b-18" data-validate = "Description is required">
             <span class="label-input100">Description<span style="color: red;">*</span></span>
 
-            <textarea rows="4" cols="50"  name="description" placeholder="say something about your house"></textarea>
+            <textarea class="input100" rows="4" cols="50" name="description" placeholder="say something about your house"></textarea>
             <span class="focus-input100"></span>
           </div>
-           <div class="modal-footer">
-          <button  class="modal-cancel-button">Cancel</button>
-          <button  class="modal-accept-button login100-form-btn ">Create Item</button>
-        </div>
 
-        </form>        
+          <div class="modal-footer">
+            <button type="button" class="modal-cancel-button">Cancel</button>
+            <button class="modal-accept-button">Create Item</button>
+          </div>
 
-
-
-
+        </form>
       </div>
     </div>
   </div>
 
-
-
-
-  <main class="item-container">
-
-
-
-  </main>
 
   </body>
 
