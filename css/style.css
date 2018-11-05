@@ -3,7 +3,9 @@ body {
   margin: 0;
   background-color:#ffffff;
 }
-
+i{
+  font-family: Roboto, Helvetica, sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -164,6 +166,36 @@ a:focus {
 
 }
 
+.item-title-container{
+  display: flex;
+  flex-wrap: wrap;
+  /*margin: 2px 8%;*/
+
+}
+
+.item-title{
+  font-size: 15px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0;
+  padding: 5px;
+}
+.larger{
+  font-size: 15px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0;
+
+}
+
+.item-description-title{
+  font-size: 15px;
+  font-weight: 700;
+  color: #444;
+  margin-bottom: 0;
+}
+
+
 
 .item {
 /*  flex: 1 4;*/
@@ -218,9 +250,12 @@ a:focus {
   width: 45%;
 }
 
+
+
 .item-name {
    font-weight: bold;
 }
+
 
 #create-item-button {
   /*position: fixed;*/
