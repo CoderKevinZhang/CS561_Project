@@ -32,7 +32,9 @@
                     if (isset($_POST['userName']) && isset($_POST['address'])
                     && isset($_POST['city']) && isset($_POST['state'])
                     && isset($_POST['bath']) && isset($_POST['bed'])
+                    /////////////////////////////////////////
                     && isset($_POST['price']) && isset($_POST['price'])
+                    /////////////////////////////////////////////
                     && isset($_POST['livingSpace']) && isset($_POST['zipCode'])){
                         /*Get all required data ---> Query Databaes ---> Return callback*/
                         $userName = $_POST['userName'];
@@ -42,6 +44,7 @@
                         $bath = $_POST['bath'];
                         $bed = $_POST['bed'];
                         $price = $_POST['price'];
+                        ////////////////////////////
                         // $imageUrl = $_POST['imageUrl'];
                         $buildTime = $_POST['buildTime'];
                         $livingSpace = $_POST['livingSpace'];
