@@ -34,6 +34,7 @@
         var description;
         var bath;
         var bed;
+	
 
         for(var i=0; i<input.length; i++) {
 
@@ -63,6 +64,7 @@
                     check = false;
                 }
             }
+	//alert(check);
 
 
             // price required 
@@ -119,7 +121,7 @@
             check = false;
         }
         else{
-            bed_n = bed_num.val()
+            bed_num = bed_num.val()
             hideValidate(bed_num);
         }
 
@@ -128,17 +130,18 @@
             check = false;
         }
         else{
-            bath_n = bath_num.val()
+            bath_num = bath_num.val()
             hideValidate(bath_num);
         }
+	
 
         if (check == true) {
             $.ajax({
                 type: "POST",
-                url: "../php/userActionHandler.php" , //url
-                data: {'houseService': 'uploadHouseInfo', 'servicePara': 'username', 'address': address,
+                url: "../php/houseInfoHandler.php" , //url
+                data: {'houseService': 'uploadHouseInfo', 'userName': 222, 'address': address,
                 'city': city, 'state': state, 'price': price, 'livingSpace': livingSpace, 'zipCode': zipCode,
-                'buildTime': buildTime, 'lotSpace': lotSpace, 'description': description, 'bath': bath_n, 'bed': bed_n},
+                'buildTime': buildTime, 'lotSpace': lotSpace, 'description': description, 'bath': bath_num, 'bed': bed_num},
                 success: function (serverResponse) {
                 //     if (JSON.parse(result).msg == "SUCCESS") {
                 //         //check = false;
@@ -153,11 +156,12 @@
                 //         console.log(newURL);    
                 //         window.location.replace(newURL);
                 //         // var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+                            alert("upload success, please review your information and try again");
                         
                 //     }
                 },
                 error : function(ajaxError) {
-                //     alert("sign up failed, please review your information and try again");
+                    alert("upload failed");
                 }
             });
         }
@@ -180,7 +184,7 @@
         $.ajax({
             async: false,
             type: "POST",
-            url: "../php/userActionHandler.php" , //url
+            url: "../php/houseActionHandler.php" , //url
             data: {'userService' : 'isDuplicate', 'userName': name},
             success: function (result) {
                 if (JSON.parse(result).msg == true) {

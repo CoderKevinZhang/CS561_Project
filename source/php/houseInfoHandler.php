@@ -32,7 +32,7 @@
                     if (isset($_POST['userName']) && isset($_POST['address'])
                     && isset($_POST['city']) && isset($_POST['state'])
                     && isset($_POST['bath']) && isset($_POST['bed'])
-                    && isset($_POST['price']) && isset($_POST['imageUrl'])
+                    && isset($_POST['price']) && isset($_POST['price'])
                     && isset($_POST['livingSpace']) && isset($_POST['zipCode'])){
                         /*Get all required data ---> Query Databaes ---> Return callback*/
                         $userName = $_POST['userName'];
@@ -42,7 +42,7 @@
                         $bath = $_POST['bath'];
                         $bed = $_POST['bed'];
                         $price = $_POST['price'];
-                        $imageUrl = $_POST['imageUrl'];
+                        // $imageUrl = $_POST['imageUrl'];
                         $buildTime = $_POST['buildTime'];
                         $livingSpace = $_POST['livingSpace'];
                         $lotSpace = $_POST['lotSpace'];
@@ -58,7 +58,7 @@
 
                         if ($dbResult){
                            $statement = "INSERT INTO `Houses_image` (`House_id`,`User_id`, `Url`) 
-                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'$imageUrl')";
+                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'$price')";
                            $dbResult =$db->dbExecute($statement);
                             if($dbResult){
                                 $response->status   = 200;
