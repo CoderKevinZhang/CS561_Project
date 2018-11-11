@@ -23,6 +23,20 @@
         return "";
     }
 
+    $("#logout-btn").click(function(){
+        document.cookie = "username=" + "" + ";" ;
+        var curUser;
+        curUser = getCookie("username")
+        if (curUser == ""){
+            alert("Log out successfully!");
+        }
+        else{
+            alert("Log out failed, please try again.");
+            console.log(getCookie("username"));
+        }
+    });
+
+
 })(jQuery);
 
 

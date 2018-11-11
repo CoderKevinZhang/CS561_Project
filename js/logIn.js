@@ -110,6 +110,15 @@
         });
     });
 
+    // $('#logout-btn').click(function(){
+    //     alert("The paragraph was clicked.");
+    // });
+
+    $(document).ready(function(){
+        $("#logout-btn").click(function(){
+            alert("The paragraph was clicked.");
+        });
+    });
     // check wheher the user name is existing or not 
     function checkName(name){
         var check = true;
@@ -186,6 +195,8 @@
            }
         }
     }
+
+
 
 })(jQuery);
 
