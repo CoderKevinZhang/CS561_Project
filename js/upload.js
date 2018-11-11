@@ -36,7 +36,7 @@
         var bed;
         var userName;
         var picURL;
-	   
+       
         userName = getCookie("username")
         for(var i=0; i<input.length; i++) {
 
@@ -66,7 +66,7 @@
                     check = false;
                 }
             }
-	//alert(check);
+    //alert(check);
 
 
             // price required 
@@ -143,7 +143,7 @@
             bath_num = bath_num.val()
             hideValidate(bath_num);
         }
-	
+    
 
         if (check == true) {
             $.ajax({
