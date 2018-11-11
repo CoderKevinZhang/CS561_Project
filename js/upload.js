@@ -35,6 +35,7 @@
         var bath;
         var bed;
         var userName;
+        var picURL;
 	   
         userName = getCookie("username")
         for(var i=0; i<input.length; i++) {
@@ -148,9 +149,7 @@
             $.ajax({
                 type: "POST",
                 url: "../php/houseInfoHandler.php" , //url
-                data: {'houseService': 'uploadHouseInfo', 'userName': userNam
-                e, 'address': address,
-                'city': city, 'state': state, 'price': price, 'imageUrl': picURL 'livingSpace': livingSpace, 'zipCode': zipCode,
+                data: {'houseService': 'uploadHouseInfo', 'userName': userName, 'address': address,'city': city, 'state': state, 'price': price, 'imageUrl': picURL, 'livingSpace': livingSpace, 'zipCode': zipCode,
                 'buildTime': buildTime, 'lotSpace': lotSpace, 'description': description, 'bath': bath_num, 'bed': bed_num},
                 success: function (serverResponse) {
                 //     if (JSON.parse(result).msg == "SUCCESS") {
@@ -166,7 +165,7 @@
                 //         console.log(newURL);    
                 //         window.location.replace(newURL);
                 //         // var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
-                            alert("upload success, please review your information and try again");
+                            alert("upload success");
                         
                 //     }
                 },
