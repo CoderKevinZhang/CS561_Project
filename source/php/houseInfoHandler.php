@@ -57,7 +57,7 @@
                         
 
                         if ($dbResult){
-                           $statement = "INSERT INTO `Houses_image` (`House_id`,`User_id`, `Url`) 
+                           $statement = "INSERT INTO `Houses_images` (`House_id`,`User_id`, `Url`) 
                            VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'$imageUrl')";
                            $dbResult =$db->dbExecute($statement);
                             if($dbResult){
