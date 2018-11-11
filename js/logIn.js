@@ -73,17 +73,21 @@
                         //check = false;
                         checkCookie(user_name);
                         // redirect to the index.html if log in successful
-			            var pageURL = window.location.pathname;
-            			console.log(pageURL);
-            			var elements = String(pageURL).split("/");i
-            			var len = elements.length;
-            			elements[elements.length - 1] = "index_success.html";
-            			var newURL = elements.join("/");
-            			// console.log(newURL);
-            			window.location.replace(newURL);
-            			// var lastURLSegment = pageURL.substr(pageURL.lastIndexOf('/') + 1);
+			            // var pageURL = window.location.pathname;
+            			// var elements = String(pageURL).split("/");i
+            			// var len = elements.length;
+            			// elements[elements.length - 1] = "index_success.html";
+            			// var newURL = elements.join("/");
             			
-            			// console.log(lastURLSegment);
+            			// window.location.replace(newURL);
+                        
+                        console.log(JSON.parse(result).userRole);
+                        // 1 is seller, 2 is buyer                        
+                        if (JSON.parse(result).userRole == 1) {
+                            window.location.replace('index_success.html');
+                        }else {
+                            window.location.replace('index.html');
+                        }
 
                     }
                     else{
