@@ -34,8 +34,9 @@
         var description;
         var bath;
         var bed;
-	
-
+        var userName;
+	   
+        userName = getCookie("username")
         for(var i=0; i<input.length; i++) {
 
             // get address 
@@ -114,6 +115,14 @@
                 }
             }
 
+            // picture URL required 
+            if ($(input[i]).attr('type') == 'text' && $(input[i]).attr('name') == 'picURL') {
+                picURL = $(input[i]).val();
+                if(validate(input[i]) == false){
+                    showValidate(input[i]);
+                    check = false;
+                }
+            }
         }
 
         if (bed_num.val() == 0) {
@@ -139,8 +148,9 @@
             $.ajax({
                 type: "POST",
                 url: "../php/houseInfoHandler.php" , //url
-                data: {'houseService': 'uploadHouseInfo', 'userName': 222, 'address': address,
-                'city': city, 'state': state, 'price': price, 'livingSpace': livingSpace, 'zipCode': zipCode,
+                data: {'houseService': 'uploadHouseInfo', 'userName': userNam
+                e, 'address': address,
+                'city': city, 'state': state, 'price': price, 'imageUrl': picURL 'livingSpace': livingSpace, 'zipCode': zipCode,
                 'buildTime': buildTime, 'lotSpace': lotSpace, 'description': description, 'bath': bath_num, 'bed': bed_num},
                 success: function (serverResponse) {
                 //     if (JSON.parse(result).msg == "SUCCESS") {
@@ -216,6 +226,22 @@
         var thisAlert = $(input).parent();
 
         $(thisAlert).removeClass('alert-validate');
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
     
