@@ -53,7 +53,7 @@
                         VALUES((SELECT `User_id` FROM `User_info` WHERE `User_name` = '$userName'),'$zipCode',
                         '$address','$city', '$state', '$price', '$bed','$bath','$buildTime','$description','$livingSpace','$lotSpace')"; #Houses2 will be modified in the final verson
 
-                        $dbResult           =$db->dbExecute($statement);
+                        $dbResult  =$db->dbExecute($statement);
                         
 
                         if ($dbResult){

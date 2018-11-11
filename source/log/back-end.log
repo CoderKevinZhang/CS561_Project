@@ -569,3 +569,71 @@
 2018-10-28 17:06:42 db::dbExecute [INFO] - 0
 2018-10-28 17:06:42 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
 2018-10-28 17:06:42 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:17:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:17:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:17:32 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:17:32 db::dbExecute [INFO] - 0
+2018-11-05 17:17:32 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-05 17:17:32 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:18:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:18:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:18:32 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:18:32 db::dbExecute [INFO] - 0
+2018-11-05 17:18:32 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-05 17:18:32 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:20:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:20:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:20:33 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:20:33 db::dbExecute [INFO] - 0
+2018-11-05 17:20:33 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '12345' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '12345' 
+2018-11-05 17:20:33 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:21:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:21:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:21:14 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:21:14 db::dbExecute [INFO] - 0
+2018-11-05 17:21:14 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-05 17:21:14 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:23:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:23:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:23:59 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:23:59 db::dbExecute [INFO] - 0
+2018-11-05 17:23:59 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-05 17:23:59 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 17:32:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:32:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:32:43 main::main [WARN] - userService :: No Service Selected
+2018-11-05 17:35:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 17:35:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 17:35:11 main::main [INFO] - userService :: logIn Called.
+2018-11-05 17:35:11 db::dbExecute [INFO] - 0
+2018-11-05 17:35:11 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-05 17:35:11 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-05 18:01:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 18:01:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 18:01:57 main::main [INFO] - houseService :: uploadHouseInfo Called.
+2018-11-05 18:01:57 main::main [WARN] - houseService ::uploadHouseInfo Called Failed. No enought info passed back via POST
+2018-11-05 18:04:08 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 18:04:08 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 18:04:08 main::main [INFO] - houseService :: uploadHouseInfo Called.
+2018-11-05 18:04:08 main::main [WARN] - houseService ::uploadHouseInfo Called Failed. No enought info passed back via POST
+2018-11-05 18:09:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 18:09:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 18:09:29 main::main [INFO] - houseService :: uploadHouseInfo Called.
+2018-11-05 18:09:29 main::main [WARN] - houseService ::uploadHouseInfo Called Failed. No enought info passed back via POST
+2018-11-05 18:12:58 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-05 18:12:58 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-05 18:12:58 main::main [INFO] - houseService :: uploadHouseInfo Called.
+2018-11-05 18:12:58 db::dbExecute [INFO] - 0
+2018-11-05 18:12:58 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO `Houses2` (`User_id`, `Zipcode`, `Address`, `City`, `State`,`Price`,`Beds`, `Baths`, `Built`,`description`,`Space`,`Lot_space`) 
+                        VALUES((SELECT `User_id` FROM `User_info` WHERE `User_name` = '222'),'97330',
+                        '1230 NW Ridgewood Pl','Corvallis', 'OR', '1', '1','1','1','1','1','1')
+2018-11-05 18:12:58 db::dbExecute [INFO] - 0
+2018-11-05 18:12:58 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO `Houses_image` (`House_id`,`User_id`, `Url`) 
+                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'1')
+2018-11-05 18:12:58 main::main [INFO] - houseService :: uploadHouseInfo Send dbResponse back.
+2018-11-11 14:56:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-11 14:56:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-11 14:56:23 main::main [INFO] - userService :: logIn Called.
+2018-11-11 14:56:23 db::dbExecute [INFO] - 0
+2018-11-11 14:56:23 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-11 14:56:23 main::main [INFO] - userService :: logIn Send dbResponse back.

@@ -31,7 +31,6 @@ function closeAddPhotoModal() {
 
 }
 
-
 /*
  * This function clears the values of all input elements in the photo modal.
  */
@@ -44,6 +43,7 @@ function clearPhotoInputValues() {
   }
 
 }
+
 
 
 // /*
@@ -195,10 +195,10 @@ function clearPhotoInputValues() {
 // Wait until the DOM content is loaded to hook up UI interactions, etc.
 window.addEventListener('DOMContentLoaded', function (event) {
 
-  var itemElemsCollection = document.getElementsByClassName('item');
-  for (var i = 0; i < itemElemsCollection.length; i++) {
-    allItemElems.push(itemElemsCollection[i]);
-  }
+  // var itemElemsCollection = document.getElementsByClassName('item');
+  // for (var i = 0; i < itemElemsCollection.length; i++) {
+  //   allItemElems.push(itemElemsCollection[i]);
+  // }
 
   var addPhotoButton = document.getElementById('create-item-button');
   if (addPhotoButton) {
@@ -215,19 +215,19 @@ window.addEventListener('DOMContentLoaded', function (event) {
     modalCancalButton.addEventListener('click', closeAddPhotoModal);
   }
 
-  var modalAcceptButton = document.querySelector('#create-item-modal .modal-accept-button');
-  if (modalAcceptButton) {
-    modalAcceptButton.addEventListener('click', insertNewPhoto);
-  }
+  // var modalAcceptButton = document.querySelector('#create-item-modal .modal-accept-button');
+  // if (modalAcceptButton) {
+  //   modalAcceptButton.addEventListener('click', insertNewPhoto);
+  // }
 
-  var modalSearchButton = document.getElementById('navbar-search-button');
-  if (modalSearchButton) {
-    modalSearchButton.addEventListener('click', doSearch);
-  }
+  // var modalSearchButton = document.getElementById('navbar-search-button');
+  // if (modalSearchButton) {
+  //   modalSearchButton.addEventListener('click', doSearch);
+  // }
 
-  var modalSearchInput = document.getElementById('navbar-search-input');
-  if (modalSearchInput) {
-    modalSearchInput.addEventListener('input', doSearch);
-  }
+  // var modalSearchInput = document.getElementById('navbar-search-input');
+  // if (modalSearchInput) {
+  //   modalSearchInput.addEventListener('input', doSearch);
+  // }
 
 });

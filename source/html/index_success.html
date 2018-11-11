@@ -85,10 +85,10 @@
           <button type="button" class="modal-close-button">&times;</button>
         </div>
 
-        <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
+        <form id="uploadForm" style="padding-bottom: 50px;" class="login100-form validate-form">
           <div class="wrap-input100 validate-input m-b-26" data-validate="address is required">
             <span class="label-input100">Street Address<span style="color: red;">*</span></span>
-            <input id="username" class="input100" type="text" name="address" placeholder="Enter a street address">
+            <input class="input100" type="text" name="address" placeholder="Enter a street address">
             <span class="focus-input100"></span>
           </div>
 
@@ -99,34 +99,40 @@
           </div>
           <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
             <span class="label-input100">State<span style="color: red;">*</span></span>
-            <input class="input100" type="text" name="state" placeholder="Enter a state">
+            <input id = "state", class="input100" type="text" name="state" placeholder="Enter a state">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
+            <span class="label-input100">Zipcode<span style="color: red;">*</span></span>
+            <input  class="input100" type="text" name="zipCode" placeholder="Enter a state">
             <span class="focus-input100"></span>
           </div>
 
 
           <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is invalid">
             <span class="label-input100">Price <span style="color: red;">*</span></span>
-            <input class="input100" type="number" name="price" placeholder="100000">
+            <input id= "price" class="input100" type="number" name="price" placeholder="100000">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input m-b-26" data-validate="">
             <span class="label-input100">Living Space <span style="color: red;">*</span></span>
-            <input class="input100" type="number" name="livingSpace" placeholder="xxxx">
+            <input id = "livingSpace", class="input100" type="number" name="livingSpace" placeholder="xxxx">
             <span class="focus-input100"></span>
           </div>
 
 
           <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "#Bedroom #Bathroom is required">
             <span class="label-input100">More Info<span style="color: red;">*</span></span>
-            <select style="margin-top: 15px;" >
+            <select style="margin-top: 15px;" class="bed-num">
               <option value="0" selected>#Bedroom:</option>
               <option value="1">1 Bedroom</option>
               <option value="2">2 Bedroom</option>
               <option value="3">2 Bedroom</option>
               <option value="4">4+ Bedroom</option>
             </select>
-            <select style="margin-top: 15px;" >
+            <select style="margin-top: 15px;" class="bath-num">
               <option value="0" selected>#Bathroom:</option>
               <option value="1">1 Bathroom</option>
               <option value="2">2 Bathroom</option>
@@ -139,45 +145,42 @@
 
           <div class="wrap-input100 validate-input m-b-26" data-validate="When house built?">
             <span class="label-input100">Built Year</span>
-            <input class="input100" type="number" name="builtYear" placeholder="xxxx">
+            <input class="input100" type="number" name="buildTime" placeholder="xxxx">
             <span class="focus-input100"></span>
           </div>
 
           <div class="wrap-input100 validate-input m-b-26" data-validate="">
             <span class="label-input100">Lot space</span>
-            <input class="input100" type="number" name="lotSpace" placeholder="Enter email">
+            <input class="input100" type="number" name="lotSpace" placeholder="the lot space of your house?">
             <span class="focus-input100"></span>
           </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="URL for Pictures is required">
+            <span class="label-input100">Picture URL<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="picURL" placeholder="URL for picture">
+            <span class="focus-input100"></span>
+          </div>
+
+
 
 
           <div class="wrap-input100 validate-input m-b-18" data-validate = "Description is required">
             <span class="label-input100">Description<span style="color: red;">*</span></span>
 
-            <textarea rows="4" cols="50"  name="description" placeholder="say something about your house"></textarea>
+            <textarea class="input100" rows="4" cols="50" name="description" placeholder="say something about your house"></textarea>
             <span class="focus-input100"></span>
           </div>
 
+          <div class="modal-footer">
+            <button type="button" class="modal-cancel-button">Cancel</button>
+            <button class="modal-accept-button">Create Item</button>
+          </div>
 
-        </form>        
-
-        <div class="modal-footer">
-          <button type="button" class="modal-cancel-button">Cancel</button>
-          <button type="button" class="modal-accept-button">Create Item</button>
-        </div>
-
-
+        </form>
       </div>
     </div>
   </div>
 
-
-
-
-  <main class="item-container">
-
-
-
-  </main>
 
   </body>
 
@@ -194,6 +197,7 @@
   <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
   <script src="../../js/index_success.js"></script>
+  <script src="../../js/upload.js"></script>
 
 </html>
 
