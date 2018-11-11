@@ -60,7 +60,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #57b846;
+  color: #178ff3;
 }
 
 /*---------------------------------------------*/
@@ -268,8 +268,9 @@ iframe {
 
   position: absolute;
   top: 14px;
-  left: -105px;
-  width: 80px;
+  left: -125px;
+  width: 120px;
+
 
 }
 
