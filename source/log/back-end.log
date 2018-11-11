@@ -631,3 +631,9 @@
 2018-11-05 18:12:58 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO `Houses_image` (`House_id`,`User_id`, `Url`) 
                            VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'1')
 2018-11-05 18:12:58 main::main [INFO] - houseService :: uploadHouseInfo Send dbResponse back.
+2018-11-11 14:56:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-11 14:56:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-11 14:56:23 main::main [INFO] - userService :: logIn Called.
+2018-11-11 14:56:23 db::dbExecute [INFO] - 0
+2018-11-11 14:56:23 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-11 14:56:23 main::main [INFO] - userService :: logIn Send dbResponse back.

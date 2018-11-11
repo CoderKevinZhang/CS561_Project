@@ -67,7 +67,7 @@
                         /*Get all required data ---> Query Databaes ---> Return callback*/
                         $userName           = $_POST['userName'];
                         $userPassword           = $_POST['userPassword'];
-                        $statement = "SELECT COUNT(`User_name`) AS dbResult FROM `User_info` WHERE `User_name` = '$userName' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '$userPassword' ";
+                        $statement = "SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = '$userName' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '$userPassword' ";
                         $dbResult           =$db->dbExecute($statement);
                         $dbResult = mysqli_fetch_assoc($dbResult);
                         if ($dbResult){
@@ -75,6 +75,7 @@
                             //COVERED
                            $response->status   = 200;
                            $response->msg      =!!($dbResult['dbResult']);
+                           $response->userRole = $dbResult['userRole'];
                            $userServiceLog->info('userService :: logIn Send dbResponse back.');
                         }
                        else {
