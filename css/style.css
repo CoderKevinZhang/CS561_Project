@@ -392,7 +392,16 @@ a:focus {
   background-color: #eee;
 }
 
+.modal-footer .modal-sign-button:hover {
+  background-color: #eee;
+}
+
 .modal-footer .modal-accept-button {
+  background-color: #319df6;
+  color: #fff;
+}
+
+.modal-footer .modal-sign-button {
   background-color: #319df6;
   color: #fff;
 }
@@ -427,4 +436,12 @@ a:focus {
    height: 29px;
    padding: 5px; /* If you add too much padding here, the options won't show in IE */
    width: 200px;
+}
+
+.modal-content{
+
+  height:100px;
+}
+.modal-content h2{
+  padding:10px, 0,10px,0;
 }
