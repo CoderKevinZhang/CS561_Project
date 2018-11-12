@@ -38,10 +38,18 @@
    
     <nav class="navbar">
 
-      <ul class="navlist">
+      <ul class="navlist" >
         <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
-        <li class="navitem navlink"><a href="login.html">Sign In</a></li> 
-        <li class="navitem navlink"><a href="signUp.html">Sign Up</a></li>
+        <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
+        <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
+        <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
+         <div class="dropdown">
+            <button class="dropbtn"> <a id="user_name" href="#"></a></button>
+            <div class="dropdown-content">
+              <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+            </div>
+         </div>
+        </li>
       </ul>
  
       <div class="navbar-search-container">
