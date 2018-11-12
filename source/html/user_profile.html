@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+<link rel="stylesheet" type="text/css" href="../../css/main.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+
+<link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 10px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Profile</h1>
+</div>
+
+
+<div class="row">
+  <div class="side">
+      <h2>UserName</h2>
+      <!-- <h5>Photo of me:</h5> -->
+      <img src="../../images/Capture.JPG" height = 200px width = 100%>
+      <p>UserRole</p>
+      <h3>Conect Me</h3>
+      <h5>Email:12312123</h5>
+      <h5>Phone:12312123</h5>
+      <button type="button" id="create-item-button"><i class="fa fa-plus-square-o"></i></button>
+      <div id="modal-backdrop" class="hidden"></div>
+    <div id="create-item-modal" class="hidden">
+      <div class="modal-dialog">
+        <div class="modal-header" style="background-color: #319df6;">        
+          <span class="login100-form-title-1">
+            House Information
+          </span>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <form id="uploadForm" style="padding-bottom: 50px;" class="login100-form validate-form">
+          <div class="wrap-input100 validate-input m-b-26" data-validate="address is required">
+            <span class="label-input100">Street Address<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="address" placeholder="Enter a street address">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="City is required">
+            <span class="label-input100">City<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="city" placeholder="Enter a city">
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
+            <span class="label-input100">State<span style="color: red;">*</span></span>
+            <input id = "state", class="input100" type="text" name="state" placeholder="Enter a state">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
+            <span class="label-input100">Zipcode<span style="color: red;">*</span></span>
+            <input  class="input100" type="text" name="zipCode" placeholder="Enter a state">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is invalid">
+            <span class="label-input100">Price <span style="color: red;">*</span></span>
+            <input id= "price" class="input100" type="number" name="price" placeholder="100000">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Living Space <span style="color: red;">*</span></span>
+            <input id = "livingSpace", class="input100" type="number" name="livingSpace" placeholder="xxxx">
+            <span class="focus-input100"></span>
+          </div>
+
+
+          <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "#Bedroom #Bathroom is required">
+            <span class="label-input100">More Info<span style="color: red;">*</span></span>
+            <select style="margin-top: 15px;" class="bed-num">
+              <option value="0" selected>#Bedroom:</option>
+              <option value="1">1 Bedroom</option>
+              <option value="2">2 Bedroom</option>
+              <option value="3">2 Bedroom</option>
+              <option value="4">4+ Bedroom</option>
+            </select>
+            <select style="margin-top: 15px;" class="bath-num">
+              <option value="0" selected>#Bathroom:</option>
+              <option value="1">1 Bathroom</option>
+              <option value="2">2 Bathroom</option>
+              <option value="3">2 Bathroom</option>
+              <option value="4">4+ Bathroom</option>
+            </select>
+          </div>
+
+
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="When house built?">
+            <span class="label-input100">Built Year</span>
+            <input class="input100" type="number" name="buildTime" placeholder="xxxx">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="">
+            <span class="label-input100">Lot space</span>
+            <input class="input100" type="number" name="lotSpace" placeholder="the lot space of your house?">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-26" data-validate="URL for Pictures is required">
+            <span class="label-input100">Picture URL<span style="color: red;">*</span></span>
+            <input class="input100" type="text" name="picURL" placeholder="URL for picture">
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 validate-input m-b-18" data-validate = "Description is required">
+            <span class="label-input100">Description<span style="color: red;">*</span></span>
+
+            <textarea class="input100" rows="4" cols="50" name="description" placeholder="say something about your house"></textarea>
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="modal-cancel-button">Cancel</button>
+            <button class="modal-accept-button">Create Item</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+      
+  </div>
+
+  <div class="main">
+    <h2>Uploaded houses</h2>
+    <h5>upload date</h5>
+    <main class="item-container">
+    <article class="item">
+      <div class="image-container">
+        <img class="image" src="../../images/demoPic/demo1.jpg">
+      </div>
+
+      <div class="item-content">
+        <!-- <p class="item-name"> -->
+
+        <p class="item-location">
+          <a class = "larger" href="#" > 1046 Fernbush, Los Angeles, CA 90077 </a>
+        </p>
+        <p class=" larger item-price"> 
+            $ 10000
+        </p>
+        <div class = "item-title-container"> 
+
+          <i class="item-title fa fa-bed" style="font-size:20px"> 2</i>
+          <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
+          <p class="item-title">
+            <a > 13000 sqft </a>
+          </p>
+          <p class="item-title item-builtTime">
+            <a > Build in 1992 </a>
+          </p>
+        </div>
+
+        <p class= "item-description-title" > Description</p>
+        <div class="item-description-container">
+
+          <p class = "item-description">
+            Be mesmerized and let your senses dance by the everlasting impression of Sunset Chateau. Indulge in this elegant Holmby Hills estate exuding luxury across approx. 1.70 acres of land. The long private drive leads to lush grounds including private park, grassy yard, gardens, and walking paths that envelope this captivating home. Entertain in the grand formal dining room, spacious living room, library, bar, and indulgent eat-in chef's kitchen or outside in the expansive terraces, grandiose pool, and patio flowing seamlessly through beautiful French doors throughout. Relax in the luxurious bedrooms & spa-like baths detailed w/ utmost perfection. Designed w/ exquisite crown moldings, beautiful arches, marvelous staircase, mahogany floors & pristine marble, this home has been the venue of some of Hollywood's most elegant celebrations. Live in the embodiment of Old Hollywood sophistication w/ the finest details & craftsmanship captured by this iconic masterpiece in the grandest setting.
+          </p>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="image-container">
+        <img class="image" src="../../images/demoPic/demo2.jpg">
+      </div>
+
+      <div class="item-content">
+        <!-- <p class="item-name"> -->
+
+        <p class="item-location">
+          <a class = "larger" href="#" > 1515 NW 29th St
+Corvallis, OR 97330 </a>
+        </p>
+        <p class=" larger item-price"> 
+            $250,000
+        </p>
+        <div class = "item-title-container"> 
+
+          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
+          <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
+          <p class="item-title">
+            <a > 1,075 sqft </a>
+          </p>
+          <p class="item-title item-builtTime">
+            <a > Build in 1992 </a>
+          </p>
+        </div>
+
+        <p class= "item-description-title" > Description</p>
+        <div class="item-description-container">
+
+          <p class = "item-description">
+            Cute single level home in wonderful location. Spacious corner lot, large for an in-town home, with nice garden areas in the backyard & a treehouse structure. Lovely hardwood floors throughout the home & a cozy corner fireplace. Kitchen includes a newer 4 burner gas range. Vaulted ceilings & large windows. Spend summer nights on the large patio, roasting marshmallows in the fire pit. Roof, furnace, kitchen appliances new in 2011. Close to OSU, multiple parks, & just blocks shopping and restaurants.
+
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="image-container">
+        <img class="image" src="../../images/demoPic/demo3.jpg">
+      </div>
+
+      <div class="item-content">
+        <!-- <p class="item-name"> -->
+
+        <p class="item-location">
+          <a class = "larger" href="#" > 49 Eugenie Ct
+New Orleans, LA 70131 </a>
+        </p>
+        <p class=" larger item-price"> 
+            $237,900
+        </p>
+        <div class = "item-title-container"> 
+
+          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
+          <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
+          <p class="item-title">
+            <a > 2,577 sqft </a>
+          </p>
+          <p class="item-title item-builtTime">
+            <a > Build in 1992 </a>
+          </p>
+        </div>
+
+        <p class= "item-description-title" > Description</p>
+        <div class="item-description-container">
+
+          <p class = "item-description">
+            This home has everything!  Just renovated, 4 bedroom home with formal dining room and super large den with corner fireplace. Upstairs has 3 large bedrooms and separate den/landing area.  All rooms have nice sized closets and lots of natural light.  Master suite is on the lower level with large corner garden tub, separate shower, double vanities and very large walk in closet.  Outside you have an incredibly large deck for grilling and entertainment and an extra large yard that can easily fit a swimming pool.
+
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="image-container">
+        <img class="image" src="../../images/demoPic/demo4.jpg">
+      </div>
+
+      <div class="item-content">
+        <!-- <p class="item-name"> -->
+
+        <p class="item-location">
+          <a class = "larger" href="#" > 3711 Saint Charles Ave
+New Orleans, LA 70115 </a>
+        </p>
+        <p class=" larger item-price"> 
+            $4,500,000
+        </p>
+        <div class = "item-title-container"> 
+
+          <i class="item-title fa fa-bed" style="font-size:20px"> 5</i>
+          <i class="item-title fa fa-bath" style="font-size:20px"> 6 </i>
+          <p class="item-title">
+            <a > 8,747 sqft</a>
+          </p>
+          <p class="item-title item-builtTime">
+            <a > Build in 1992 </a>
+          </p>
+        </div>
+
+        <p class= "item-description-title" > Description</p>
+        <div class="item-description-container">
+
+          <p class = "item-description">
+            Magnificently restored Victorian mansion once owned by Anne Rice. Grand center hall w/original 1880's stained glass window & mahogany & cypress staircase. Formal entertaining rooms w/elaborate moldings, mantles, medallions & stunning chandeliers. Dream gourmet kitchen w/wet bar open to breathtaking entertaining & dining area. 5 beds w/huge master suite, exceptional marble bath, rm of closets. Elevator. 8 HVAC systems. Fenced manicured grounds w/marble patio & covered entertaining space. 4 car garage.
+
+          </p>
+        </div>
+      </div>
+    </article>
+    <article class="item">
+      <div class="image-container">
+        <img class="image" src="../../images/demoPic/demo5.jpg">
+      </div>
+
+      <div class="item-content">
+        <!-- <p class="item-name"> -->
+
+        <p class="item-location">
+          <a class = "larger" href="#" > 33028 Marais St
+New Orleans, LA 70117 </a>
+        </p>
+        <p class=" larger item-price"> 
+            $259,900
+        </p>
+        <div class = "item-title-container"> 
+
+          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
+          <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
+          <p class="item-title">
+            <a > 1,443 sqft</a>
+          </p>
+          <p class="item-title item-builtTime">
+            <a > Build in 1999 </a>
+          </p>
+        </div>
+
+        <p class= "item-description-title" > Description</p>
+        <div class="item-description-container">
+
+          <p class = "item-description">
+            Beautiful side gallery 3 bedroom 1.5 bath home. Possible off street parking with change of gate. Central air & heat, updated kitchen and baths.
+
+          </p>
+        </div>
+      </div>
+    </article>
+  </main>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+<script src="../../js/index.js"></script>
+</html>
