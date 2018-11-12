@@ -29,6 +29,7 @@
         curUser = getCookie("username")
         if (curUser == ""){
             alert("Log out successfully!");
+            window.location.replace('index.html');
         }
         else{
             alert("Log out failed, please try again.");
