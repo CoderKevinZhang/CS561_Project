@@ -11,7 +11,7 @@ a {
 }
 
 .navlink a {
-  color: black;
+  color: #fff;
 }
 
 main a{
@@ -19,7 +19,7 @@ main a{
 } 
 
 .site-title a {
-  color:#178ff3
+  color:#fff;
  }
 
 a:hover,
@@ -49,9 +49,10 @@ a:focus {
   padding: 10px 80px 10px 0px;
   font-size: 30px;
   font-weight: 100;
-  color:#178ff3;
+  /*color:#178ff3;*/
+  color:#fff;
   display: inline-block;
-  line-height: 38px;
+  /*line-height: 38px;*/
   font-style: bold;
 }
 
@@ -59,13 +60,22 @@ a:focus {
  /* background-color: #fff;*/
   font-size: 18px;
   line-height: 22px;
-}
 
+
+
+}
 .navlist {
-  margin: 0 0 0 4%;
-/*  padding: 0px 130px 0px 130px;*/
-  background-color: #ffffff;
-  max-width: 1300px;
+  /*margin: 0 0 0 4%;*/
+  padding: 0px 6% 0px 6%;
+  background-color: #151111;
+  /*max-width: 1300px;*/
+  /*position: fixed;*/
+  background-color: #333;
+  position: fixed;
+  /*top: -50px;*/
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
 }
 
 .navitem {
@@ -74,9 +84,10 @@ a:focus {
 
 .navitem.navlink{
   float: right;
-  margin-right: 20px;
-  padding: 0;
-  line-height: 38px;
+  /*margin-right: 20px;*/
+  /*line-height: 38px;*/
+  padding: 10px 40px 10px 0px;
+
 }
 
 
@@ -127,13 +138,10 @@ a:focus {
 }
 
 
-
-
-
 /*.navlink.active {
   box-shadow: inset 0 -3px #319df6;
 }*/
-.navbar-search-container{
+/*.navbar-search-container{
   display:flex;
   font-size: 18px;
   background-image:url("../images/bg.jpg");
@@ -142,10 +150,36 @@ a:focus {
  background-size: cover;
   /*height:660px;*/
   /*min-height: 100%;*/
-  height: 300px;
-  padding-left: 215px;
-  justify-content: center;
-}  
+  /*height: 300px;*/
+  /*padding-left: 215px;*/
+  /*justify-content: center;*/
+/*}  */
+
+
+.navbar {
+    /* The image used */
+    background-image: url("../images/bg.jpg");
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text h1{
+  font-size:50px;
+}
 
 .navbar-search {
   flex: 0 1 50%;
