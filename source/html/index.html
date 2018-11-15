@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../css/nav.css" media="screen">
 
     <!-- template -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
@@ -36,7 +37,7 @@
 
     <!-- The <i>  <i class="fa fa-hand-lizard-o"> tag below includes the bullhorn icon from Font Awesome -->   
    
-    <nav class="navbar">
+    <div class="navbar">
 
       <ul class="navlist" >
         <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
@@ -58,11 +59,45 @@
          <!--    <input type="text" id="navbar-search-input" placeholder="Search...">
             <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button> -->
           </div>
-    </div>
+      </div>
 
-    </nav>
+    </div>
         
   </header>
+
+  <nav style="width: 540px;" id="topNav">
+    <ul>
+        <li><a href="#">Zipcode</a>
+          <ul style="width: 180px;">
+                <li><span style="color: white;">zipcode: </span><input style="width: 100px;" type="text"></li>
+              </ul> 
+        </li>
+        <li><a href="#">Price</a>
+            <ul style="width: 150px;">
+                <li><span style="color: white;">Min: </span><input style="width: 100px;" type="text"></li>
+                <li><span style="color: white;">Max: </span><input style="width: 100px;" type="text"></li>
+              </ul>        
+          </li>
+        <li><a href="#" title="Nav Link 1">Location</a></li>
+        <li><a href="#">Beds</a>
+          <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4+</a></li>
+          </ul>
+        </li>
+        <li><a href="#" title="Nav Link 1">Baths</a>
+          <ul>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4+</a></li>
+          </ul>
+        </li>
+        <li class="last"><a href="#" title="Nav Link 1">Squares</a></li>
+    </ul>
+  </nav>
 
   <section class="share-container">
     <div class="share-content">
