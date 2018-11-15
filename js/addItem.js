@@ -20,7 +20,7 @@ var objSample =
  * @param obj: an JSON that contains house infomation
  * @return: a DOM object (essential to list a single house info) 
  */
-function generateitem(obj){
+function generateItem(obj){
 
 	var newP = document.createElement('p');
 	var newDiv = document.createElement('div');
@@ -127,7 +127,7 @@ function generateitem(obj){
 }
 
 function handleCreateItem(){
-	var itemElem = generateitem(objSample);
+	var itemElem = generateItem(objSample);
 	itemContainer.appendChild(itemElem);
 	// backupitems = document.querySelectorAll('.item');
 }
