@@ -126,8 +126,11 @@ function generateItem(obj){
 	return itemElem;
 }
 
+//Create new HTML nodes and append to itemContainer
 function handleCreateItem(){
 	var itemElem = generateItem(objSample);
+	var itemContainer = document.querySelector('.item-container');
+
 	itemContainer.appendChild(itemElem);
 	// backupitems = document.querySelectorAll('.item');
 }
