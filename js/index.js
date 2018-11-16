@@ -44,7 +44,99 @@ function clearPhotoInputValues() {
 
 }
 
+function promZip() {
+  var zipcode = prompt("Please enter your zipcode", "");
 
+  if (zipcode === null) {
+    /* todo : cancel */
+    return;
+  }
+
+  if (!zipcode)
+  {
+    alert("Zipcode cannot be empty!")
+  }
+}
+
+function promPrice() {
+  var min_price = prompt("Please enter your Min Price", "");
+  if (min_price === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!min_price)
+  {
+    alert("Min Price cannot be empty!")
+  }
+
+  var max_price = prompt("Please enter your Max Price", "");
+  if (max_price === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!max_price)
+  {
+    alert("Max Price cannot be empty!")
+  }
+}
+
+function promLocation() {
+  var city = prompt("Please enter your city", "");
+  if (city === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!city)
+  {
+    alert("City cannot be empty!")
+  }
+
+  var state = prompt("Please enter your state", "");
+  if (state === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!state)
+  {
+    alert("State cannot be empty!")
+  }
+}
+
+function promBeds() {
+  var beds = prompt("Please select your number of beds from [1, 2, 3, 4+]", "");
+  if (beds === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!beds)
+  {
+    alert("State cannot be empty!")
+  }
+}
+
+function promBaths() {
+  var baths = prompt("Please select your number of baths from [1, 2, 3, 4+]", "");
+  if (baths === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!baths)
+  {
+    alert("State cannot be empty!")
+  }
+}
+
+function promSquares() {
+  var squares = prompt("Please enter your squares", "");
+  if (squares === null) {
+    /* todo : cancel */
+    return;
+  }
+  if (!squares)
+  {
+    alert("State cannot be empty!")
+  }
+}
 
 // /*
 //  * Small function to get a person's identifier from the current URL.

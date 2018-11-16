@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
 
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../../css/nav.css" media="screen">
 
     <!-- template -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
@@ -37,11 +38,9 @@
     <!-- <header> -->
 
     <!-- The <i>  <i class="fa fa-hand-lizard-o"> tag below includes the bullhorn icon from Font Awesome -->   
+    <div class="navbar">
 
-
-    <nav class="navbar">
-
-      <ul class="navlist" >
+      <ul class="navlist" style="z-index: 99">
         <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
         <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
         <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
@@ -61,16 +60,27 @@
       </div>
 
 
-      <div class="navbar-search-container">
+<!--       <div class="navbar-search-container">
           <div class="navbar-search">
-         <!--    <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button> -->
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
           </div>
-      </div>
+      </div> -->
 
-    </nav>
+    </div>
         
   <!-- </header> -->
+
+  <nav style="width: 540px;" id="topNav">
+    <ul>
+        <li><a href="javascript:void(0);" onclick="promZip()">Zipcode</a></li>
+        <li><a href="javascript:void(0);" onclick="promPrice()">Price</a></li>
+        <li><a href="javascript:void(0);" onclick="promLocation()">Location</a></li>
+        <li><a href="javascript:void(0);" onclick="promBeds()">Beds</a></li>
+        <li><a href="javascript:void(0);" onclick="promBaths()">Baths</a></li>
+        <li class="last"><a href="javascript:void(0);" onclick="promSquares()">Squares</a></li>
+    </ul>
+  </nav>
 
   <section class="share-container">
     <div class="share-content">
@@ -303,7 +313,7 @@ New Orleans, LA 70117 </a>
 
   </main>
 
-  </body>
+</body>
 
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
   <script src="/itemTemplate.js"></script>
