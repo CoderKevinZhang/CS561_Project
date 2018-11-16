@@ -40,7 +40,7 @@
     <!-- The <i>  <i class="fa fa-hand-lizard-o"> tag below includes the bullhorn icon from Font Awesome -->   
     <div class="navbar">
 
-      <ul class="navlist" >
+      <ul class="navlist" style="z-index: 99">
         <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
         <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
         <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
@@ -60,12 +60,12 @@
       </div>
 
 
-      <div class="navbar-search-container">
+<!--       <div class="navbar-search-container">
           <div class="navbar-search">
-         <!--    <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button> -->
+            <input type="text" id="navbar-search-input" placeholder="Search...">
+            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
           </div>
-      </div>
+      </div> -->
 
     </div>
         
@@ -73,35 +73,12 @@
 
   <nav style="width: 540px;" id="topNav">
     <ul>
-        <li><a href="#">Zipcode</a>
-          <ul style="width: 180px;">
-                <li><span style="color: white;">zipcode: </span><input style="width: 100px;" type="text"></li>
-              </ul> 
-        </li>
-        <li><a href="#">Price</a>
-            <ul style="width: 150px;">
-                <li><span style="color: white;">Min: </span><input style="width: 100px;" type="text"></li>
-                <li><span style="color: white;">Max: </span><input style="width: 100px;" type="text"></li>
-              </ul>        
-          </li>
-        <li><a href="#" title="Nav Link 1">Location</a></li>
-        <li><a href="#">Beds</a>
-          <ul>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4+</a></li>
-          </ul>
-        </li>
-        <li><a href="#" title="Nav Link 1">Baths</a>
-          <ul>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4+</a></li>
-          </ul>
-        </li>
-        <li class="last"><a href="#" title="Nav Link 1">Squares</a></li>
+        <li><a href="javascript:void(0);" onclick="promZip()">Zipcode</a></li>
+        <li><a href="javascript:void(0);" onclick="promPrice()">Price</a></li>
+        <li><a href="javascript:void(0);" onclick="promLocation()">Location</a></li>
+        <li><a href="javascript:void(0);" onclick="promBeds()">Beds</a></li>
+        <li><a href="javascript:void(0);" onclick="promBaths()">Baths</a></li>
+        <li class="last"><a href="javascript:void(0);" onclick="promSquares()">Squares</a></li>
     </ul>
   </nav>
 
@@ -336,7 +313,7 @@ New Orleans, LA 70117 </a>
 
   </main>
 
-  </body>
+</body>
 
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
   <script src="/itemTemplate.js"></script>
