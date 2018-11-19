@@ -142,6 +142,8 @@ function getNewHouses(pageNum, itemPerPage, initial){
     while (itemContainer.firstChild) {
         itemContainer.removeChild(itemContainer.firstChild);
     }
+    /*Read Form Data*/
+    
     /*Communicate with Server to get house info*/
    /* for (i = 0; i < itemPerPage; i++){
         if (initial == 0){
