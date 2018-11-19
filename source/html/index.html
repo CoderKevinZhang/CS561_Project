@@ -1,73 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    
-
     <meta charset="utf-8">
     <title>LA Estate</title>
-
-    <!-- This is a stylesheet that includes the font you should use -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
-
-    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
-
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../css/nav.css" media="screen">
-
-    <!-- template -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
-
-<!--     <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css"> 
-    <link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css"> 
-    <link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css"> -->
     <link rel="stylesheet" type="text/css" href="../../css/util.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pagination.css">
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
-
   </head>
 
-  <body>
-    <!-- <div class="bg"></div> -->
-    <!-- <header> -->
-
-    <!-- The <i>  <i class="fa fa-hand-lizard-o"> tag below includes the bullhorn icon from Font Awesome -->   
-    <div class="navbar">
-
-      <ul class="navlist" style="z-index: 99">
-        <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
-        <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
-        <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
-        <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
-         <div class="dropdown">
-            <button class="dropbtn"> <a id="user_name" href="#"></a></button>
-            <div class="dropdown-content">
-              <a id= "logout-btn" href="user_profile.html" >My Profile</a>
-              <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+  <body onload="generatePagination(5 ,1)">
+      <div class="navbar">
+        <ul class="navlist" style="z-index: 99">
+          <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
+          <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
+          <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
+          <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
+            <div class="dropdown">
+                <button class="dropbtn"> <a id="user_name" href="#"></a></button>
+                <div class="dropdown-content">
+                    <a id= "logout-btn" href="user_profile.html" >My Profile</a>
+                    <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+                </div>
             </div>
-         </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
 
-      <div class="hero-text">
-        <h1 style="font-size:50px"> Find A Dream House</h1>
-      </div>
-
-
-<!--       <div class="navbar-search-container">
-          <div class="navbar-search">
-            <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-          </div>
-      </div> -->
-
-    </div>
+        <div class="hero-text">
+            <h1 style="font-size:50px"> Find A Dream House</h1>
+        </div>
+     </div>
         
   <!-- </header> -->
   <section style="background-color: beige; width: 40%; margin-left: 300px;" class="">
@@ -327,7 +292,11 @@ New Orleans, LA 70117 </a>
 
 
   </main>
-
+  
+  <!--House Listing Pagination-->
+  <div id="pagination" >
+  
+  </div> 
 </body>
 
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
@@ -343,58 +312,5 @@ New Orleans, LA 70117 </a>
   <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
   <script src="../../js/filter_form.js"></script>
-
+  <script src="../../js/housePagination.js"></script>
 </html>
-
-
-
-<!-- 
-<div class="modal-body">
-          <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
-
-            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-            <span class="label-input100">Username<span style="color: red;">*</span></span>
-            <input id="username" class="input100" type="text" name="username" placeholder="Enter username">
-            <span class="focus-input100"></span>
-          </div>
-
-
-          <div class="item-input-element styled-select wrap-input100 validate-input m-b-26">
-            <label for="item-text-input" class="label-input100">House Type</label>
-            <select style="margin-top: 15px;" >
-              <option value="0" selected>#Bedroom:</option>
-              <option value="1">1 Bedroom</option>
-              <option value="2">2 Bedroom</option>
-              <option value="3">2 Bedroom</option>
-              <option value="4">4+ Bedroom</option>
-            </select>
-            <select style="margin-top: 15px;" >
-              <option value="0" selected>#Bathroom:</option>
-              <option value="1">1 Bathroom</option>
-              <option value="2">2 Bathroom</option>
-              <option value="3">2 Bathroom</option>
-              <option value="4">4+ Bathroom</option>
-            </select>
-
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-text-input">LocationName</label>
-            <input type="text" id="item-locationName-input">
-          </div>
-
-        <div class="modal-body">
-          <div class="item-input-element">
-            <label for="item-text-input">Price</label>
-            <input type="number">
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-url-input">Image URL</label>
-            <input type="url" id="item-image-input">
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-text-input">Description</label>
-            <textarea id="item-description-input"></textarea>
-          </div> -->
