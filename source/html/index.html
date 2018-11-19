@@ -70,18 +70,33 @@
     </div>
         
   <!-- </header> -->
-
-  <nav style="width: 540px;" id="topNav">
-    <ul>
-        <li><a href="javascript:void(0);" onclick="promZip()">Zipcode</a></li>
-        <li><a href="javascript:void(0);" onclick="promPrice()">Price</a></li>
-        <li><a href="javascript:void(0);" onclick="promLocation()">Location</a></li>
-        <li><a href="javascript:void(0);" onclick="promBeds()">Beds</a></li>
-        <li><a href="javascript:void(0);" onclick="promBaths()">Baths</a></li>
-        <li class="last"><a href="javascript:void(0);" onclick="promSquares()">Squares</a></li>
-    </ul>
-  </nav>
-
+  <section style="background-color: beige; width: 40%; margin-left: 300px;" class="">
+    <form class="filter-form">
+		Zipcode: <input type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
+		City: <input type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
+		State: <input type="text" class="text" value="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" id="state"><br>
+		MinPice: <input type="text" class="text" value="MinPice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinPice';}" id="minPice">
+		MaxPrice: <input type="text" class="text" value="MaxPrice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxPrice';}" id="maxPrice"><br>
+		MinSquare: <input type="text" class="text" value="MinSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinSquare';}" id="minSquare">
+		MaxSquare: <input type="text" class="text" value="MaxSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxSquare';}" id="maxSquare"><br>
+		beds: <select id="beds_option">
+		  <option value="" selected disabled="disabled">-select-</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+      <option value="4">4+</option>
+		</select>
+		baths: <select id="baths_option">
+		  <option value="0" selected disabled="disabled">-select-</option>
+		  <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4+</option>
+		</select>
+		<button style="margin-left: 250px;">Submit</button>
+	</form>
+  </section>
+	  
   <section class="share-container">
     <div class="share-content">
       <p >Got a House Information?    Share With Us</p>
@@ -318,8 +333,16 @@ New Orleans, LA 70117 </a>
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
   <script src="/itemTemplate.js"></script>
   <script src="/itemPhotoTemplate.js"></script> -->
+  <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../../vendor/animsition/js/animsition.min.js"></script>
+  <script src="../../vendor/bootstrap/js/popper.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../vendor/select2/select2.min.js"></script>
+  <script src="../../vendor/daterangepicker/moment.min.js"></script>
+  <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
-
+  <script src="../../js/filter_form.js"></script>
 
 </html>
 
