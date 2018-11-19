@@ -321,7 +321,6 @@ window.addEventListener('DOMContentLoaded', function (event) {
   //   allItemElems.push(itemElemsCollection[i]);
   // }
   var userName = getCookie('username');
-  console.log(userName);
   if (userName !==""){
     document.getElementById('before_login_show_sign_up').style.display = "none";
     document.getElementById('before_login_show_sign_in').style.display = "none";

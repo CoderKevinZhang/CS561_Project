@@ -555,3 +555,26 @@ a:focus {
   padding:10px, 0,10px,0;
 }
 
+.lable input[type="text"] {
+  padding: 15px;
+  width: 44%;
+  font-size: 1.1em;
+  margin: 18px 0px;
+  color: #666666;
+  float: left;
+  cursor: pointer;
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  outline: none;
+  font-weight: 600;
+  margin-left: 3px;
+  background: #FFFFFF;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  border-left: 6px solid #fff;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
+}
+
