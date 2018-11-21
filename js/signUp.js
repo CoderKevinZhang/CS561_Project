@@ -2,6 +2,9 @@
 (function ($) {
     "use strict";
 
+    var EMAIL = new RegExp('^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$');
+    var PHONE = new RegExp('^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$');
+
     /*==================================================================
     [ Focus Contact2 ]*/
     $('.input100').each(function(){
@@ -72,11 +75,15 @@
         }
 
         if (email != '') {
-            email.trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/);
+            if (!EMAIL.test(email)) {
+                check = false;
+            }
         }
 
         if (phone != '') {
-            phone.trim().match(/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/);
+            if (!PHONE.test(phone)) {
+                check = false;
+            }
         }
 
         if (user_name != '' && email != '' && phone != '' && password != '' && repassword != '') {

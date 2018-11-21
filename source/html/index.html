@@ -1,87 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    
-
     <meta charset="utf-8">
     <title>LA Estate</title>
-
-    <!-- This is a stylesheet that includes the font you should use -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
-
-    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
-
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../css/nav.css" media="screen">
-
-    <!-- template -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
-
-<!--     <link rel="icon" type="image/png" href="../../images/icons/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="../../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../../fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/animate/animate.css"> 
-    <link rel="stylesheet" type="text/css" href="../../vendor/css-hamburgers/hamburgers.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/animsition/css/animsition.min.css">
-    <link rel="stylesheet" type="text/css" href="../../vendor/select2/select2.min.css"> 
-    <link rel="stylesheet" type="text/css" href="../../vendor/daterangepicker/daterangepicker.css"> -->
     <link rel="stylesheet" type="text/css" href="../../css/util.css">
+    <link rel="stylesheet" type="text/css" href="../../css/pagination.css">
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
-
   </head>
 
-  <body>
-    <!-- <div class="bg"></div> -->
-    <!-- <header> -->
-
-    <!-- The <i>  <i class="fa fa-hand-lizard-o"> tag below includes the bullhorn icon from Font Awesome -->   
-    <div class="navbar">
-
-      <ul class="navlist" style="z-index: 99">
-        <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
-        <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
-        <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
-        <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
-         <div class="dropdown">
-            <button class="dropbtn"> <a id="user_name" href="#"></a></button>
-            <div class="dropdown-content">
-              <a id= "logout-btn" href="user_profile.html" >My Profile</a>
-              <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+  <body onload="generatePagination(5 ,1)">
+      <div class="navbar">
+        <ul class="navlist" style="z-index: 99">
+          <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
+          <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
+          <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
+          <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
+            <div class="dropdown">
+                <button class="dropbtn"> <a id="user_name" href="#"></a></button>
+                <div class="dropdown-content">
+                    <a id= "logout-btn" href="user_profile.html" >My Profile</a>
+                    <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+                </div>
             </div>
-         </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
 
-      <div class="hero-text">
-        <h1 style="font-size:50px"> Find A Dream House</h1>
-      </div>
-
-
-<!--       <div class="navbar-search-container">
-          <div class="navbar-search">
-            <input type="text" id="navbar-search-input" placeholder="Search...">
-            <button type="button" id="navbar-search-button"><i class="fa fa-search"></i></button>
-          </div>
-      </div> -->
-
-    </div>
+        <div class="hero-text">
+            <h1 style="font-size:50px"> Find A Dream House</h1>
+        </div>
+     </div>
         
   <!-- </header> -->
-
-  <nav style="width: 540px;" id="topNav">
-    <ul>
-        <li><a href="javascript:void(0);" onclick="promZip()">Zipcode</a></li>
-        <li><a href="javascript:void(0);" onclick="promPrice()">Price</a></li>
-        <li><a href="javascript:void(0);" onclick="promLocation()">Location</a></li>
-        <li><a href="javascript:void(0);" onclick="promBeds()">Beds</a></li>
-        <li><a href="javascript:void(0);" onclick="promBaths()">Baths</a></li>
-        <li class="last"><a href="javascript:void(0);" onclick="promSquares()">Squares</a></li>
-    </ul>
-  </nav>
-
+  <section style="background-color: beige; width: 40%; margin-left: 300px;" class="">
+    <form class="filter-form" id = 'filter'>
+		Zipcode: <input id = 'zipCode' type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
+		City: <input id = 'city' type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
+		State: <input id = 'state' type="text" class="text" value="State" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'State';}" id="state"><br>
+		MinPice: <input id = 'minPrice' type="text" class="text" value="MinPice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinPice';}" id="minPice">
+		MaxPrice: <input id = 'maxPrice' type="text" class="text" value="MaxPrice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxPrice';}" id="maxPrice"><br>
+		MinSquare: <input id = 'minSquare' type="text" class="text" value="MinSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinSquare';}" id="minSquare">
+		MaxSquare: <input id = 'maxSquare' type="text" class="text" value="MaxSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxSquare';}" id="maxSquare"><br>
+		beds: <select id="beds">
+		  <option value="" selected disabled="disabled">-select-</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+      <option value="4">4+</option>
+		</select>
+		baths: <select id="baths">
+		  <option value="0" selected disabled="disabled">-select-</option>
+		  <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4+</option>
+		</select>
+		<button style="margin-left: 250px;">Submit</button>
+	</form>
+  </section>
+	  
   <section class="share-container">
     <div class="share-content">
       <p >Got a House Information?    Share With Us</p>
@@ -122,256 +102,29 @@
   </div>
 
   <main class="item-container">
-    <article class="item">
-      <div class="image-container">
-        <img class="image" src="../../images/demoPic/demo1.jpg">
-      </div>
-
-      <div class="item-content">
-        <!-- <p class="item-name"> -->
-
-        <p class="item-location">
-          <a class = "larger" href="#" > 1046 Fernbush, Los Angeles, CA 90077 </a>
-        </p>
-        <p class=" larger item-price"> 
-            $ 10000
-        </p>
-        <div class = "item-title-container"> 
-
-          <i class="item-title fa fa-bed" style="font-size:20px"> 2</i>
-          <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
-          <p class="item-title">
-            <a > 13000 sqft </a>
-          </p>
-          <p class="item-title item-builtTime">
-            <a > Build in 1992 </a>
-          </p>
-        </div>
-
-        <p class= "item-description-title" > Description</p>
-        <div class="item-description-container">
-
-          <p class = "item-description">
-            Be mesmerized and let your senses dance by the everlasting impression of Sunset Chateau. Indulge in this elegant Holmby Hills estate exuding luxury across approx. 1.70 acres of land. The long private drive leads to lush grounds including private park, grassy yard, gardens, and walking paths that envelope this captivating home. Entertain in the grand formal dining room, spacious living room, library, bar, and indulgent eat-in chef's kitchen or outside in the expansive terraces, grandiose pool, and patio flowing seamlessly through beautiful French doors throughout. Relax in the luxurious bedrooms & spa-like baths detailed w/ utmost perfection. Designed w/ exquisite crown moldings, beautiful arches, marvelous staircase, mahogany floors & pristine marble, this home has been the venue of some of Hollywood's most elegant celebrations. Live in the embodiment of Old Hollywood sophistication w/ the finest details & craftsmanship captured by this iconic masterpiece in the grandest setting.
-          </p>
-        </div>
-
-      </div>
-    </article>
-
-    <article class="item">
-      <div class="image-container">
-        <img class="image" src="../../images/demoPic/demo2.jpg">
-      </div>
-
-      <div class="item-content">
-        <!-- <p class="item-name"> -->
-
-        <p class="item-location">
-          <a class = "larger" href="#" > 1515 NW 29th St
-Corvallis, OR 97330 </a>
-        </p>
-        <p class=" larger item-price"> 
-            $250,000
-        </p>
-        <div class = "item-title-container"> 
-
-          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
-          <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
-          <p class="item-title">
-            <a > 1,075 sqft </a>
-          </p>
-          <p class="item-title item-builtTime">
-            <a > Build in 1992 </a>
-          </p>
-        </div>
-
-        <p class= "item-description-title" > Description</p>
-        <div class="item-description-container">
-
-          <p class = "item-description">
-            Cute single level home in wonderful location. Spacious corner lot, large for an in-town home, with nice garden areas in the backyard & a treehouse structure. Lovely hardwood floors throughout the home & a cozy corner fireplace. Kitchen includes a newer 4 burner gas range. Vaulted ceilings & large windows. Spend summer nights on the large patio, roasting marshmallows in the fire pit. Roof, furnace, kitchen appliances new in 2011. Close to OSU, multiple parks, & just blocks shopping and restaurants.
-
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <article class="item">
-      <div class="image-container">
-        <img class="image" src="../../images/demoPic/demo3.jpg">
-      </div>
-
-      <div class="item-content">
-        <!-- <p class="item-name"> -->
-
-        <p class="item-location">
-          <a class = "larger" href="#" > 49 Eugenie Ct
-New Orleans, LA 70131 </a>
-        </p>
-        <p class=" larger item-price"> 
-            $237,900
-        </p>
-        <div class = "item-title-container"> 
-
-          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
-          <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
-          <p class="item-title">
-            <a > 2,577 sqft </a>
-          </p>
-          <p class="item-title item-builtTime">
-            <a > Build in 1992 </a>
-          </p>
-        </div>
-
-        <p class= "item-description-title" > Description</p>
-        <div class="item-description-container">
-
-          <p class = "item-description">
-            This home has everything!  Just renovated, 4 bedroom home with formal dining room and super large den with corner fireplace. Upstairs has 3 large bedrooms and separate den/landing area.  All rooms have nice sized closets and lots of natural light.  Master suite is on the lower level with large corner garden tub, separate shower, double vanities and very large walk in closet.  Outside you have an incredibly large deck for grilling and entertainment and an extra large yard that can easily fit a swimming pool.
-
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <article class="item">
-      <div class="image-container">
-        <img class="image" src="../../images/demoPic/demo4.jpg">
-      </div>
-
-      <div class="item-content">
-        <!-- <p class="item-name"> -->
-
-        <p class="item-location">
-          <a class = "larger" href="#" > 3711 Saint Charles Ave
-New Orleans, LA 70115 </a>
-        </p>
-        <p class=" larger item-price"> 
-            $4,500,000
-        </p>
-        <div class = "item-title-container"> 
-
-          <i class="item-title fa fa-bed" style="font-size:20px"> 5</i>
-          <i class="item-title fa fa-bath" style="font-size:20px"> 6 </i>
-          <p class="item-title">
-            <a > 8,747 sqft</a>
-          </p>
-          <p class="item-title item-builtTime">
-            <a > Build in 1992 </a>
-          </p>
-        </div>
-
-        <p class= "item-description-title" > Description</p>
-        <div class="item-description-container">
-
-          <p class = "item-description">
-            Magnificently restored Victorian mansion once owned by Anne Rice. Grand center hall w/original 1880's stained glass window & mahogany & cypress staircase. Formal entertaining rooms w/elaborate moldings, mantles, medallions & stunning chandeliers. Dream gourmet kitchen w/wet bar open to breathtaking entertaining & dining area. 5 beds w/huge master suite, exceptional marble bath, rm of closets. Elevator. 8 HVAC systems. Fenced manicured grounds w/marble patio & covered entertaining space. 4 car garage.
-
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="item">
-      <div class="image-container">
-        <img class="image" src="../../images/demoPic/demo5.jpg">
-      </div>
-
-      <div class="item-content">
-        <!-- <p class="item-name"> -->
-
-        <p class="item-location">
-          <a class = "larger" href="#" > 33028 Marais St
-New Orleans, LA 70117 </a>
-        </p>
-        <p class=" larger item-price"> 
-            $259,900
-        </p>
-        <div class = "item-title-container"> 
-
-          <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
-          <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
-          <p class="item-title">
-            <a > 1,443 sqft</a>
-          </p>
-          <p class="item-title item-builtTime">
-            <a > Build in 1999 </a>
-          </p>
-        </div>
-
-        <p class= "item-description-title" > Description</p>
-        <div class="item-description-container">
-
-          <p class = "item-description">
-            Beautiful side gallery 3 bedroom 1.5 bath home. Possible off street parking with change of gate. Central air & heat, updated kitchen and baths.
-
-          </p>
-        </div>
-      </div>
-    </article>
+    
 
 
   </main>
-
+  
+  <!--House Listing Pagination-->
+  <div id="pagination" >
+  
+  </div> 
 </body>
 
 <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
   <script src="/itemTemplate.js"></script>
   <script src="/itemPhotoTemplate.js"></script> -->
+  <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="../../vendor/animsition/js/animsition.min.js"></script>
+  <script src="../../vendor/bootstrap/js/popper.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../vendor/select2/select2.min.js"></script>
+  <script src="../../vendor/daterangepicker/moment.min.js"></script>
+  <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
-
-
+  <script src="../../js/filter_form.js"></script>
+  <script src="../../js/housePagination.js"></script>
 </html>
-
-
-
-<!-- 
-<div class="modal-body">
-          <form id="signUpForm" style="padding-bottom: 50px;" class="login100-form validate-form">
-
-            <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-            <span class="label-input100">Username<span style="color: red;">*</span></span>
-            <input id="username" class="input100" type="text" name="username" placeholder="Enter username">
-            <span class="focus-input100"></span>
-          </div>
-
-
-          <div class="item-input-element styled-select wrap-input100 validate-input m-b-26">
-            <label for="item-text-input" class="label-input100">House Type</label>
-            <select style="margin-top: 15px;" >
-              <option value="0" selected>#Bedroom:</option>
-              <option value="1">1 Bedroom</option>
-              <option value="2">2 Bedroom</option>
-              <option value="3">2 Bedroom</option>
-              <option value="4">4+ Bedroom</option>
-            </select>
-            <select style="margin-top: 15px;" >
-              <option value="0" selected>#Bathroom:</option>
-              <option value="1">1 Bathroom</option>
-              <option value="2">2 Bathroom</option>
-              <option value="3">2 Bathroom</option>
-              <option value="4">4+ Bathroom</option>
-            </select>
-
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-text-input">LocationName</label>
-            <input type="text" id="item-locationName-input">
-          </div>
-
-        <div class="modal-body">
-          <div class="item-input-element">
-            <label for="item-text-input">Price</label>
-            <input type="number">
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-url-input">Image URL</label>
-            <input type="url" id="item-image-input">
-          </div>
-
-          <div class="item-input-element">
-            <label for="item-text-input">Description</label>
-            <textarea id="item-description-input"></textarea>
-          </div> -->

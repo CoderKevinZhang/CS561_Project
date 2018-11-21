@@ -23,7 +23,7 @@
     // catch the input from userName and check if it's existing 
     $('#username').focusout(function(){
         var name = $('#username').val();
-	check = true;
+        check = true;
         // if (name != null && name != '') {
         //     check = checkName(name);
         // }

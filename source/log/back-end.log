@@ -775,3 +775,9 @@
 2018-11-11 17:05:22 db::dbExecute [INFO] - 0
 2018-11-11 17:05:22 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
 2018-11-11 17:05:22 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-20 16:16:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-20 16:16:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-20 16:16:49 main::main [WARN] - houseService :: getHouseInfo Not Found
+2018-11-20 16:17:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-20 16:17:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-20 16:17:23 main::main [WARN] - houseService :: getHouseInfo Not Found
