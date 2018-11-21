@@ -136,28 +136,58 @@ function generateItem(obj){
  * @return: a list of DOM object {size = itemPerPage}
 */       
        
-function getNewHouses(pageNum, itemPerPage, initial){
-    var i;
+function getNewHouses(pageNum, itemPerPage){
+    var i, formData, zipCode, city, state, minPrice, maxPrice, minSquare, maxSquare, bed, bath;
     var itemContainer = document.querySelector('.item-container');
     while (itemContainer.firstChild) {
         itemContainer.removeChild(itemContainer.firstChild);
     }
-    /*Read Form Data*/
-    
-    /*Communicate with Server to get house info*/
-   /* for (i = 0; i < itemPerPage; i++){
-        if (initial == 0){
-            var itemElem = generateItem(objIntial);
-        }else{
-            var itemElem = generateItem(objChange);
-        }
-        itemContainer.appendChild(itemElem);
-    }
+    /*
     */
+    /*Read Form Data*/
+    formData = document.getElementById('filter');  
+    zipCode     = formData.elements['zipCode'].value;
+    city        = formData.elements['city'].value;
+    state       = formData.elements['state'].value;
+    minPrice    = formData.elements['minPrice'].value;
+    maxPrice    = formData.elements['maxPrice'].value;
+    minSquare   = formData.elements['minSquare'].value;
+    maxSquare   = formData.elements['maxSquare'].value;
+    bed         = formData.elements['beds'].value;
+    bath        = formData.elements['baths'].value;
+    price = {"min": minPrice, "max": maxPrice};
+    livingSpace = {"min": minSquare, "max": maxPrice};
+    filterVariables = { "zipCode" : zipCode, 
+                        "city": city, 
+                        "state": state, 
+                        "price": price, 
+                        "livingSpace": livingSpace,
+                        "bed" : bed,
+                        "bath": bath}  
+    console.log(filterVariables);                    
+    /*Communicate with Server to get house info*/
+    $.ajax({
+                type: "POST",
+                url: "../php/houseInfoHandler.php" , //url
+                data: {
+                    'houseService' : 'getHouseInfo', 
+                    'filtered': true,
+                    'filterVariables': filterVariables,
+                    'pageNum': pageNum,
+                    'itemPerPage': itemPerPage
+                },
+
+                success: function(result) {
+                    
+                },
+                error : function(error) {
+                    alert("sign up failed, please review your information and try again");  
+                }
+            });
 }
 
 function generatePagination(itemPerPage, pageNum){
-    getNewHouses(pageNum, itemPerPage, 0);
+    getNewHouses(pageNum, itemPerPage);
     var paginationDiv = document.getElementById('pagination');
     var i;
     var link2PreviousPage = document.createElement("a");
@@ -212,7 +242,7 @@ function changeActive(nextPageNumber){
         pageLinks[currentPageNumber- currentMinPageNumber].classList.remove('active');
         pageLinks[nextPageNumber - currentMinPageNumber].classList.add('active');
         // reload page based on nextPageNumber ------------------> todo
-        getNewHouses(nextPageNumber, 5, nextPageNumber);
+        getNewHouses(nextPageNumber, 5);
     }
 }
 
@@ -235,7 +265,7 @@ function updatePageNumbers(direction){
             pageLinks[currentPageNumber- currentMinPageNumber].classList.remove('active');
             pageLinks[currentPageNumber- currentMinPageNumber - 1].classList.add('active');
             // reload page based on nextPageNumber ------------------> todo
-            getNewHouses(nextPageNumber, 5, nextPageNumber);
+            getNewHouses(nextPageNumber, 5);
             
         }else {
             if (currentMinPageNumber != 1){
@@ -244,7 +274,7 @@ function updatePageNumbers(direction){
                     pageLinks[i].textContent = Number(tmp) - 1;
                }
                 // reload page based on nextPageNumber ------------------> todo
-                getNewHouses(nextPageNumber, 5, nextPageNumber);
+                getNewHouses(nextPageNumber, 5);
             }
         }
     }else {
@@ -253,7 +283,7 @@ function updatePageNumbers(direction){
             pageLinks[currentPageNumber- currentMinPageNumber + 1].classList.add('active'); 
                       
             // reload page based on nextPageNumber ------------------> todo 
-            getNewHouses(nextPageNumber, 5, nextPageNumber);             
+            getNewHouses(nextPageNumber, 5);             
         }else {
            if (currentMaxPageNumber != Max){
                for (i = 0 ; i < pageLinks.length; i++){
@@ -261,7 +291,7 @@ function updatePageNumbers(direction){
                     pageLinks[i].textContent = Number(tmp) + 1;
                }
                // reload page based on nextPageNumber ------------------> todo
-               getNewHouses(nextPageNumber, 5, nextPageNumber); 
+               getNewHouses(nextPageNumber, 5); 
            } 
         }
     }
