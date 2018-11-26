@@ -93,16 +93,13 @@
                      && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
                         $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
                         $Y = $_POST['itemPerPage'];
-                        $statement = "SELECT * FROM `Houses2` LIMIT $X, $Y";
+                        $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit $X,$Y";
                         $dbResult  =$db->dbExecute($statement);
                         if ($dbResult->num_rows > 0) {
                             while($row = $dbResult->fetch_assoc()) {
                                 $houseId = $row['House_id'];
-                                $url = $db->dbExecute("SELECT `Url` FROM `Houses_images` WHERE `House_id` = '$houseId'");
-                                
-                                while($dd = $url->fetch_assoc()){
-                                    array_push($row,$dd);
-                                }
+                              
                                 $arr[] = $row; 
                             }
                         }
