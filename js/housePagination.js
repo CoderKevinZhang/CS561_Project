@@ -1,5 +1,8 @@
 var objIntial = 
-      { "address":"5454 SW Chicken St Corvallis, OR 97333", 
+      { "address":"5454 SW Chicken St", 
+        "city": "Corvallis",
+        "state":"OR",
+        "zipCode":"97330",
   	    "price":"20000000" ,
   	    "bed": "2",
   	   	"bath": "1",
@@ -10,7 +13,10 @@ var objIntial =
 	   }
 
 var objChange = 
-      { "address":"5454 SW Chicken St Corvallis, OR 97333", 
+      { "address":"5454 SW Chicken St", 
+        "city": "Corvallis",
+        "state":"OR",
+        "zipCode":"97330",
   	    "price":"20000000" ,
   	    "bed": "2",
   	   	"bath": "1",
@@ -56,7 +62,7 @@ function generateItem(obj){
 	address.classList.add('larger');
 	address.setAttribute('hred', '#');
 	// add address text to DOM 
-	var addressText =  document.createTextNode(obj.address);
+	var addressText =  document.createTextNode(obj.address + " " + obj.city + ",  " + obj.state + " " + obj.zipCode);
 	address.appendChild(addressText);	
 	itemLocation.appendChild(address);
 
@@ -166,6 +172,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "bath": bath}  
                       
     /*Communicate with Server to get house info*/
+
     $.ajax({
                 type: "POST",
                 url: "../php/houseInfoHandler.php" , //url
@@ -190,6 +197,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                     alert("bad request");  
                 }
             });
+
 }
 
 function generatePagination(itemPerPage, pageNum, filteredSearch = 0){
