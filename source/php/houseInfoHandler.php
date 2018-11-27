@@ -87,7 +87,81 @@
                        $response->msg      = 'houseService: uploadHouseInfo requires enough variable';
                     }
                     break;
+                case "getHouseInfo":   /*Perform Service -getHouseInfo- if it is called*/                   
+                    $houseServiceLog->info('houseService :: getHouseInfo Called.');
+                    if(isset($_POST['filtered']) && $_POST['filtered'] == 0
+                     && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+                        $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
+                        $Y = $_POST['itemPerPage'];
+                        $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit $X,$Y";
+                        $dbResult  =$db->dbExecute($statement);
+                        if ($dbResult->num_rows > 0) {
+                            while($row = $dbResult->fetch_assoc()) {
+                                $houseId = $row['House_id'];
+                              
+                                $arr[] = $row; 
+                            }
+                        }
+                        $response->status   = 200;
+                        $response->msg      = "SUCCESS";
+                        $response->foundHouse = $arr;
+                    }
+                    elseif(isset($_POST['filtered']) && $_POST['filtered'] == 1){
+                        $filterVariables = json_decode($_POST['filterVariables']);
 
+                        if(isset($filterVariables->city) && isset($filterVariables->state) && isset($filterVariables->zipCode)
+                         && isset($filterVariables->livingSpace->min) && isset($filterVariables->livingSpace->max)
+                         && isset($filterVariables->price->min) && isset($filterVariables->price->max)
+                         && isset($filterVariables->bed) && isset($filterVariables->bath)
+                         && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+                            $city = $filterVariables->city;
+                            $state = $filterVariables->state;
+                            $zipCode = $filterVariables->zipCode;
+                            $livingSpaceMin = $filterVariables->livingSpace->min;
+                            $livingSpaceMax = $filterVariables->livingSpace->max;
+                            $priceMin = $filterVariables->price->min;
+                            $priceMax = $filterVariables->price->max;
+                            $bed = $filterVariables->bed;
+                            $bath = $filterVariables->bath;
+
+                            $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
+                            $Y = $_POST['itemPerPage'];
+
+                            $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,
+                            H.`Baths`,H.`Built`,H.`Space`, H.`description` FROM `Houses2` H WHERE H.`City`= '$city' 
+                            AND H.`State`= '$state' AND H.`Zipcode`='$zipCode' AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
+                            AND H.`Beds`=$bed AND H.`Baths`=$bath AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax LIMIT $X, $Y";
+
+                            $dbResult  =$db->dbExecute($statement);
+                            if ($dbResult->num_rows > 0) {
+                                while($row = $dbResult->fetch_assoc()) {
+                                    $houseId = $row['House_id'];
+                                    $url = $db->dbExecute("SELECT `Url` FROM `Houses_images` WHERE `House_id` = '$houseId'");
+                                    
+                                    while($dd = $url->fetch_assoc()){
+                                        array_push($row,$dd);
+                                    }
+                                    $arr[] = $row;
+                                }
+                            }
+                            $response->status   = 200;
+                            $response->msg      = "SUCCESS";
+                            $response->foundHouse = $arr;
+                         }else {
+                            $houseServiceLog->warn('houseService ::getHouseInfo Called Failed. No enought info passed back via POST');
+                            $response->status   = 406;
+                            $response->msg      = 'houseService: getHouseInfo requires enough variable';
+                         }
+                    }
+                    else {
+                        /*No enough data ---> Return callback*/
+                        // COVERED
+                       $houseServiceLog->warn('houseService ::getHouseInfo Called Failed. No enought info passed back via POST');
+                       $response->status   = 406;
+                       $response->msg      = 'houseService: getHouseInfo requires enough variable';
+                    }
+                    break;
                default: //COVERED
                     $houseServiceLog->warn('houseService :: '.$service.' Not Found');
                     $response->status = 404;
@@ -96,5 +170,4 @@
         }         
 	}
 	echo(json_encode($response));
-	
 ?>

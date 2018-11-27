@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
   </head>
 
-  <body onload="generatePagination(5 ,1)">
+  <body onload="generatePagination(5 ,1, 0)">
       <div class="navbar">
         <ul class="navlist" style="z-index: 99">
           <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
@@ -36,7 +36,7 @@
         
   <!-- </header> -->
   <section style="background-color: beige; width: 40%; margin-left: 300px;" class="">
-    <form class="filter-form">
+    <form class="filter-form" id = 'filter'>
 		Zipcode: <input id = 'zipCode' type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
 		City: <input id = 'city' type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
 		State: <select id = "state">
@@ -110,8 +110,9 @@
       <option value="3">3</option>
       <option value="4">4+</option>
 		</select>
-		<button style="margin-left: 250px;">Submit</button>
+		
 	</form>
+    <button style="margin-left: 250px;" onclick='filteredSearch()'>Search</button>
   </section>
 	  
   <section class="share-container">
@@ -177,6 +178,6 @@
   <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
   <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
-  <script src="../../js/filter_form.js"></script>
+
   <script src="../../js/housePagination.js"></script>
 </html>
