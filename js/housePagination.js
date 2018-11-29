@@ -32,6 +32,7 @@ var objChange =
  */
 function generateItem(obj){
 
+	
 	var newP = document.createElement('p');
 	var newDiv = document.createElement('div');
 	var newA = document.createElement('a');
@@ -62,7 +63,7 @@ function generateItem(obj){
 	address.classList.add('larger');
 	address.setAttribute('hred', '#');
 	// add address text to DOM 
-	var addressText =  document.createTextNode(obj.address + " " + obj.city + ",  " + obj.state + " " + obj.zipCode);
+	var addressText =  document.createTextNode(obj.Address + " " + obj.City + ", " + obj.State + " " + obj.Zipcode);
 	address.appendChild(addressText);	
 	itemLocation.appendChild(address);
 
@@ -71,7 +72,7 @@ function generateItem(obj){
 	price.classList.add('larger');
 	price.classList.add('item-price');
 	// add price text to DOM
-	var priceText = document.createTextNode("$" + obj.price);
+	var priceText = document.createTextNode("$" + obj.Price);
 	price.appendChild(priceText);
 	itemContentElem.appendChild(price);
 
@@ -83,7 +84,7 @@ function generateItem(obj){
 	faBedElem.classList.add('item-title');
 	faBedElem.classList.add('fa');
 	faBedElem.classList.add('fa-bed');
-	var faBedText = document.createTextNode(obj.bed );
+	var faBedText = document.createTextNode(obj.Beds );
 	faBedElem.appendChild(faBedText);
 	itemTitleContainer.appendChild(faBedElem);
 
@@ -92,7 +93,7 @@ function generateItem(obj){
 	faBathElem.classList.add('fa');
 	faBathElem.classList.add('fa-bath');
 	// add bed count text t to DOM
-	var faBathText = document.createTextNode(obj.bath);
+	var faBathText = document.createTextNode(obj.Baths);
 	faBathElem.appendChild(faBathText);
 	itemTitleContainer.appendChild(faBathElem);
 
@@ -102,7 +103,7 @@ function generateItem(obj){
 	itemTitleContainer.appendChild(itemTitleArea);
 	var space = document.createElement('a');
 
-	var spaceText = document.createTextNode(obj.lotSpace + " sqft");
+	var spaceText = document.createTextNode(obj.Space + " sqft");
 	space.appendChild(spaceText);
 	itemTitleArea.appendChild(space);
 
@@ -114,7 +115,7 @@ function generateItem(obj){
 	var builtTime = document.createElement('a');
 	itemTitleYear.appendChild(builtTime);
 
-	var buildYearText = document.createTextNode("Build in " + obj.buildTime);
+	var buildYearText = document.createTextNode("Build in " + obj.Built);
 	builtTime.appendChild(buildYearText);
 
 	var itemDescriptionTitle = document.createElement('p');
@@ -170,26 +171,37 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "livingSpace": livingSpace,
                         "bed" : bed,
                         "bath": bath}  
-                      
+    filterVariables = { "zipCode" : 90077, 
+                        "city": "Los Angeles", 
+                        "state": " CA ", 
+                        "price": {"min": -1, "max": 999999999}, 
+                        "livingSpace": {"min": -1, "max": 999999999},
+                        "bed" : 0,
+                        "bath": 0} 
+    console.log(filtered);
+    console.log(filterVariables);                  
     /*Communicate with Server to get house info*/
-
+    var itemContainer = document.querySelector('.item-container');
     $.ajax({
                 type: "POST",
                 url: "../php/houseInfoHandler.php" , //url
                 data: {
                     'houseService' : 'getHouseInfo', 
-                    'filtered': 0,
-                    'filterVariables': filterVariables,
+                    'filtered': filtered,
+                    'filterVariables': JSON.stringify(filterVariables),
                     'pageNum': pageNum,
                     'itemPerPage': itemPerPage
                 },
 
                 success: function(result) {
                     result = JSON.parse(result);
-                    console.log(objChange);
-                    if (result.msg = "SUCCESS" && result.status === 200){
+                    
+                    if (result.msg === "SUCCESS" && result.status === 200){
+                        
                         for (var i = 0; i < itemPerPage; i++){
                             console.log(result.foundHouse[i]);
+                            var item = generateItem(result.foundHouse[i]);
+                            itemContainer.appendChild(item);
                         }
                     }
                 },

@@ -1340,3 +1340,1653 @@
 2018-11-25 15:44:43 db::dbExecute [INFO] - 0
 2018-11-25 15:44:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
      ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 17:02:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 17:02:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 17:02:59 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 17:02:59 db::dbExecute [INFO] - 0
+2018-11-28 17:02:59 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:09:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:09:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:09:46 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:09:46 db::dbExecute [INFO] - 0
+2018-11-28 21:09:46 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:14:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:14:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:14:26 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:14:26 db::dbExecute [INFO] - 0
+2018-11-28 21:14:26 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:14:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:14:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:14:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:14:37 db::dbExecute [INFO] - 0
+2018-11-28 21:14:37 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 21:14:38 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:14:38 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:14:38 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:14:38 db::dbExecute [INFO] - 0
+2018-11-28 21:14:38 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:15:47 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:15:47 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:15:47 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:15:47 db::dbExecute [INFO] - 0
+2018-11-28 21:15:47 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:16:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:16:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:16:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:16:00 db::dbExecute [INFO] - 0
+2018-11-28 21:16:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:16:22 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:16:22 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:16:22 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:16:22 db::dbExecute [INFO] - 0
+2018-11-28 21:16:22 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:16:41 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:16:41 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:16:41 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:16:41 db::dbExecute [INFO] - 0
+2018-11-28 21:16:41 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:16:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:16:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:16:55 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:16:55 db::dbExecute [INFO] - 0
+2018-11-28 21:16:55 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:17:16 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:17:16 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:17:16 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:17:16 db::dbExecute [INFO] - 0
+2018-11-28 21:17:16 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:24:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:24:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:24:31 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:24:31 db::dbExecute [INFO] - 0
+2018-11-28 21:24:31 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:24:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:24:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:24:59 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:24:59 db::dbExecute [INFO] - 0
+2018-11-28 21:24:59 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:25:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:25:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:25:26 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:25:26 db::dbExecute [INFO] - 0
+2018-11-28 21:25:26 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:26:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:26:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:26:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:26:07 db::dbExecute [INFO] - 0
+2018-11-28 21:26:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:26:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:26:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:26:49 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:26:49 db::dbExecute [INFO] - 0
+2018-11-28 21:26:49 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:27:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:27:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:27:32 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:27:32 db::dbExecute [INFO] - 0
+2018-11-28 21:27:32 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 21:27:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:27:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:27:34 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:27:34 db::dbExecute [INFO] - 0
+2018-11-28 21:27:34 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 10,5
+2018-11-28 21:28:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:28:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:28:44 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:28:44 db::dbExecute [INFO] - 0
+2018-11-28 21:28:44 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 15,5
+2018-11-28 21:28:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:28:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:28:46 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:28:46 db::dbExecute [INFO] - 0
+2018-11-28 21:28:46 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 10,5
+2018-11-28 21:28:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:28:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:28:49 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:28:49 db::dbExecute [INFO] - 0
+2018-11-28 21:28:49 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 15,5
+2018-11-28 21:29:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:29:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:29:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:29:00 db::dbExecute [INFO] - 0
+2018-11-28 21:29:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 21:29:10 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:29:10 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:29:10 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:29:10 db::dbExecute [INFO] - 0
+2018-11-28 21:29:10 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:29:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:29:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:29:28 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:29:28 db::dbExecute [INFO] - 0
+2018-11-28 21:29:28 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:58:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:58:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:58:17 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:58:17 db::dbExecute [INFO] - 0
+2018-11-28 21:58:17 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 21:59:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 21:59:20 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 21:59:20 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 21:59:20 db::dbExecute [INFO] - 0
+2018-11-28 21:59:20 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:10:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:10:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:10:32 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:10:32 db::dbExecute [INFO] - 0
+2018-11-28 22:10:32 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:11:08 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:11:08 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:11:08 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:11:08 db::dbExecute [INFO] - 0
+2018-11-28 22:11:08 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:52:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:52:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:52:57 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:52:57 db::dbExecute [INFO] - 0
+2018-11-28 22:52:57 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:53:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:53:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:53:42 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:53:42 db::dbExecute [INFO] - 0
+2018-11-28 22:53:42 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:54:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:54:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:54:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:54:01 db::dbExecute [INFO] - 0
+2018-11-28 22:54:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:54:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:54:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:54:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:54:13 db::dbExecute [INFO] - 0
+2018-11-28 22:54:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:56:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:56:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:56:59 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:56:59 db::dbExecute [INFO] - 0
+2018-11-28 22:56:59 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 22:57:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:57:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:57:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:57:07 db::dbExecute [INFO] - 0
+2018-11-28 22:57:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 22:57:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 22:57:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 22:57:23 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 22:57:23 db::dbExecute [INFO] - 0
+2018-11-28 22:57:24 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:01:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:01:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:01:28 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:01:28 db::dbExecute [INFO] - 0
+2018-11-28 23:01:28 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:01:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:01:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:01:32 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:01:32 db::dbExecute [INFO] - 0
+2018-11-28 23:01:32 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:01:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:01:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:01:43 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:01:43 db::dbExecute [INFO] - 0
+2018-11-28 23:01:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 23:01:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:01:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:01:44 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:01:44 db::dbExecute [INFO] - 0
+2018-11-28 23:01:44 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:00 db::dbExecute [INFO] - 0
+2018-11-28 23:02:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:02 db::dbExecute [INFO] - 0
+2018-11-28 23:02:02 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:07 db::dbExecute [INFO] - 0
+2018-11-28 23:02:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:15 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:15 db::dbExecute [INFO] - 0
+2018-11-28 23:02:15 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:29 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:29 db::dbExecute [INFO] - 0
+2018-11-28 23:02:29 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:02:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:02:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:02:43 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:02:43 db::dbExecute [INFO] - 0
+2018-11-28 23:02:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:15:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:15:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:15:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:15:13 db::dbExecute [INFO] - 0
+2018-11-28 23:15:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:17:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:17:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:17:09 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:17:09 db::dbExecute [INFO] - 0
+2018-11-28 23:17:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:17:50 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:17:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:17:51 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:17:51 db::dbExecute [INFO] - 0
+2018-11-28 23:17:51 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:17:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:17:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:17:55 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:17:55 db::dbExecute [INFO] - 0
+2018-11-28 23:17:55 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:18:23 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:18:23 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:18:23 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:18:23 db::dbExecute [INFO] - 0
+2018-11-28 23:18:23 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:18:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:18:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:18:26 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:18:26 db::dbExecute [INFO] - 0
+2018-11-28 23:18:26 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:21:48 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:21:48 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:21:48 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:21:48 db::dbExecute [INFO] - 0
+2018-11-28 23:21:48 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:21:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:21:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:21:54 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:21:54 db::dbExecute [INFO] - 0
+2018-11-28 23:21:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:22:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:22:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:22:54 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:22:54 db::dbExecute [INFO] - 0
+2018-11-28 23:22:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:22:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:22:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:22:57 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:22:57 main::main [WARN] - houseService ::getHouseInfo Called Failed. No enought info passed back via POST
+2018-11-28 23:26:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:26:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:26:31 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:26:31 db::dbExecute [INFO] - 0
+2018-11-28 23:26:31 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:26:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:26:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:26:33 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:26:33 db::dbExecute [INFO] - 0
+2018-11-28 23:26:33 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:29:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:29:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:29:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:29:37 db::dbExecute [INFO] - 0
+2018-11-28 23:29:37 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:29:38 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:29:38 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:29:38 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:29:38 db::dbExecute [INFO] - 0
+2018-11-28 23:29:38 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:30:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:00 db::dbExecute [INFO] - 0
+2018-11-28 23:30:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:30:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:01 db::dbExecute [INFO] - 0
+2018-11-28 23:30:01 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:30:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:03 db::dbExecute [INFO] - 0
+2018-11-28 23:30:03 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:30:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:03 db::dbExecute [INFO] - 0
+2018-11-28 23:30:03 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:30:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:31 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:31 db::dbExecute [INFO] - 0
+2018-11-28 23:30:31 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:30:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:30:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:30:34 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:30:34 db::dbExecute [INFO] - 0
+2018-11-28 23:30:34 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:36:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:36:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:36:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:36:02 db::dbExecute [INFO] - 0
+2018-11-28 23:36:02 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:36:05 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:36:05 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:36:05 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:36:05 main::main [WARN] - 
+2018-11-28 23:36:05 db::dbExecute [INFO] - 0
+2018-11-28 23:36:05 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:37:47 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:37:47 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:37:47 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:37:47 db::dbExecute [INFO] - 0
+2018-11-28 23:37:47 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:37:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:37:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:37:49 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:37:49 main::main [WARN] - 5
+2018-11-28 23:37:49 db::dbExecute [INFO] - 0
+2018-11-28 23:37:49 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:38:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:38:25 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:38:25 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:38:25 db::dbExecute [INFO] - 0
+2018-11-28 23:38:25 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:38:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:38:25 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:38:25 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:38:25 main::main [WARN] - Array
+(
+    [zipCode] => 97330
+    [city] => true
+    [state] => true
+    [price] => true
+    [livingSpace] => true
+    [bed] => true
+    [bath] => true
+)
+
+2018-11-28 23:38:25 db::dbExecute [INFO] - 0
+2018-11-28 23:38:25 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= AND H.`State`= AND H.`Zipcode`= 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`= AND H.`Baths` =  
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`State`= AND H.`Zipcode`= 
+                                          AND H' at line 3
+2018-11-28 23:39:36 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:39:36 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:39:36 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:39:36 db::dbExecute [INFO] - 0
+2018-11-28 23:39:36 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:39:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:39:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:39:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:39:37 main::main [WARN] - {"zipCode":97330,"city":true,"state":true,"price":true,"livingSpace":true,"bed":true,"bath":true}
+2018-11-28 23:39:37 db::dbExecute [INFO] - 0
+2018-11-28 23:39:37 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=1 AND H.`State`=1 AND H.`Zipcode`=97330 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`Price`<=`>=
+                                          AND H.`Beds`=1 AND ' at line 4
+2018-11-28 23:40:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:40:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:40:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:40:00 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => 1
+    [state] => 1
+    [price] => 1
+    [livingSpace] => 1
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:40:00 db::dbExecute [INFO] - 0
+2018-11-28 23:40:00 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=1 AND H.`State`=1 AND H.`Zipcode`=97330 
+                                          AND H.`Price`>= AND H.`Price`<=`>=
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>= AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND H.`Price`<=`>=
+                                          AND H.`Beds`=1 AND ' at line 4
+2018-11-28 23:41:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:41:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:41:18 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:41:18 db::dbExecute [INFO] - 0
+2018-11-28 23:41:18 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:41:19 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:41:19 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:41:19 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:41:19 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => 1
+    [state] => 1
+    [price] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:41:19 db::dbExecute [INFO] - 0
+2018-11-28 23:41:19 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=1 AND H.`State`=1 AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=1 AND H.`Price`<=`>=1
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>=1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Spac' at line 4
+2018-11-28 23:41:24 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:41:24 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:41:24 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:41:24 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => 1
+    [state] => 1
+    [price] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:41:24 db::dbExecute [INFO] - 0
+2018-11-28 23:41:24 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=1 AND H.`State`=1 AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=1 AND H.`Price`<=`>=1
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>=1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Spac' at line 4
+2018-11-28 23:46:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:46:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:46:09 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:46:09 db::dbExecute [INFO] - 0
+2018-11-28 23:46:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:46:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:46:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:46:14 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:46:14 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => 1
+    [state] => 1
+    [price] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => 1
+            [max] => 1
+        )
+
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:46:14 db::dbExecute [INFO] - 0
+2018-11-28 23:46:14 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=1 AND H.`State`=1 AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=1 AND H.`Price`<=1
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>=1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0, 5' at line 6
+2018-11-28 23:53:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:01 db::dbExecute [INFO] - 0
+2018-11-28 23:53:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:53:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:07 db::dbExecute [INFO] - 0
+2018-11-28 23:53:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-28 23:53:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:09 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:09 db::dbExecute [INFO] - 0
+2018-11-28 23:53:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 15,5
+2018-11-28 23:53:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:11 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:11 db::dbExecute [INFO] - 0
+2018-11-28 23:53:11 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 20,5
+2018-11-28 23:53:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:13 db::dbExecute [INFO] - 0
+2018-11-28 23:53:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 25,5
+2018-11-28 23:53:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:14 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:14 db::dbExecute [INFO] - 0
+2018-11-28 23:53:14 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 30,5
+2018-11-28 23:53:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:15 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:15 db::dbExecute [INFO] - 0
+2018-11-28 23:53:15 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 35,5
+2018-11-28 23:53:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:17 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:17 db::dbExecute [INFO] - 0
+2018-11-28 23:53:17 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 40,5
+2018-11-28 23:53:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:17 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:17 db::dbExecute [INFO] - 0
+2018-11-28 23:53:17 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 45,5
+2018-11-28 23:53:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:18 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:18 db::dbExecute [INFO] - 0
+2018-11-28 23:53:18 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 50,5
+2018-11-28 23:53:19 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:19 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:19 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:19 db::dbExecute [INFO] - 0
+2018-11-28 23:53:19 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 55,5
+2018-11-28 23:53:19 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:19 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:19 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:19 db::dbExecute [INFO] - 0
+2018-11-28 23:53:19 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 60,5
+2018-11-28 23:53:21 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:21 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:21 db::dbExecute [INFO] - 0
+2018-11-28 23:53:21 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 65,5
+2018-11-28 23:53:22 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:22 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:22 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:22 db::dbExecute [INFO] - 0
+2018-11-28 23:53:22 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 70,5
+2018-11-28 23:53:22 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:22 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:22 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:22 db::dbExecute [INFO] - 0
+2018-11-28 23:53:23 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 75,5
+2018-11-28 23:53:24 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:24 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:24 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:24 db::dbExecute [INFO] - 0
+2018-11-28 23:53:24 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 80,5
+2018-11-28 23:53:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:34 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:34 db::dbExecute [INFO] - 0
+2018-11-28 23:53:34 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 85,5
+2018-11-28 23:53:35 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:35 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:35 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:35 db::dbExecute [INFO] - 0
+2018-11-28 23:53:35 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 90,5
+2018-11-28 23:53:35 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:35 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:35 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:35 db::dbExecute [INFO] - 0
+2018-11-28 23:53:35 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 95,5
+2018-11-28 23:53:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:42 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:42 db::dbExecute [INFO] - 0
+2018-11-28 23:53:42 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 90,5
+2018-11-28 23:53:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:43 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:43 db::dbExecute [INFO] - 0
+2018-11-28 23:53:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 95,5
+2018-11-28 23:53:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:53:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:53:46 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:53:46 db::dbExecute [INFO] - 0
+2018-11-28 23:53:46 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 95,5
+2018-11-28 23:56:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:56:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:56:14 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:56:14 db::dbExecute [INFO] - 0
+2018-11-28 23:56:14 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:56:16 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:56:16 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:56:16 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:56:16 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => Corvallis
+    [state] => Oregon
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:56:16 db::dbExecute [INFO] - 0
+2018-11-28 23:56:16 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Corvallis AND H.`State`=Oregon AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>=-1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0, 5' at line 6
+2018-11-28 23:56:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:56:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:56:54 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:56:54 db::dbExecute [INFO] - 0
+2018-11-28 23:56:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:56:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:56:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:56:55 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:56:55 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => Corvallis
+    [state] => OR
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 1
+    [bath] => 1
+)
+
+2018-11-28 23:56:55 db::dbExecute [INFO] - 0
+2018-11-28 23:56:55 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Corvallis AND H.`State`=OR AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=1 AND H.`Baths` = 1 
+                                          AND H.`Space`>=-1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR AND H.`Zipcode`=97330 
+                                          AND H.`Price' at line 3
+2018-11-28 23:57:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:57:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:57:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:57:37 db::dbExecute [INFO] - 0
+2018-11-28 23:57:37 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:57:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:57:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:57:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:57:37 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 97330
+    [city] => Corvallis
+    [state] => OR
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-28 23:57:37 db::dbExecute [INFO] - 0
+2018-11-28 23:57:37 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Corvallis AND H.`State`=OR AND H.`Zipcode`=97330 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OR AND H.`Zipcode`=97330 
+                                          AND H.`Price' at line 3
+2018-11-28 23:58:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:58:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:58:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:58:00 db::dbExecute [INFO] - 0
+2018-11-28 23:58:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:58:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:58:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:58:29 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:58:29 db::dbExecute [INFO] - 0
+2018-11-28 23:58:29 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:58:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:58:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:58:29 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:58:29 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-28 23:58:29 db::dbExecute [INFO] - 0
+2018-11-28 23:58:29 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Los Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                ' at line 3
+2018-11-28 23:58:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:58:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:58:39 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:58:39 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-28 23:58:39 db::dbExecute [INFO] - 0
+2018-11-28 23:58:39 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Los Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<= limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                ' at line 3
+2018-11-28 23:59:12 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:59:12 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:59:12 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:59:12 db::dbExecute [INFO] - 0
+2018-11-28 23:59:12 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:59:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:59:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:59:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:59:13 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-28 23:59:13 db::dbExecute [INFO] - 0
+2018-11-28 23:59:13 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=Los Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`=0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`=CA AND H.`Zipcode`=90077 
+                                ' at line 3
+2018-11-28 23:59:40 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:59:40 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:59:40 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:59:40 db::dbExecute [INFO] - 0
+2018-11-28 23:59:40 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-28 23:59:41 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-28 23:59:41 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-28 23:59:41 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-28 23:59:41 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-28 23:59:41 db::dbExecute [INFO] - 0
+2018-11-28 23:59:41 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 
+                                          AND H.`Price`>= -1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 
+                              ' at line 3
+2018-11-29 00:01:52 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:01:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:01:53 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:01:53 db::dbExecute [INFO] - 0
+2018-11-29 00:01:53 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 
+                                          AND H.`Price`>= -1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 
+                              ' at line 3
+2018-11-29 00:04:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:04:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:04:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:04:03 db::dbExecute [INFO] - 0
+2018-11-29 00:04:03 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:06:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:06:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:06:46 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:06:46 db::dbExecute [INFO] - 0
+2018-11-29 00:06:46 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:06:47 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:06:47 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:06:47 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:06:47 db::dbExecute [INFO] - 0
+2018-11-29 00:06:47 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`= CA AND H.`Zipcode`= 90077 AND H.`Price`>= -1 AND H.`Price' at line 3
+2018-11-29 00:07:30 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:07:30 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:07:30 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:07:30 db::dbExecute [INFO] - 0
+2018-11-29 00:07:30 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`State`= CA  AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`State`= CA  AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Be' at line 3
+2018-11-29 00:08:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:08:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:08:17 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:08:17 db::dbExecute [INFO] - 0
+2018-11-29 00:08:17 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:08:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:08:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:08:18 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:08:18 db::dbExecute [INFO] - 0
+2018-11-29 00:08:18 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths' at line 3
+2018-11-29 00:08:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:08:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:08:26 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:08:26 db::dbExecute [INFO] - 0
+2018-11-29 00:08:26 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`= Los Angeles AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths' at line 3
+2018-11-29 00:09:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:09:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:09:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:09:02 db::dbExecute [INFO] - 0
+2018-11-29 00:09:02 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:09:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:09:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:09:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:09:07 db::dbExecute [INFO] - 0
+2018-11-29 00:09:07 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`State`= CA AND H.`Zipcode`= 90077 AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'CA' in 'having clause'
+2018-11-29 00:09:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:09:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:09:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:09:07 db::dbExecute [INFO] - 0
+2018-11-29 00:09:07 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`State`= CA AND H.`Zipcode`= 90077 AND H.`Price`>= -1 AND H.`Price`<=999999999 AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>= -1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'CA' in 'having clause'
+2018-11-29 00:10:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:10:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:10:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:10:01 db::dbExecute [INFO] - 0
+2018-11-29 00:10:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:10:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:10:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:10:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:10:02 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:10:02 db::dbExecute [INFO] - 0
+2018-11-29 00:10:02 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=(Los Angeles) AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` =0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoYou have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Angeles) AND H.`State`=CA AND H.`Zipcode`=90077 
+                               ' at line 3
+2018-11-29 00:10:36 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:10:36 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:10:36 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:10:36 db::dbExecute [INFO] - 0
+2018-11-29 00:10:36 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:10:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:10:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:10:37 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:10:37 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:10:37 db::dbExecute [INFO] - 0
+2018-11-29 00:10:37 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` =0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'CA' in 'having clause'
+2018-11-29 00:11:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:11:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:11:32 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:11:32 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:11:32 db::dbExecute [INFO] - 0
+2018-11-29 00:11:32 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` =0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'CA' in 'having clause'
+2018-11-29 00:12:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:12:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:12:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:12:03 db::dbExecute [INFO] - 0
+2018-11-29 00:12:03 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:12:04 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:12:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:12:04 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:12:04 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:12:04 db::dbExecute [INFO] - 0
+2018-11-29 00:12:04 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` =0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:12:06 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:12:06 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:12:06 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:12:06 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:12:06 db::dbExecute [INFO] - 0
+2018-11-29 00:12:06 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` =0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:13:19 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:13:19 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:13:19 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:13:19 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:13:19 db::dbExecute [INFO] - 0
+2018-11-29 00:13:19 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`=`Los Angeles` AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'Los Angeles' in 'having clause'
+2018-11-29 00:13:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:13:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:13:46 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:13:46 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:13:46 db::dbExecute [INFO] - 0
+2018-11-29 00:13:46 db::dbExecute [WARN] - Query Fail :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='Los Angeles' AND H.`State`=CA AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5||Error InfoUnknown column 'CA' in 'having clause'
+2018-11-29 00:15:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:15:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:15:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:15:01 db::dbExecute [INFO] - 0
+2018-11-29 00:15:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:15:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:15:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:15:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:15:02 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:15:02 db::dbExecute [INFO] - 0
+2018-11-29 00:15:02 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='Los Angeles' AND H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:15:08 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:15:08 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:15:08 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:15:08 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:15:08 db::dbExecute [INFO] - 0
+2018-11-29 00:15:08 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='Los Angeles' AND H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:19:21 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:19:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:19:21 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:19:21 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:19:21 db::dbExecute [INFO] - 0
+2018-11-29 00:19:21 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING  H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:19:45 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:19:45 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:19:45 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:19:45 db::dbExecute [INFO] - 0
+2018-11-29 00:19:45 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:19:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:19:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:19:55 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:19:55 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:19:55 db::dbExecute [INFO] - 0
+2018-11-29 00:19:55 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING  H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:20:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:20:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:20:02 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:20:02 db::dbExecute [INFO] - 0
+2018-11-29 00:20:02 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:20:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:20:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:20:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:20:03 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:20:03 db::dbExecute [INFO] - 0
+2018-11-29 00:20:03 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING  H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:21:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:21:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:21:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:21:13 db::dbExecute [INFO] - 0
+2018-11-29 00:21:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:21:14 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:21:14 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:21:14 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:21:14 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:21:14 db::dbExecute [INFO] - 0
+2018-11-29 00:21:14 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING  H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:21:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:21:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:21:28 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:21:28 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] => CA
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:21:28 db::dbExecute [INFO] - 0
+2018-11-29 00:21:28 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING  H.`State`='CA' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:21:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:21:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:21:56 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:21:56 db::dbExecute [INFO] - 0
+2018-11-29 00:21:56 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-29 00:21:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:21:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:21:57 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:21:57 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] =>  CA 
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:21:57 db::dbExecute [INFO] - 0
+2018-11-29 00:21:57 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='Los Angeles' AND H.`State`=' CA ' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5
+2018-11-29 00:22:00 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 00:22:00 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 00:22:00 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 00:22:00 main::main [WARN] - stdClass Object
+(
+    [zipCode] => 90077
+    [city] => Los Angeles
+    [state] =>  CA 
+    [price] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [livingSpace] => stdClass Object
+        (
+            [min] => -1
+            [max] => 999999999
+        )
+
+    [bed] => 0
+    [bath] => 0
+)
+
+2018-11-29 00:22:00 db::dbExecute [INFO] - 0
+2018-11-29 00:22:00 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='Los Angeles' AND H.`State`=' CA ' AND H.`Zipcode`=90077 
+                                          AND H.`Price`>=-1 AND H.`Price`<=999999999
+                                          AND H.`Beds`= 0 AND H.`Baths` = 0 
+                                          AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 0, 5

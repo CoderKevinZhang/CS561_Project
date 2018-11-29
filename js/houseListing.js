@@ -36,7 +36,7 @@ function generateItem(obj){
 	var newImg = document.createElement('img');
 	newImg.classList.add('image');
 	newImg.setAttribute('src','');
-	newImg.src = obj.imgUrl;
+	newImg.src = obj.Url;
 	imgContainer.appendChild(newImg);
 	itemElem.appendChild(imgContainer);
 	
@@ -55,7 +55,7 @@ function generateItem(obj){
 	address.classList.add('larger');
 	address.setAttribute('hred', '#');
 	// add address text to DOM 
-	var addressText =  document.createTextNode(obj.address + " " + obj.city + ", " + obj.state + " " + obj.zipCode);
+	var addressText =  document.createTextNode(obj.Address + " " + obj.City + ", " + obj.State + " " + obj.Zipcode);
 	address.appendChild(addressText);	
 	itemLocation.appendChild(address);
 
@@ -64,7 +64,7 @@ function generateItem(obj){
 	price.classList.add('larger');
 	price.classList.add('item-price');
 	// add price text to DOM
-	var priceText = document.createTextNode("$" + obj.price);
+	var priceText = document.createTextNode("$" + obj.Price);
 	price.appendChild(priceText);
 	itemContentElem.appendChild(price);
 
@@ -76,7 +76,7 @@ function generateItem(obj){
 	faBedElem.classList.add('item-title');
 	faBedElem.classList.add('fa');
 	faBedElem.classList.add('fa-bed');
-	var faBedText = document.createTextNode(obj.bed );
+	var faBedText = document.createTextNode(obj.Beds );
 	faBedElem.appendChild(faBedText);
 	itemTitleContainer.appendChild(faBedElem);
 
@@ -85,7 +85,7 @@ function generateItem(obj){
 	faBathElem.classList.add('fa');
 	faBathElem.classList.add('fa-bath');
 	// add bed count text t to DOM
-	var faBathText = document.createTextNode(obj.bath);
+	var faBathText = document.createTextNode(obj.Baths);
 	faBathElem.appendChild(faBathText);
 	itemTitleContainer.appendChild(faBathElem);
 
@@ -95,7 +95,7 @@ function generateItem(obj){
 	itemTitleContainer.appendChild(itemTitleArea);
 	var space = document.createElement('a');
 
-	var spaceText = document.createTextNode(obj.lotSpace + " sqft");
+	var spaceText = document.createTextNode(obj.Space + " sqft");
 	space.appendChild(spaceText);
 	itemTitleArea.appendChild(space);
 
@@ -107,7 +107,7 @@ function generateItem(obj){
 	var builtTime = document.createElement('a');
 	itemTitleYear.appendChild(builtTime);
 
-	var buildYearText = document.createTextNode("Build in " + obj.buildTime);
+	var buildYearText = document.createTextNode("Build in " + obj.Built);
 	builtTime.appendChild(buildYearText);
 
 	var itemDescriptionTitle = document.createElement('p');

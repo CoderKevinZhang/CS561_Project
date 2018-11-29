@@ -108,13 +108,9 @@
                         $response->foundHouse = $arr;
                     }
                     elseif(isset($_POST['filtered']) && $_POST['filtered'] == 1){
-                        $filterVariables = json_decode($_POST['filterVariables']);
-
-                        if(isset($filterVariables->city) && isset($filterVariables->state) && isset($filterVariables->zipCode)
-                         && isset($filterVariables->livingSpace->min) && isset($filterVariables->livingSpace->max)
-                         && isset($filterVariables->price->min) && isset($filterVariables->price->max)
-                         && isset($filterVariables->bed) && isset($filterVariables->bath)
+                        if(isset($_POST['filterVariables'])
                          && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+                            $filterVariables = json_decode($_POST['filterVariables']);
                             $city = $filterVariables->city;
                             $state = $filterVariables->state;
                             $zipCode = $filterVariables->zipCode;
@@ -124,24 +120,21 @@
                             $priceMax = $filterVariables->price->max;
                             $bed = $filterVariables->bed;
                             $bath = $filterVariables->bath;
-
+                            $houseServiceLog->warn($filterVariables);
                             $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
                             $Y = $_POST['itemPerPage'];
 
-                            $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,
-                            H.`Baths`,H.`Built`,H.`Space`, H.`description` FROM `Houses2` H WHERE H.`City`= '$city' 
-                            AND H.`State`= '$state' AND H.`Zipcode`='$zipCode' AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
-                            AND H.`Beds`=$bed AND H.`Baths`=$bath AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax LIMIT $X, $Y";
+                            $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                                          ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+                                          HAVING H.`City`='$city' AND H.`State`='$state' AND H.`Zipcode`=$zipCode 
+                                          AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
+                                          AND H.`Beds`= $bed AND H.`Baths` = $bath 
+                                          AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax limit $X, $Y";
 
                             $dbResult  =$db->dbExecute($statement);
                             if ($dbResult->num_rows > 0) {
                                 while($row = $dbResult->fetch_assoc()) {
                                     $houseId = $row['House_id'];
-                                    $url = $db->dbExecute("SELECT `Url` FROM `Houses_images` WHERE `House_id` = '$houseId'");
-                                    
-                                    while($dd = $url->fetch_assoc()){
-                                        array_push($row,$dd);
-                                    }
                                     $arr[] = $row;
                                 }
                             }
