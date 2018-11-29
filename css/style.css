@@ -100,7 +100,7 @@ a:focus {
 .dropbtn {
     /*background-color: #eee;*/
     color: white;
-    /*padding: 16px;*/
+    padding: 2px;
     font-size: 16px;
     border: none;
     cursor: pointer;
