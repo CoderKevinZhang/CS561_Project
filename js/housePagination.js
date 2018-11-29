@@ -179,7 +179,6 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "bed" : 0,
                         "bath": 0} 
     console.log(filtered);
-    console.log(filterVariables);                  
     /*Communicate with Server to get house info*/
     var itemContainer = document.querySelector('.item-container');
     $.ajax({
@@ -197,9 +196,10 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                     result = JSON.parse(result);
                     
                     if (result.msg === "SUCCESS" && result.status === 200){
-                        
+                        while (itemContainer.hasChildNodes()){
+                             itemContainer.removeChild(itemContainer.firstChild);
+                        }
                         for (var i = 0; i < itemPerPage; i++){
-                            console.log(result.foundHouse[i]);
                             var item = generateItem(result.foundHouse[i]);
                             itemContainer.appendChild(item);
                         }
@@ -214,7 +214,11 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
 
 function generatePagination(itemPerPage, pageNum, filteredSearch = 0){
     getNewHouses(pageNum, itemPerPage, filteredSearch);
+    
     var paginationDiv = document.getElementById('pagination');
+    while (paginationDiv.hasChildNodes()){
+        paginationDiv.removeChild(paginationDiv.firstChild);
+    }
     var i;
     var link2PreviousPage = document.createElement("a");
     var node = document.createTextNode('<<');
@@ -327,5 +331,5 @@ function updatePageNumbers(direction, filteredSearch){
 function filteredSearch ( ) {
     // Jump to Page 1
     // Update Search
-    changeActive(1, 1);
+    generatePagination(5, 1, 1);
 }
