@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LA Estate</title>
+    <title>Dream House</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen">
@@ -10,111 +10,149 @@
     <link rel="stylesheet" type="text/css" href="../../css/util.css">
     <link rel="stylesheet" type="text/css" href="../../css/pagination.css">
     <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/filterForm.css">
+
   </head>
 
   <body onload="generatePagination(5 ,1, 0)">
-      <div class="navbar">
-        <ul class="navlist" style="z-index: 99">
-          <li class="navitem site-title" ><a href="#"><strong> LA </strong> Estate</a></li>
-          <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
-          <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
-          <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
-            <div class="dropdown">
-                <button class="dropbtn"> <a id="user_name" href="#"></a></button>
-                <div class="dropdown-content">
-                    <a id= "logout-btn" href="user_profile.html" >My Profile</a>
-                    <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
-                </div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="hero-text">
-            <h1 style="font-size:50px"> Find A Dream House</h1>
+    <div class="navbar">
+      <div class="navlist">
+          <ul  style="z-index: 99">
+            <li class="navitem site-title" ><a href="#"><strong> Dream House</strong> </a></li>
+            <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
+            <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
+            <li class="navitem navlink" id = "after_login_show_user_name" style ="display: none">
+              <div class="dropdown">
+                  <button class="dropbtn"> <a id="user_name" href="#"></a></button>
+                  <div class="dropdown-content">
+                      <a id= "logout-btn" href="user_profile.html" >My Profile</a>
+                      <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
+                  </div>
+              </div>
+            </li>
+          </ul>
         </div>
-     </div>
-        
-  <!-- </header> -->
-  <section style="background-color: beige; width: 40%; margin-left: 300px;" class="">
-    <form class="filter-form" id = 'filter'>
-		Zipcode: <input id = 'zipCode' type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
-		City: <input id = 'city' type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
-		State: <select id = "state">
-      <option value="AL">Alabama</option>
-      <option value="AK">Alaska</option>
-      <option value="AZ">Arizona</option>
-      <option value="AR">Arkansas</option>
-      <option value="CA">California</option>
-      <option value="CO">Colorado</option>
-      <option value="CT">Connecticut</option>
-      <option value="DE">Delaware</option>
-      <option value="DC">District Of Columbia</option>
-      <option value="FL">Florida</option>
-      <option value="GA">Georgia</option>
-      <option value="HI">Hawaii</option>
-      <option value="ID">Idaho</option>
-      <option value="IL">Illinois</option>
-      <option value="IN">Indiana</option>
-      <option value="IA">Iowa</option>
-      <option value="KS">Kansas</option>
-      <option value="KY">Kentucky</option>
-      <option value="LA">Louisiana</option>
-      <option value="ME">Maine</option>
-      <option value="MD">Maryland</option>
-      <option value="MA">Massachusetts</option>
-      <option value="MI">Michigan</option>
-      <option value="MN">Minnesota</option>
-      <option value="MS">Mississippi</option>
-      <option value="MO">Missouri</option>
-      <option value="MT">Montana</option>
-      <option value="NE">Nebraska</option>
-      <option value="NV">Nevada</option>
-      <option value="NH">New Hampshire</option>
-      <option value="NJ">New Jersey</option>
-      <option value="NM">New Mexico</option>
-      <option value="NY">New York</option>
-      <option value="NC">North Carolina</option>
-      <option value="ND">North Dakota</option>
-      <option value="OH">Ohio</option>
-      <option value="OK">Oklahoma</option>
-      <option value="OR">Oregon</option>
-      <option value="PA">Pennsylvania</option>
-      <option value="RI">Rhode Island</option>
-      <option value="SC">South Carolina</option>
-      <option value="SD">South Dakota</option>
-      <option value="TN">Tennessee</option>
-      <option value="TX">Texas</option>
-      <option value="UT">Utah</option>
-      <option value="VT">Vermont</option>
-      <option value="VA">Virginia</option>
-      <option value="WA">Washington</option>
-      <option value="WV">West Virginia</option>
-      <option value="WI">Wisconsin</option>
-      <option value="WY">Wyoming</option>
-    </select>
-		MinPice: <input id = 'minPrice' type="text" class="text" value="MinPice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinPice';}" id="minPice">
-		MaxPrice: <input id = 'maxPrice' type="text" class="text" value="MaxPrice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxPrice';}" id="maxPrice"><br>
-		MinSquare: <input id = 'minSquare' type="text" class="text" value="MinSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinSquare';}" id="minSquare">
-		MaxSquare: <input id = 'maxSquare' type="text" class="text" value="MaxSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxSquare';}" id="maxSquare"><br>
-		beds: <select id="beds">
-		  <option value="" selected disabled="disabled">-select-</option>
-		  <option value="1">1</option>
-		  <option value="2">2</option>
-		  <option value="3">3</option>
-      <option value="4">4+</option>
-		</select>
-		baths: <select id="baths">
-		  <option value="0" selected disabled="disabled">-select-</option>
-		  <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4+</option>
-		</select>
-		
-	</form>
-    <button style="margin-left: 250px;" onclick='filteredSearch()'>Search</button>
-  </section>
-	  
+    </div>
+    <header class = "banner">
+
+      <div class="hero-text">
+          <h1 style="font-size:50px"> Find A Dream House</h1>
+      </div> 
+
+      
+        <form  id = 'filter'>
+          <div class="filter-form-container" >
+    		<div class = "box">
+        <label >Zipcode</label> 
+          <input id = 'zipCode' type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
+    		<label >City</label>  
+          <input id = 'city' type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
+    		<label >State</label>
+          <div class = "custom-select">
+            <select id = "state" >           
+              <option value="" selected disabled="disabled">-select-</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District Of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+            </select>
+          </div>
+        </div>
+        <div class = "box">
+    		  <label> MinPrice</label> 
+          <input id = 'minPrice' type="text" class="text" value="MinPice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinPice';}" id="minPice">
+<!--         </div>
+        <div class = "box"> -->
+    		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="MaxPrice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxPrice';}" id="maxPrice"><br>
+        </div>
+        <div class = "box">
+    		<label> MinSquare</label> 
+          <input id = 'minSquare' type="text" class="text" value="MinSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinSquare';}" id="minSquare">
+  <!--   		</div>
+        <div class = "box"> -->
+        <label> MaxSquare</label>  
+          <input id = 'maxSquare' type="text" class="text" value="MaxSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxSquare';}" id="maxSquare"><br>
+        </div>
+        <div class = "box">
+    		<label> beds</label> 
+        <div class = "custom-select"> 
+          <select id="beds"  >
+      		  <option value="" selected disabled="disabled">-select-</option>
+      		  <option value="1">1</option>
+      		  <option value="2">2</option>
+      		  <option value="3">3</option>
+            <option value="4">4+</option>
+    		  </select>
+         </div> 
+
+    		<label> baths</label> 
+        <div class = "custom-select">
+          <select id="baths">
+      		  <option value="0" selected disabled="disabled">-select-</option>
+      		  <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4+</option>
+    		  </select>
+        </div>
+        </div>
+      <div class = "filter-form-footer">
+        <button class = "filter-form-submit" onclick='filteredSearch()'>Search</button>
+      </div>   		  
+    	  </form>
+
+      </div>
+
+
+ </header>
+ 
   <section class="share-container">
     <div class="share-content">
       <p >Got a House Information?    Share With Us</p>
@@ -180,4 +218,5 @@
   <script src="../../js/index.js"></script>
 
   <script src="../../js/housePagination.js"></script>
+  <script src="../../js/customSelect.js"></script>
 </html>
