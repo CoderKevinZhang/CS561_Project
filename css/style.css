@@ -1,7 +1,7 @@
 body {
   font-family: Roboto, Helvetica, sans-serif;
   margin: 0;
-  background-color:#ffffff;
+  background-color:#afabab0d;
 }
 i{
   font-family: Roboto, Helvetica, sans-serif;
@@ -24,7 +24,7 @@ main a{
 
 a:hover,
 a:focus {
-  color:#178ff3;
+  color:#ee963b;
 
 }
 
@@ -49,8 +49,8 @@ a:focus {
   padding: 10px 80px 10px 0px;
   font-size: 30px;
   font-weight: 100;
-  /*color:#178ff3;*/
-  color:#fff;
+  color:#ee963b;
+  /*color:#fff;*/
   display: inline-block;
   /*line-height: 38px;*/
   font-style: bold;
@@ -100,7 +100,7 @@ a:focus {
 .dropbtn {
     /*background-color: #eee;*/
     color: white;
-    padding: 16px;
+    /*padding: 16px;*/
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -157,7 +157,11 @@ a:focus {
 
 
 .navbar {
-    /* The image used */
+
+}
+
+.banner{
+      /* The image used */
     background-image: url("../images/bg.jpg");
     /* Full height */
     height: 100%; 
@@ -171,7 +175,7 @@ a:focus {
 .hero-text {
   text-align: center;
   position: absolute; 
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -219,11 +223,11 @@ a:focus {
 }
 
 #navbar-search-button:hover {
-  color: #319df6;
+  color: #ee963b;
 }
 
 #navbar-search-button:focus {
-  color: #319df6;
+  color: #ee963b;
   outline: none;
 }
 
