@@ -17,7 +17,7 @@
   <body onload="generatePagination(5 ,1, 0)">
     <div class="navbar">
       <div class="navlist">
-          <ul  style="z-index: 99">
+          <ul style="z-index: 99">
             <li class="navitem site-title" ><a href="#"><strong> Dream House</strong> </a></li>
             <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li> 
             <li class="navitem navlink" id = "before_login_show_sign_up"><a href="signUp.html">Sign Up</a></li>
@@ -40,16 +40,16 @@
       </div> 
 
       
-        <form  id = 'filter'>
+        <form id = 'filter'>
           <div class="filter-form-container" >
     		<div class = "box">
         <label >Zipcode</label> 
-          <input id = 'zipCode' type="text" class="text" value="Zipcode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Zipcode';}" id="zipcode">
+          <input id = 'zipCode' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
     		<label >City</label>  
-          <input id = 'city' type="text" class="text" value="City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" id="city">
+          <input id = 'city' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
     		<label >State</label>
-          <div class = "custom-select">
-            <select id = "state" >           
+          <!-- <div class = "custom-select"> -->
+            <select id = "state" style="background-color: white; font-size: 17px; width: 111px; margin-bottom: 8px;">           
               <option value="" selected disabled="disabled">-select-</option>
               <option value="AL">Alabama</option>
               <option value="AK">Alaska</option>
@@ -103,45 +103,41 @@
               <option value="WI">Wisconsin</option>
               <option value="WY">Wyoming</option>
             </select>
-          </div>
+          <!-- </div> -->
         </div>
         <div class = "box">
     		  <label> MinPrice</label> 
-          <input id = 'minPrice' type="text" class="text" value="MinPice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinPice';}" id="minPice">
+          <input id = 'minPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
 <!--         </div>
         <div class = "box"> -->
-    		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="MaxPrice" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxPrice';}" id="maxPrice"><br>
+    		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"><br>
         </div>
         <div class = "box">
     		<label> MinSquare</label> 
-          <input id = 'minSquare' type="text" class="text" value="MinSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MinSquare';}" id="minSquare">
+          <input id = 'minSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
   <!--   		</div>
         <div class = "box"> -->
         <label> MaxSquare</label>  
-          <input id = 'maxSquare' type="text" class="text" value="MaxSquare" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'MaxSquare';}" id="maxSquare"><br>
+          <input id = 'maxSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="margin-left: 5px;"><br>
         </div>
         <div class = "box">
     		<label> beds</label> 
-        <div class = "custom-select"> 
-          <select id="beds_option"  >
+          <select id="beds" style="background-color: white; font-size: 17px">
       		  <option value="" selected disabled="disabled">-select-</option>
       		  <option value="1">1</option>
       		  <option value="2">2</option>
       		  <option value="3">3</option>
             <option value="4">4+</option>
     		  </select>
-         </div> 
 
     		<label> baths</label> 
-        <div class = "custom-select">
-          <select id="baths_option">
+          <select id="baths" style="background-color: white; font-size: 17px">
       		  <option value="0" selected disabled="disabled">-select-</option>
       		  <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4+</option>
     		  </select>
-        </div>
         </div>
       <div class = "filter-form-footer">
         <button class = "filter-form-submit" onclick='filteredSearch()'>Search</button>
