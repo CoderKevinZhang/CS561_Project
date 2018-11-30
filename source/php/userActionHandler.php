@@ -141,6 +141,41 @@
                     }
                     
                      break;
+
+                 case "getUserInfo":   /*Perform Service -getUserInfo- if it is called*/
+                    
+                     $userServiceLog->info('userService :: getUserInfo Called.');
+                     
+                    if (isset($_POST['userName'])){
+                         /*Get all required data ---> Query Databaes ---> Return callback*/
+                         $userName           = $_POST['userName'];
+                         $statement          = "SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '$userName'";
+                         $dbResult           =$db->dbExecute($statement);
+
+                        if ($dbResult->num_rows > 0) {
+                            while($row = $dbResult->fetch_assoc()) {                                
+                                $arr[] = $row; 
+                            }
+                            $response->status   = 200;
+                            $response->msg      = $arr;
+                            $userServiceLog->info('userService :: getUserInfo Send dbResponse back.');
+                        }
+                        else {
+                            /*Report error back if the query is failed*/
+                            //COVERED
+                            $response->status   = 601;
+                            $response->msg      = 'can not find this user in database';
+                            $userServiceLog->warn('userService ::getUserInfo fail in database');
+                         }
+                    }
+                     else {
+                         /*No enough data ---> Return callback*/
+                         // COVERED
+                        $userServiceLog->warn('userService ::getUserInfo Called Failed. No userName passed back via POST');
+                        $response->status   = 406;
+                        $response->msg      = 'userService: getUserInfo requires variable [userName]';
+                     }
+                     break;                     
                default: //COVERED
                     $userServiceLog->warn('userService :: '.$service.' Not Found');
                     $response->status = 404;
