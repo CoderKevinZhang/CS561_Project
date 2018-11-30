@@ -153,11 +153,9 @@
                          $dbResult           =$db->dbExecute($statement);
 
                         if ($dbResult->num_rows > 0) {
-                            while($row = $dbResult->fetch_assoc()) {                                
-                                $arr[] = $row; 
-                            }
+                            $row = $dbResult->fetch_assoc();                               
                             $response->status   = 200;
-                            $response->msg      = $arr;
+                            $response->msg      = $row;
                             $userServiceLog->info('userService :: getUserInfo Send dbResponse back.');
                         }
                         else {
