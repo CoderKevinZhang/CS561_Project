@@ -84,7 +84,7 @@ function generateItem(obj){
 	faBedElem.classList.add('item-title');
 	faBedElem.classList.add('fa');
 	faBedElem.classList.add('fa-bed');
-	var faBedText = document.createTextNode(obj.Beds );
+	var faBedText = document.createTextNode(" " + obj.Beds );
 	faBedElem.appendChild(faBedText);
 	itemTitleContainer.appendChild(faBedElem);
 
@@ -93,7 +93,7 @@ function generateItem(obj){
 	faBathElem.classList.add('fa');
 	faBathElem.classList.add('fa-bath');
 	// add bed count text t to DOM
-	var faBathText = document.createTextNode(obj.Baths);
+	var faBathText = document.createTextNode(" " + obj.Baths);
 	faBathElem.appendChild(faBathText);
 	itemTitleContainer.appendChild(faBathElem);
 
