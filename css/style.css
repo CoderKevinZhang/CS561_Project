@@ -60,11 +60,9 @@ a:focus {
  /* background-color: #fff;*/
   font-size: 18px;
   line-height: 22px;
-
-
-
 }
 .navlist {
+  z-index: 2;
   /*margin: 0 0 0 4%;*/
   padding: 0px 6% 0px 6%;
   /*background-color: #151111;*/
@@ -241,7 +239,7 @@ a:focus {
 }
 
 .share-content{
-  padding-left: 10px;
+  padding-left: 25%;
   font-style: bold;
   color:#219494;
   font-size: 25px;
@@ -358,28 +356,15 @@ a:focus {
 
 #create-item-button {
   /*position: fixed;*/
+  display: inline-block;
   right: 30px;
   bottom: 30px;
   height: 60px;
-  width: 60px;
+  width: 120px;
   border: none;
-  border-radius: 30px;
-  font-size: 36px;
-  background-color: #ff1010;
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
-}
-#create-item-button-2 {
-  /*position: fixed;*/
-  right: 30px;
-  bottom: 30px;
-  height: 60px;
-  width: 60px;
-  border: none;
-  /*border-radius: 30px;*/
-  font-size: 36px;
-  background-color: #ff1010;
+/*  border-radius: 30px;*/
+/*  font-size: 36px;*/
+  background-color: #545353;
   color: #fff;
   cursor: pointer;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
@@ -389,11 +374,9 @@ a:focus {
 #create-item-button:focus {
   right: 27px;
   bottom: 27px;
-  height: 66px;
-  width: 66px;
-  border-radius: 33px;
-  font-size: 40px;
-  background-color: #6dd48c;
+  height: 62px;
+  width: 122px;
+  background-color: #333333;
 }
 
 #create-item-button:focus {
@@ -437,6 +420,7 @@ a:focus {
 .modal-header {
   position: relative;
   padding: 10px 20px;
+  background-color: #333333;
 }
 
 .modal-header h3 {
@@ -502,25 +486,25 @@ a:focus {
 }
 
 .modal-footer .modal-cancel-button:hover {
-  background-color: #eee;
+  background-color: #ee963b;
 }
 
 .modal-footer .modal-sign-button:hover {
-  background-color: #eee;
+  background-color: #ee963b;
 }
 
 .modal-footer .modal-accept-button {
-  background-color: #319df6;
+  background-color: #333333;
   color: #fff;
 }
 
 .modal-footer .modal-sign-button {
-  background-color: #319df6;
+  background-color: #333333;
   color: #fff;
 }
 
 .modal-footer .modal-accept-button:hover {
-  background-color: #087dde;
+  background-color: #ee963b;
 }
 
 .error-container {
