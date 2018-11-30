@@ -3,7 +3,7 @@
     var ZIPCODE = new RegExp('^[0-9]{5}(?:-[0-9]{4})?$');
     var check = true;
 
-    $('.filter-form').on('submit',function(e){
+    $('#filter').on('submit',function(e){
         var zipcode = $('#zipcode').val();
         var city = $('#city').val();
         var state = $('#state').val();
