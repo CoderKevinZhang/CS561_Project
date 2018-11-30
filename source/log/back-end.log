@@ -3417,3 +3417,168 @@
                                           AND H.`Price`>=-1 AND H.`Price`<=999999999
                                           AND H.`Beds`= 0 AND H.`Baths` = 0 
                                           AND H.`Space`>=-1 AND H.`Space`<=999999999 limit 15, 5
+2018-11-29 12:32:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-29 12:32:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-29 12:32:43 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-29 12:32:43 db::dbExecute [INFO] - 0
+2018-11-29 12:32:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 13:52:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 13:52:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 13:52:39 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 13:52:39 db::dbExecute [INFO] - 0
+2018-11-30 13:52:39 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 13:57:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 13:57:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 13:57:31 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 13:57:31 db::dbExecute [INFO] - 0
+2018-11-30 13:57:31 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 13:57:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 13:57:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 13:57:39 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 13:57:39 db::dbExecute [INFO] - 0
+2018-11-30 13:57:39 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-30 13:57:41 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 13:57:41 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 13:57:41 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 13:57:41 db::dbExecute [INFO] - 0
+2018-11-30 13:57:41 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 10,5
+2018-11-30 13:57:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 13:57:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 13:57:42 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 13:57:42 db::dbExecute [INFO] - 0
+2018-11-30 13:57:42 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 15,5
+2018-11-30 14:02:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:02:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:02:42 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:02:42 db::dbExecute [INFO] - 0
+2018-11-30 14:02:42 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:02:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:02:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:02:53 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:02:53 db::dbExecute [INFO] - 0
+2018-11-30 14:02:53 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 5,5
+2018-11-30 14:02:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:02:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:02:54 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:02:54 db::dbExecute [INFO] - 0
+2018-11-30 14:02:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 10,5
+2018-11-30 14:02:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:02:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:02:56 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:02:56 db::dbExecute [INFO] - 0
+2018-11-30 14:02:56 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 15,5
+2018-11-30 14:06:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:06:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:06:43 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:06:43 db::dbExecute [INFO] - 0
+2018-11-30 14:06:44 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:09:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:09:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:09:53 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:09:53 db::dbExecute [INFO] - 0
+2018-11-30 14:09:53 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:19:50 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:19:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:19:51 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:19:51 db::dbExecute [INFO] - 0
+2018-11-30 14:19:51 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:23:17 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:23:17 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:23:17 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:23:17 db::dbExecute [INFO] - 0
+2018-11-30 14:23:17 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:23:30 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:23:30 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:23:30 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:23:30 db::dbExecute [INFO] - 0
+2018-11-30 14:23:30 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:24:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:24:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:24:03 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:24:03 db::dbExecute [INFO] - 0
+2018-11-30 14:24:03 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:25:42 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:25:42 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:25:42 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:25:42 db::dbExecute [INFO] - 0
+2018-11-30 14:25:42 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 14:39:30 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 14:39:30 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 14:39:30 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 14:39:30 db::dbExecute [INFO] - 0
+2018-11-30 14:39:30 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:21:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:21:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:21:44 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:22:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:22:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:22:01 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 15:22:01 db::dbExecute [INFO] - 0
+2018-11-30 15:22:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:22:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:22:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:22:11 main::main [INFO] - userService :: logIn Called.
+2018-11-30 15:22:11 db::dbExecute [INFO] - 0
+2018-11-30 15:22:11 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = '222' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-30 15:22:11 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-30 15:22:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:22:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:22:13 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 15:22:13 db::dbExecute [INFO] - 0
+2018-11-30 15:22:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:22:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:22:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:22:57 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 15:22:57 db::dbExecute [INFO] - 0
+2018-11-30 15:22:57 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:23:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:23:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:23:18 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 15:23:18 db::dbExecute [INFO] - 0
+2018-11-30 15:23:19 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:23:52 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:23:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:23:53 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 15:23:53 db::dbExecute [INFO] - 0
+2018-11-30 15:23:53 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 15:23:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:23:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:23:56 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:27:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:27:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:27:33 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:28:19 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:28:19 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:28:19 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:28:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:28:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:28:31 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:29:04 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:29:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:29:04 main::main [WARN] - userService :: getUserInfo Not Found
+2018-11-30 15:29:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 15:29:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 15:29:44 main::main [WARN] - userService :: getUserInfo Not Found
