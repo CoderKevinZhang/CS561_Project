@@ -11,8 +11,18 @@
         var maxPrice = $('#maxPrice').val();
         var minSquare = $('#minSquare').val();
         var maxSquare = $('#maxSquare').val();
-        var beds_option = $('#beds_option').val();
-        var baths_option = $('#baths_option').val();
+        var beds_option = $('#beds').val();
+        var baths_option = $('#baths').val();
+
+        if (maxPrice == '' || maxSquare == '') {
+            maxPrice = '999999';
+            maxSquare = '999999';
+        }
+
+        if (minPice == '' || minSquare == '') {
+            minPice = '-1';
+            minSquare = '-1';
+        }
 
         if (!ZIPCODE.test(zipcode)) {
             check = false;
