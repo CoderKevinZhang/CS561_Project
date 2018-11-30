@@ -3,7 +3,7 @@
     var ZIPCODE = new RegExp('^[0-9]{5}(?:-[0-9]{4})?$');
     var check = true;
 
-    $('#filter').on('submit',function(e){
+    $('.filter-form').on('submit',function(e){
         var zipcode = $('#zipcode').val();
         var city = $('#city').val();
         var state = $('#state').val();
@@ -36,8 +36,7 @@
                 data: {"houseService" : "getHouseInfo", "filtered": true,
                 "filterVariables": {"city": city, "state": state, "zipCode": zipcode,
                 'livingSpace': {"min":parseInt(minSquare), "max": parseInt(maxSquare)}, price: {"min": parseInt(minPice), "max": parseInt(maxPrice)},
-                "bed": parseInt(beds_option), "bath": parseInt(baths_option)},
-                "pageNum": INT, "itemPerPage": INT},
+                "bed": parseInt(beds_option), "bath": parseInt(baths_option)}},
                 success: function (result) {
                     
                 },
