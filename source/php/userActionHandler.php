@@ -153,9 +153,9 @@
                          $dbResult           =$db->dbExecute($statement);
 
                         if ($dbResult->num_rows > 0) {
-                            $row = $dbResult->fetch_assoc();                               
+                            $row = $dbResult->fetch_assoc();                              
                             $response->status   = 200;
-                            $response->msg      = $row;
+                            $response->msg      = json_encode($row);
                             $userServiceLog->info('userService :: getUserInfo Send dbResponse back.');
                         }
                         else {
@@ -181,6 +181,6 @@
             }
         }         
   }
-  echo(json_encode($response));
+//   echo(json_encode($response));
   
 ?>
