@@ -24,7 +24,7 @@
             minSquare = '-1';
         }
 
-        if (!ZIPCODE.test(zipcode)) {
+        if (zipcode && !ZIPCODE.test(zipcode)) {
             check = false;
             alert("The format of your zipcode is wrong!");
         }
