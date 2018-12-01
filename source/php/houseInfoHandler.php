@@ -96,6 +96,7 @@
                         $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
      ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit $X,$Y";
                         $dbResult  =$db->dbExecute($statement);
+                        $arr = [];
                         if ($dbResult->num_rows > 0) {
                             while($row = $dbResult->fetch_assoc()) {
                                 $houseId = $row['House_id'];
@@ -132,6 +133,7 @@
                                           AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax limit $X, $Y";
 
                             $dbResult  =$db->dbExecute($statement);
+                            $arr = [];
                             if ($dbResult->num_rows > 0) {
                                 while($row = $dbResult->fetch_assoc()) {
                                     $houseId = $row['House_id'];
@@ -165,6 +167,7 @@
                         $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
                         ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '$userName') limit $X,$Y";
                         $dbResult  =$db->dbExecute($statement);
+                        $arr = [];
                         if ($dbResult->num_rows > 0) {
                             while($row = $dbResult->fetch_assoc()) {
                                 $arr[] = $row; 
@@ -214,6 +217,9 @@
                         if ($dbResult) {
                             $response->status   = 200;
                             $response->msg      = "SUCCESS";
+                        }else{
+                            $response->status   = 400;
+                            $response->msg      = "Error ";
                         }
                     }
                     else {
@@ -253,9 +259,10 @@
                         $userName = $_POST['userName'];
                         
                         $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
-     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = '$userName') LIMIT 5";
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = '$userName')";
                         
                         $dbResult  =$db->dbExecute($statement);
+                        $arr = [];
                         if ($dbResult->num_rows > 0) {
                             while($row = $dbResult->fetch_assoc()) {
                                 $arr[] = $row;
