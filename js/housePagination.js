@@ -6,112 +6,135 @@
  */
 function generateItem(obj){
 
-	
-	var newP = document.createElement('p');
-	var newDiv = document.createElement('div');
-	var newA = document.createElement('a');
-   
-	var itemElem = document.createElement('article');
-	itemElem.classList.add('item');
-	var imgContainer = newDiv;
-	imgContainer.classList.add('image-container');
-	var newImg = document.createElement('img');
-	newImg.classList.add('image');
-	newImg.setAttribute('src','');
-	newImg.src = obj.Url;
-	imgContainer.appendChild(newImg);
-	itemElem.appendChild(imgContainer);
-	
+    var newP = document.createElement('p');
+    var newDiv = document.createElement('div');
+    var newA = document.createElement('a');
+
+    var itemElem = document.createElement('article');
+    itemElem.classList.add('item');
+    var imgContainer = newDiv;
+    imgContainer.classList.add('image-container');
+    var newImg = document.createElement('img');
+    newImg.classList.add('image');
+    newImg.setAttribute('src','');
+    newImg.src = obj.Url;
+    imgContainer.appendChild(newImg);
+    itemElem.appendChild(imgContainer);
     
-    
-	var itemContentElem = document.createElement('div');
-	var itemTextElem = document.createElement('p');
-	var itemAElem = document.createElement('a');
 
-	itemContentElem.classList.add('item-content');
-	itemElem.appendChild(itemContentElem);
+    var itemContentElem = document.createElement('div');
+    var itemTextElem = document.createElement('p');
+    var itemAElem = document.createElement('a');
 
-	var itemLocation = document.createElement('p');
-	itemLocation.classList.add('item-location');
-	itemContentElem.appendChild(itemLocation)
-	var address = document.createElement('a');
-	address.classList.add('larger');
-	address.setAttribute('hred', '#');
-	// add address text to DOM 
-	var addressText =  document.createTextNode(obj.Address + " " + obj.City + ", " + obj.State + " " + obj.Zipcode);
-	address.appendChild(addressText);	
-	itemLocation.appendChild(address);
+    itemContentElem.classList.add('item-content');
+    itemElem.appendChild(itemContentElem);
+
+    var itemLocation = document.createElement('p');
+    itemLocation.classList.add('item-location');
+    itemContentElem.appendChild(itemLocation)
+    var address = document.createElement('a');
+    address.classList.add('larger');
+    address.setAttribute('hred', '#');
+    // add address text to DOM 
+    var addressText =  document.createTextNode(obj.Address + " " + obj.City + ", " + obj.State + " " + obj.Zipcode);
+    address.appendChild(addressText);   
+    itemLocation.appendChild(address);
 
 
-	var price = document.createElement('p') ;
-	price.classList.add('larger');
-	price.classList.add('item-price');
-	// add price text to DOM
-	var priceText = document.createTextNode("$" + obj.Price);
-	price.appendChild(priceText);
-	itemContentElem.appendChild(price);
+    var price = document.createElement('p') ;
+    price.classList.add('larger');
+    price.classList.add('item-price');
+    // add price text to DOM
+    var priceText = document.createTextNode("$" + obj.Price);
+    price.appendChild(priceText);
+    itemContentElem.appendChild(price);
 
-	var itemTitleContainer = document.createElement('div');
-	itemTitleContainer.classList.add('item-title-container');
-	itemContentElem.appendChild(itemTitleContainer);
+    var itemTitleContainer = document.createElement('div');
+    itemTitleContainer.classList.add('item-title-container');
+    itemContentElem.appendChild(itemTitleContainer);
 
-	var faBedElem = document.createElement('i');
-	faBedElem.classList.add('item-title');
-	faBedElem.classList.add('fa');
-	faBedElem.classList.add('fa-bed');
-	var faBedText = document.createTextNode(" " + obj.Beds );
-	faBedElem.appendChild(faBedText);
-	itemTitleContainer.appendChild(faBedElem);
+    var faBedElem = document.createElement('i');
+    faBedElem.classList.add('item-title');
+    faBedElem.classList.add('fa');
+    faBedElem.classList.add('fa-bed');
+    var faBedText = document.createTextNode(" " + obj.Beds );
+    faBedElem.appendChild(faBedText);
+    itemTitleContainer.appendChild(faBedElem);
 
-	var faBathElem = document.createElement('i');
-	faBathElem.classList.add('item-title');
-	faBathElem.classList.add('fa');
-	faBathElem.classList.add('fa-bath');
-	// add bed count text t to DOM
-	var faBathText = document.createTextNode(" " + obj.Baths);
-	faBathElem.appendChild(faBathText);
-	itemTitleContainer.appendChild(faBathElem);
+    var faBathElem = document.createElement('i');
+    faBathElem.classList.add('item-title');
+    faBathElem.classList.add('fa');
+    faBathElem.classList.add('fa-bath');
+    // add bed count text t to DOM
+    var faBathText = document.createTextNode(" " + obj.Baths);
+    faBathElem.appendChild(faBathText);
+    itemTitleContainer.appendChild(faBathElem);
 
-	// space 
-	var itemTitleArea = document.createElement('p');
-	itemTitleArea.classList.add('item-title');
-	itemTitleContainer.appendChild(itemTitleArea);
-	var space = document.createElement('a');
+    // space 
+    var itemTitleArea = document.createElement('p');
+    itemTitleArea.classList.add('item-title');
+    itemTitleContainer.appendChild(itemTitleArea);
+    var space = document.createElement('a');
 
-	var spaceText = document.createTextNode(obj.Space + " sqft");
-	space.appendChild(spaceText);
-	itemTitleArea.appendChild(space);
+    var spaceText = document.createTextNode(obj.Space + " sqft");
+    space.appendChild(spaceText);
+    itemTitleArea.appendChild(space);
 
-	// built year
-	var itemTitleYear = document.createElement('p');
-	itemTitleYear.classList.add('item-title');
-	itemTitleYear.classList.add('item-builtTime');
-	itemTitleContainer.appendChild(itemTitleYear);
-	var builtTime = document.createElement('a');
-	itemTitleYear.appendChild(builtTime);
+    // built year
+    var itemTitleYear = document.createElement('p');
+    itemTitleYear.classList.add('item-title');
+    itemTitleYear.classList.add('item-builtTime');
+    itemTitleContainer.appendChild(itemTitleYear);
+    var builtTime = document.createElement('a');
+    itemTitleYear.appendChild(builtTime);
 
-	var buildYearText = document.createTextNode("Build in " + obj.Built);
-	builtTime.appendChild(buildYearText);
+    var buildYearText = document.createTextNode("Build in " + obj.Built);
+    builtTime.appendChild(buildYearText);
 
-	var itemDescriptionTitle = document.createElement('p');
-	itemDescriptionTitle.classList.add('item-description-title');
-	itemContentElem.appendChild(itemDescriptionTitle);
-	var descriptionTitleText = document.createTextNode("Description ");
-	itemDescriptionTitle.appendChild(descriptionTitleText);
+    var itemDescriptionTitle = document.createElement('p');
+    itemDescriptionTitle.classList.add('item-description-title');
+    itemContentElem.appendChild(itemDescriptionTitle);
+    var descriptionTitleText = document.createTextNode("Description ");
+    itemDescriptionTitle.appendChild(descriptionTitleText);
 
-	var itemDescriptionContainer = document.createElement('div');
-	itemDescriptionContainer.classList.add('item-description-container');
-	itemContentElem.appendChild(itemDescriptionContainer);
+    var itemDescriptionContainer = document.createElement('div');
+    itemDescriptionContainer.classList.add('item-description-container');
+    itemContentElem.appendChild(itemDescriptionContainer);
 
-	var itemDescription = document.createElement('p');
-	itemDescription.classList.add('item-description');
-	itemDescriptionContainer.appendChild(itemDescription);
-	var descriptionText = document.createTextNode(obj.description);
-	itemDescription.appendChild(descriptionText);
+    var itemDescription = document.createElement('p');
+    itemDescription.classList.add('item-description');
+    itemDescriptionContainer.appendChild(itemDescription);
+    var descriptionText = document.createTextNode(obj.description);
+    itemDescription.appendChild(descriptionText);
 
-    var houseId = document.createElement('p')
-    var ID = document.createTextNode(obj.House_id)
-	return itemElem;
+
+
+
+    var favContainerElem =  document.createElement('div');
+    favContainerElem.classList.add('fav-container');
+
+
+    var favElem = document.createElement('label');
+
+    var checkInput = document.createElement('input');
+    checkInput.setAttribute('type','checkbox');
+
+
+    checkInput.addEventListener('click',function(){
+            // console.log("inside");
+           addFavorite(obj.House_id);
+
+    });
+
+    favElem.appendChild(checkInput);
+    var checkSpan = document.createElement('span');
+    checkSpan.classList.add('checkmark');
+    favElem.appendChild(checkSpan);
+    itemElem.appendChild(favContainerElem);
+    favContainerElem.appendChild(favElem);
+
+
+    return itemElem;
 }
 
 /**

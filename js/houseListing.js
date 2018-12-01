@@ -133,16 +133,19 @@ function generateItem(obj){
 	var favContainerElem =  document.createElement('div');
 	favContainerElem.classList.add('fav-container');
 
-	// favElem.classList.add('click');
 
-	// favElem.addEventListener('click',function(){
- //           addFav(obj.House_id);
- //    });
+	var favElem = document.createElement('label');
 
- 	var favElem = document.createElement('label');
-	favElem.classList.add('fav');
 	var checkInput = document.createElement('input');
 	checkInput.setAttribute('type','checkbox');
+
+
+	checkInput.addEventListener('click',function(){
+			// console.log("inside");
+           addFavorite(obj.House_id);
+
+    });
+
 	favElem.appendChild(checkInput);
 	var checkSpan = document.createElement('span');
 	checkSpan.classList.add('checkmark');
@@ -152,6 +155,41 @@ function generateItem(obj){
 
 
 	return itemElem;
+}
+
+
+function addFavorite(id) {
+    var userName = getCookie("username");
+    console.log("here");
+    $.ajax({
+        type: "POST",
+        data: {
+            'houseService' : 'addFavoriteHouse',
+            'item_id': id,
+            'userName': userName,
+        },
+        success: function(result) {
+
+        },
+        error : function(error) {
+            alert("bad request");
+        }
+    });
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
 //Create new HTML nodes and append to itemContainer
