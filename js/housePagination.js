@@ -181,7 +181,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "bed" : 3,
                         "bath": 3} 
     */
-    console.log(filterVariables);
+    console.log("filtervariable",filterVariables);
     /*Communicate with Server to get house info*/
     var itemContainer = document.querySelector('.item-container');
     $.ajax({
@@ -196,7 +196,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                 },
                 success: function(result) {
                     result = JSON.parse(result);
-                    console.log(result);
+                    console.log("res",result);
                     if (result.msg === "SUCCESS" && result.status === 200){
                         while (itemContainer.hasChildNodes()){
                              itemContainer.removeChild(itemContainer.firstChild);
