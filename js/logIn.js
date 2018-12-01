@@ -84,7 +84,7 @@
                         console.log(JSON.parse(result).userRole);
                         // 1 is seller, 2 is buyer                        
                         if (JSON.parse(result).userRole == 1) {
-                            window.location.replace('index_success.html');
+                            window.location.replace('index.html');
                         }else {
                             window.location.replace('index.html');
                         }
