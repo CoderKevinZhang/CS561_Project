@@ -1,15 +1,15 @@
 function addFavorite(id) {
-    var userName = getCookie("username");
-    console.log("here");
+    // var userName = getCookie("username");
     $.ajax({
         type: "POST",
         data: {
             'houseService' : 'addFavoriteHouse',
-            'item_id': id,
-            'userName': userName,
+            'houseId': id,
+            'userName': "buyer",
         },
         success: function(result) {
-
+            // console.log(result);
+            // alert("Add Favorite Success!");
         },
         error : function(error) {
             alert("bad request");
