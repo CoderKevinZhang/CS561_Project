@@ -13,3 +13,94 @@ function openTab(evt, tabName) {
 
 }
 
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+// User stored cookie to get user info
+function getUserInfo(){
+    var userName = getCookie("username");
+    console.log(userName);
+    $.ajax({
+                type: "POST",
+                url: "../php/userActionHandler.php" , //url
+                data: {
+                    'userService' : 'getUserInfo', 
+                    'userName': userName,                    
+                },
+                success: function(result) {
+                    result = JSON.parse(result);
+                    user = JSON.parse(result.msg);
+                    console.log(user.User_role);
+                    if (user.User_role == 1){
+                        document.getElementById('sellerAction').style.display = "inline";
+                        document.getElementById('buyerAction').style.display = "none";
+                    }
+                    else if (user.User_role == 2){
+                        document.getElementById('sellerAction').style.display = "none";
+                        document.getElementById('buyerAction').style.display = "inline";
+                    }
+                    document.getElementById('userName').placeholder = user.User_name;
+                    document.getElementById('userEmail').placeholder = user.Email;
+                    document.getElementById('userPhone').placeholder = user.Phone;
+                    document.getElementById('userRole').placeholder = ( (user.User_role <2) ? 'Seller' : 'Buyer');
+                },
+                error : function(error) {
+                    alert("bad request");  
+                }
+            });    
+}
+
+function getUploadedHouses(){
+    var userName = getCookie("username");
+    console.log(userName);
+    $.ajax({
+                type: "POST",
+                url: "../php/houseInfoHandler.php" , //url
+                data: {
+                    'houseService' : 'getUploadedHouses', 
+                    'userName': userName,
+                },
+                success: function(result) {
+                    result = JSON.parse(result);
+                    console.log(result);
+                    
+                },
+                error : function(error) {
+                    alert("bad request");  
+                }
+            }); 
+}
+
+function getFavoriteHouses(){
+    var userName = getCookie("username");
+    console.log(userName);
+    $.ajax({
+                type: "POST",
+                url: "../php/houseInfoHandler.php" , //url
+                data: {
+                    'houseService' : 'getFavoriteHouses', 
+                    'userName': userName,                    
+                },
+                success: function(result) {
+                },
+                error : function(error) {
+                    alert("bad request");  
+                }
+            });     
+}
+
+
+document.addEventListener('DOMContentLoaded', function(){
+    getUserInfo();
+}, false);
