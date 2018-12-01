@@ -322,8 +322,8 @@ window.addEventListener('DOMContentLoaded', function (event) {
   // }
   var userName = getCookie('username');
   if (userName !==""){
-    document.getElementById('before_login_show_sign_up').style.display = "none";
-    document.getElementById('before_login_show_sign_in').style.display = "none";
+    // document.getElementById('before_login_show_sign_up').style.display = "none";
+    // document.getElementById('before_login_show_sign_in').style.display = "none";
     var user = document.getElementById('after_login_show_user_name');
     user.style.display = "block";
     document.getElementById('user_name').innerHTML = userName;
