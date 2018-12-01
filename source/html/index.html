@@ -26,7 +26,7 @@
               <div class="dropdown">
                   <button class="dropbtn"> <a id="user_name" href="#"></a></button>
                   <div class="dropdown-content">
-                      <a id= "logout-btn" href="user_profile.html" >My Profile</a>
+                      <a id= "logout-btn" href="userProfile.html" >My Profile</a>
                       <a id= "logout-btn" href="javascript:void(0);" onclick="logOut()">log out</a>
                   </div>
               </div>
@@ -41,112 +41,112 @@
       </div> 
 
       
-        <form id = 'filter'>
+        <form id = 'filter' class="filter-form">
           <div class="filter-form-container" >
-    		<div class = "box">
-        <label >Zipcode</label> 
-          <input id = 'zipCode' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-    		<label >City</label>  
-          <input id = 'city' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-    		<label >State</label>
-          <div class = "custom-select">
-            <select id = "state" style="background-color: white; font-size: 17px; width: 111px; margin-bottom: 8px;">     
-              <option value="" selected disabled="disabled">-select-</option>
-              <option value="Alabama">Alabama</option>
-              <option value="Alaska">Alaska</option>
-              <option value="Arizona">Arizona</option>
-              <option value="Arkansas">Arkansas</option>
-              <option value="California">California</option>
-              <option value="Colorado">Colorado</option>
-              <option value="Connecticut">Connecticut</option>
-              <option value="Delaware">Delaware</option>
-              <option value="District">District Of Columbia</option>
-              <option value="Florida">Florida</option>
-              <option value="Georgia">Georgia</option>
-              <option value="Hawaii">Hawaii</option>
-              <option value="Idaho">Idaho</option>
-              <option value="Illinois">Illinois</option>
-              <option value="Indiana">Indiana</option>
-              <option value="Iowa">Iowa</option>
-              <option value="Kansas">Kansas</option>
-              <option value="Kentucky">Kentucky</option>
-              <option value="Louisiana">Louisiana</option>
-              <option value="Maine">Maine</option>
-              <option value="Maryland">Maryland</option>
-              <option value="Massachusetts">Massachusetts</option>
-              <option value="Michigan">Michigan</option>
-              <option value="Minnesota">Minnesota</option>
-              <option value="Mississippi">Mississippi</option>
-              <option value="Missouri">Missouri</option>
-              <option value="Montana">Montana</option>
-              <option value="Nebraska">Nebraska</option>
-              <option value="Nevada">Nevada</option>
-              <option value="New Hampshire">New Hampshire</option>
-              <option value="New Jersey">New Jersey</option>
-              <option value="New Mexico">New Mexico</option>
-              <option value="New York">New York</option>
-              <option value="North Carolina">North Carolina</option>
-              <option value="North Dakota">North Dakota</option>
-              <option value="Ohio">Ohio</option>
-              <option value="Oklahoma">Oklahoma</option>
-              <option value="Oregon">Oregon</option>
-              <option value="Pennsylvania">Pennsylvania</option>
-              <option value="Rhode Island">Rhode Island</option>
-              <option value="South Carolina">South Carolina</option>
-              <option value="South Dakota">South Dakota</option>
-              <option value="Tennessee">Tennessee</option>
-              <option value="Texas">Texas</option>
-              <option value="Utah">Utah</option>
-              <option value="Vermont">Vermont</option>
-              <option value="Virginia">Virginia</option>
-              <option value="Washington">Washington</option>
-              <option value="West Virginia">West Virginia</option>
-              <option value="Wisconsin">Wisconsin</option>
-              <option value="Wyoming">Wyoming</option>
-            </select>
+      		<div class = "box">
+          <label >Zipcode</label> 
+            <input id = 'zipCode' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+      		<label >City</label>  
+            <input id = 'city' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+      		<label >State</label>
+            <div class = "custom-select">
+              <select id = "state" style="background-color: white; font-size: 17px; width: 111px; margin-bottom: 8px;">     
+                <option value="" selected disabled="disabled">-select-</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="District">District Of Columbia</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Utah">Utah</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virginia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class = "box">
-    		  <label> MinPrice</label> 
-          <input id = 'minPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-<!--         </div>
-        <div class = "box"> -->
-    		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"><br>
-        </div>
-        <div class = "box">
-    		<label> MinSquare</label> 
-          <input id = 'minSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-  <!--   		</div>
-        <div class = "box"> -->
-        <label> MaxSquare</label>  
-          <input id = 'maxSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="margin-left: 5px;"><br>
-        </div>
-        <div class = "box">
-    		<label> beds</label>
-        <div class = "custom-select"> 
-          <select id="beds" style="background-color: white; font-size: 17px">
-      		  <option value="" selected disabled="disabled">-select-</option>
-      		  <option value="1">1</option>
-      		  <option value="2">2</option>
-      		  <option value="3">3</option>
-            <option value="4">4+</option>
-    		  </select>
-        </div>
+          <div class = "box">
+      		  <label> MinPrice</label> 
+            <input id = 'minPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+  <!--         </div>
+          <div class = "box"> -->
+      		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"><br>
+          </div>
+          <div class = "box">
+      		<label> MinSquare</label> 
+            <input id = 'minSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+    <!--   		</div>
+          <div class = "box"> -->
+          <label> MaxSquare</label>  
+            <input id = 'maxSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="margin-left: 5px;"><br>
+          </div>
+          <div class = "box">
+      		<label> beds</label>
+          <div class = "custom-select"> 
+            <select id="beds" style="background-color: white; font-size: 17px">
+        		  <option value="" selected disabled="disabled">-select-</option>
+        		  <option value="1">1</option>
+        		  <option value="2">2</option>
+        		  <option value="3">3</option>
+              <option value="4">4+</option>
+      		  </select>
+          </div>
 
-    		<label> baths</label> 
-        <div class = "custom-select">
-          <select id="baths" style="background-color: white; font-size: 17px">
-      		  <option value="0" selected disabled="disabled">-select-</option>
-      		  <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4+</option>
-    		  </select>
-        </div>
-        </div>
-      <div class = "filter-form-footer">
-        <button class = "filter-form-submit" onclick='filteredSearch()'>Search</button>
-      </div>   		  
+      		<label> baths</label> 
+          <div class = "custom-select">
+            <select id="baths" style="background-color: white; font-size: 17px">
+        		  <option value="0" selected disabled="disabled">-select-</option>
+        		  <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4+</option>
+      		  </select>
+          </div>
+          </div>
+        <div class = "filter-form-footer">
+          <button class = "filter-form-submit">Search</button>
+        </div>   		  
     	  </form>
 
       </div>
@@ -208,7 +208,7 @@
   <script src="../../vendor/daterangepicker/daterangepicker.js"></script>
   <script src="../../vendor/countdowntime/countdowntime.js"></script>
   <script src="../../js/index.js"></script>
-
+  <script src="../../js/filter_form.js"></script>
   <script src="../../js/housePagination.js"></script>
   <script src="../../js/customSelect.js"></script>
 </html>

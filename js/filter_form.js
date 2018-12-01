@@ -24,7 +24,7 @@
             minSquare = '-1';
         }
 
-        if (!ZIPCODE.test(zipcode)) {
+        if (zipcode && !ZIPCODE.test(zipcode)) {
             check = false;
             alert("The format of your zipcode is wrong!");
         }
@@ -36,8 +36,7 @@
                 data: {"houseService" : "getHouseInfo", "filtered": true,
                 "filterVariables": {"city": city, "state": state, "zipCode": zipcode,
                 'livingSpace': {"min":parseInt(minSquare), "max": parseInt(maxSquare)}, price: {"min": parseInt(minPice), "max": parseInt(maxPrice)},
-                "bed": parseInt(beds_option), "bath": parseInt(baths_option)},
-                "pageNum": INT, "itemPerPage": INT},
+                "bed": parseInt(beds_option), "bath": parseInt(baths_option)}},
                 success: function (result) {
                     
                 },
