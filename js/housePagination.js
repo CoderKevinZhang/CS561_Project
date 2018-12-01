@@ -308,7 +308,3 @@ function updatePageNumbers(direction, filteredSearch){
 function filteredSearch ( ) {
     generatePagination(5, 1, 1);
 }
-
-function saveYourLike () {
-    
-}
