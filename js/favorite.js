@@ -41,8 +41,8 @@ function changeModelForFavorite(){
                 }
             }
             else if (user.User_role == 2){ // buyer
-                //console.log('buyer');
-                getFavoriteHouses(userName);
+                console.log('buyer have Favorite');
+                //getFavoriteHouses(userName);
             }
         },
         error : function(error) {
@@ -50,3 +50,4 @@ function changeModelForFavorite(){
         }
     });    
 }
+
