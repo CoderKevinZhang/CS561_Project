@@ -95,51 +95,51 @@
       <form id="uploadForm" style="padding-bottom: 50px;" class="login100-form validate-form">
         <div class="wrap-input100 validate-input m-b-26" data-validate="address is required">
           <span class="label-input100">Street Address<span style="color: red;">*</span></span>
-          <input class="input100" type="text" name="address" placeholder="Enter a street address">
+          <input class="input100" required type="text" name="address" placeholder="Enter a street address">
           <span class="focus-input100"></span>
         </div>
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="City is required">
           <span class="label-input100">City<span style="color: red;">*</span></span>
-          <input class="input100" type="text" name="city" placeholder="Enter a city">
+          <input class="input100" required type="text" name="city" placeholder="Enter a city">
           <span class="focus-input100"></span>
         </div>
         <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
           <span class="label-input100">State<span style="color: red;">*</span></span>
-          <input id = "state", class="input100" type="text" name="state" placeholder="Enter a state">
+          <input id = "state", class="input100" required type="text" name="state" placeholder="Enter a state">
           <span class="focus-input100"></span>
         </div>
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="State is required">
           <span class="label-input100">Zipcode<span style="color: red;">*</span></span>
-          <input  class="input100" type="text" name="zipCode" placeholder="Enter a state">
+          <input  class="input100" type="text" required name="zipCode" placeholder="Enter a state">
           <span class="focus-input100"></span>
         </div>
 
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="Phone number is invalid">
           <span class="label-input100">Price <span style="color: red;">*</span></span>
-          <input id= "price" class="input100" type="number" name="price" placeholder="100000">
+          <input id= "price" class="input100" required type="number" name="price" placeholder="100000">
           <span class="focus-input100"></span>
         </div>
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="">
           <span class="label-input100">Living Space <span style="color: red;">*</span></span>
-          <input id = "livingSpace", class="input100" type="number" name="livingSpace" placeholder="xxxx">
+          <input id = "livingSpace", class="input100" required type="number" name="livingSpace" placeholder="xxxx">
           <span class="focus-input100"></span>
         </div>
 
 
         <div class="wrap-input100 validate-input m-b-18" style="border-bottom: none; width:392px;" data-validate = "#Bedroom #Bathroom is required">
           <span class="label-input100">More Info<span style="color: red;">*</span></span>
-          <select style="margin-top: 15px;" class="bed-num">
+          <select required style="margin-top: 15px;" class="bed-num">
             <option value="0" selected>#Bedroom:</option>
             <option value="1">1 Bedroom</option>
             <option value="2">2 Bedroom</option>
             <option value="3">2 Bedroom</option>
             <option value="4">4+ Bedroom</option>
           </select>
-          <select style="margin-top: 15px;" class="bath-num">
+          <select  required  style="margin-top: 15px;" class="bath-num">
             <option value="0" selected>#Bathroom:</option>
             <option value="1">1 Bathroom</option>
             <option value="2">2 Bathroom</option>
@@ -150,19 +150,19 @@
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="When house built?">
           <span class="label-input100">Built Year</span>
-          <input class="input100" type="number" name="buildTime" placeholder="xxxx">
+          <input class="input100" required type="number" name="buildTime" placeholder="xxxx">
           <span class="focus-input100"></span>
         </div>
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="">
           <span class="label-input100">Lot space</span>
-          <input class="input100" type="number" name="lotSpace" placeholder="the lot space of your house?">
+          <input class="input100" required type="number" name="lotSpace" placeholder="the lot space of your house?">
           <span class="focus-input100"></span>
         </div>
 
         <div class="wrap-input100 validate-input m-b-26" data-validate="URL for Pictures is required">
           <span class="label-input100">Picture URL<span style="color: red;">*</span></span>
-          <input class="input100" type="text" name="picURL" placeholder="URL for picture">
+          <input class="input100" required type="text" name="picURL" placeholder="URL for picture">
           <span class="focus-input100"></span>
         </div>
       <div class="wrap-input100 validate-input m-b-18" data-validate = "Description is required">
@@ -188,118 +188,8 @@
     <button type="button" id="create-item-button" class = "upload-new-house">
       Upload new house
     </button>
-    <main class="item-container">
-      <article class="item">
-        <div class="image-container">
-          <img class="image" src="../../images/demoPic/demo1.jpg">
-        </div>
-
-        <div class="item-content">
-          <!-- <p class="item-name"> -->
-
-          <p class="item-location">
-            <a class = "larger" href="#" > 1046 Fernbush, Los Angeles, CA 90077 </a>
-          </p>
-          <p class=" larger item-price"> 
-              $ 10000
-          </p>
-          <div class = "item-title-container"> 
-
-            <i class="item-title fa fa-bed" style="font-size:20px"> 2</i>
-            <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
-            <p class="item-title">
-              <a > 13000 sqft </a>
-            </p>
-            <p class="item-title item-builtTime">
-              <a > Build in 1992 </a>
-            </p>
-          </div>
-
-          <p class= "item-description-title" > Description</p>
-          <div class="item-description-container">
-
-            <p class = "item-description">
-              Be mesmerized and let your senses dance by the everlasting impression of Sunset Chateau. Indulge in this elegant Holmby Hills estate exuding luxury across approx. 1.70 acres of land. The long private drive leads to lush grounds including private park, grassy yard, gardens, and walking paths that envelope this captivating home. Entertain in the grand formal dining room, spacious living room, library, bar, and indulgent eat-in chef's kitchen or outside in the expansive terraces, grandiose pool, and patio flowing seamlessly through beautiful French doors throughout. Relax in the luxurious bedrooms & spa-like baths detailed w/ utmost perfection. Designed w/ exquisite crown moldings, beautiful arches, marvelous staircase, mahogany floors & pristine marble, this home has been the venue of some of Hollywood's most elegant celebrations. Live in the embodiment of Old Hollywood sophistication w/ the finest details & craftsmanship captured by this iconic masterpiece in the grandest setting.
-            </p>
-          </div>
-
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="image-container">
-          <img class="image" src="../../images/demoPic/demo2.jpg">
-        </div>
-
-        <div class="item-content">
-          <!-- <p class="item-name"> -->
-
-          <p class="item-location">
-            <a class = "larger" href="#" > 1515 NW 29th St
-  Corvallis, OR 97330 </a>
-          </p>
-          <p class=" larger item-price"> 
-              $250,000
-          </p>
-          <div class = "item-title-container"> 
-
-            <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
-            <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
-            <p class="item-title">
-              <a > 1,075 sqft </a>
-            </p>
-            <p class="item-title item-builtTime">
-              <a > Build in 1992 </a>
-            </p>
-          </div>
-
-          <p class= "item-description-title" > Description</p>
-          <div class="item-description-container">
-
-            <p class = "item-description">
-              Cute single level home in wonderful location. Spacious corner lot, large for an in-town home, with nice garden areas in the backyard & a treehouse structure. Lovely hardwood floors throughout the home & a cozy corner fireplace. Kitchen includes a newer 4 burner gas range. Vaulted ceilings & large windows. Spend summer nights on the large patio, roasting marshmallows in the fire pit. Roof, furnace, kitchen appliances new in 2011. Close to OSU, multiple parks, & just blocks shopping and restaurants.
-
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="image-container">
-          <img class="image" src="../../images/demoPic/demo3.jpg">
-        </div>
-
-        <div class="item-content">
-          <!-- <p class="item-name"> -->
-
-          <p class="item-location">
-            <a class = "larger" href="#" > 49 Eugenie Ct New Orleans, LA 70131 </a>
-          </p>
-          <p class=" larger item-price"> 
-              $237,900
-          </p>
-          <div class = "item-title-container"> 
-
-            <i class="item-title fa fa-bed" style="font-size:20px"> 3</i>
-            <i class="item-title fa fa-bath" style="font-size:20px"> 1 </i>
-            <p class="item-title">
-              <a > 2,577 sqft </a>
-            </p>
-            <p class="item-title item-builtTime">
-              <a > Build in 1992 </a>
-            </p>
-          </div>
-
-          <p class= "item-description-title" > Description</p>
-          <div class="item-description-container">
-
-            <p class = "item-description">
-              This home has everything!  Just renovated, 4 bedroom home with formal dining room and super large den with corner fireplace. Upstairs has 3 large bedrooms and separate den/landing area.  All rooms have nice sized closets and lots of natural light.  Master suite is on the lower level with large corner garden tub, separate shower, double vanities and very large walk in closet.  Outside you have an incredibly large deck for grilling and entertainment and an extra large yard that can easily fit a swimming pool.
-
-            </p>
-          </div>
-        </div>
-      </article>
+    <main id="uploadedHousesPlace" class="item-container">
+      
     </main>
   </div>
 
@@ -311,51 +201,15 @@
 
 
 <div id="my-favorite" class="tabcontent" style="display:none">
-    <main class="item-container">
-      <article class="item">
-        <div class="image-container">
-          <img class="image" src="../../images/demoPic/demo1.jpg">
-        </div>
-
-        <div class="item-content">
-          <!-- <p class="item-name"> -->
-
-          <p class="item-location">
-            <a class = "larger" href="#" > 1046 Fernbush, Los Angeles, CA 90077 </a>
-          </p>
-          <p class=" larger item-price"> 
-              $ 10000
-          </p>
-          <div class = "item-title-container"> 
-
-            <i class="item-title fa fa-bed" style="font-size:20px"> 2</i>
-            <i class="item-title fa fa-bath" style="font-size:20px"> 2 </i>
-            <p class="item-title">
-              <a > 13000 sqft </a>
-            </p>
-            <p class="item-title item-builtTime">
-              <a > Build in 1992 </a>
-            </p>
-          </div>
-
-          <p class= "item-description-title" > Description</p>
-          <div class="item-description-container">
-
-            <p class = "item-description">
-              Be mesmerized and let your senses dance by the everlasting impression of Sunset Chateau. Indulge in this elegant Holmby Hills estate exuding luxury across approx. 1.70 acres of land. The long private drive leads to lush grounds including private park, grassy yard, gardens, and walking paths that envelope this captivating home. Entertain in the grand formal dining room, spacious living room, library, bar, and indulgent eat-in chef's kitchen or outside in the expansive terraces, grandiose pool, and patio flowing seamlessly through beautiful French doors throughout. Relax in the luxurious bedrooms & spa-like baths detailed w/ utmost perfection. Designed w/ exquisite crown moldings, beautiful arches, marvelous staircase, mahogany floors & pristine marble, this home has been the venue of some of Hollywood's most elegant celebrations. Live in the embodiment of Old Hollywood sophistication w/ the finest details & craftsmanship captured by this iconic masterpiece in the grandest setting.
-            </p>
-          </div>
-
-
-        </div>
-      </article>
+    <main id = "favoriteHousesPlace" class="item-container">
+     
     </main>
 </div>
 
 
 </body>
-<script src="../../js/index.js"></script>
+
+<script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
 <script src="../../js/userProfile.js"></script>
 <script src="../../js/upload.js"></script>
-<script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
 </html>
