@@ -3,7 +3,7 @@
     "use strict";
 
     var EMAIL = new RegExp('^([a-zA-Z0-9_\\-\.]+)@([a-zA-Z0-9_\\-\.]+)\.([a-zA-Z]{2,5})$');
-    var PHONE = new RegExp('^[2-9]\d{2}-\d{3}-\d{4}$');
+    // var PHONE = new RegExp('^[2-9]\d{2}-\d{3}-\d{4}$');
 
     /*==================================================================
     [ Focus Contact2 ]*/
@@ -80,11 +80,12 @@
             }
         }
 
-        if (phone != '') {
-            if (!PHONE.test(phone)) {
-                check = false;
-            }
-        }
+        // if (phone != '') {
+        //     if (!PHONE.test(phone)) {
+        //         console.log('phone');
+        //         check = false;
+        //     }
+        // }
 
         if (user_name != '' && email != '' && phone != '' && password != '' && repassword != '') {
             if (password != repassword) {
