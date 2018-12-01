@@ -155,6 +155,176 @@
                        $response->msg      = 'houseService: getHouseInfo requires enough variable';
                     }
                     break;
+ //-------------------------------------------------------------------------------------------------
+                case "getUploadHouse":   /*Perform Service -getUploadHouse- if it is called*/                   
+                    $houseServiceLog->info('houseService :: getUploadHouse Called.');
+                    if(isset($_POST['userName']) && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+                        $userName = $_POST['userName'];
+                        $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
+                        $Y = $_POST['itemPerPage'];
+                        $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '$userName') limit $X,$Y";
+                        $dbResult  =$db->dbExecute($statement);
+                        if ($dbResult->num_rows > 0) {
+                            while($row = $dbResult->fetch_assoc()) {
+                                $arr[] = $row; 
+                            }
+                        }
+                        $response->status   = 200;
+                        $response->msg      = "SUCCESS";
+                        $response->foundHouse = $arr;
+                    }else {
+                            $houseServiceLog->warn('houseService ::getUploadHouse Called Failed. No enought info passed back via POST');
+                            $response->status   = 406;
+                            $response->msg      = 'houseService: getUploadHouse requires enough variable';
+                    }
+                    break;
+//  //-------------------------------------------------------------------------------------------------
+
+//  //---------------------------------------------------------------------------------------------------
+//                case "getUploadHouse":   /*Perform Service -getUploadHouse- if it is called*/                   
+//                     $houseServiceLog->info('houseService :: getUploadHouse Called.');
+//                     if(isset($_POST['filtered']) && $_POST['filtered'] == 0
+//                     && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+//                         $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
+//                         $Y = $_POST['itemPerPage'];
+//                         $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+//                     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit $X,$Y";
+//                         $dbResult  =$db->dbExecute($statement);
+//                         if ($dbResult->num_rows > 0) {
+//                             while($row = $dbResult->fetch_assoc()) {
+//                                 $houseId = $row['House_id'];
+                            
+//                                 $arr[] = $row; 
+//                             }
+//                         }
+//                         $response->status   = 200;
+//                         $response->msg      = "SUCCESS";
+//                         $response->foundHouse = $arr;
+//                     }
+//                     elseif(isset($_POST['filtered']) && $_POST['filtered'] == 1){
+//                         if(isset($_POST['filterVariables'])
+//                         && isset($_POST['pageNum']) && isset($_POST['itemPerPage'])){
+//                             $filterVariables = json_decode($_POST['filterVariables']);
+//                             $city = $filterVariables->city;
+//                             $state = $filterVariables->state;
+//                             $zipCode = $filterVariables->zipCode;
+//                             $livingSpaceMin = $filterVariables->livingSpace->min;
+//                             $livingSpaceMax = $filterVariables->livingSpace->max;
+//                             $priceMin = $filterVariables->price->min;
+//                             $priceMax = $filterVariables->price->max;
+//                             $bed = $filterVariables->bed;
+//                             $bath = $filterVariables->bath;
+//                             $houseServiceLog->warn($filterVariables);
+//                             $X = ($_POST['pageNum'] - 1) * $_POST['itemPerPage'];
+//                             $Y = $_POST['itemPerPage'];
+
+//                             $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+//                                         ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
+//                                         HAVING H.`City`='$city' AND H.`State`='$state' AND H.`Zipcode`=$zipCode 
+//                                         AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
+//                                         AND H.`Beds`= $bed AND H.`Baths` = $bath 
+//                                         AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax limit $X, $Y";
+
+//                             $dbResult  =$db->dbExecute($statement);
+//                             if ($dbResult->num_rows > 0) {
+//                                 while($row = $dbResult->fetch_assoc()) {
+//                                     $houseId = $row['House_id'];
+//                                     $arr[] = $row;
+//                                 }
+//                             }
+//                             $response->status   = 200;
+//                             $response->msg      = "SUCCESS";
+//                             $response->foundHouse = $arr;
+//                         }else {
+//                             $houseServiceLog->warn('houseService ::getHouseInfo Called Failed. No enought info passed back via POST');
+//                             $response->status   = 406;
+//                             $response->msg      = 'houseService: getHouseInfo requires enough variable';
+//                         }
+//                     }
+//                     else {
+//                         /*No enough data ---> Return callback*/
+//                         // COVERED
+//                         $houseServiceLog->warn('houseService ::getHouseInfo Called Failed. No enought info passed back via POST');
+//                         $response->status   = 406;
+//                         $response->msg      = 'houseService: getHouseInfo requires enough variable';
+//                     }
+//                     break;
+ //---------------------------------------------------------------------------------------------------
+
+ //---------------------------------------------------------------------------------------------------
+                case "addFavoriteHouse":   /*Perform Service -addFavoriteHouse- if it is called*/                   
+                    $houseServiceLog->info('houseService :: addFavoriteHouse Called.');
+                    if(isset($_POST['userName']) && isset($_POST['houseId'])){
+                        $userName = $_POST['userName'];
+                        $houseId = $_POST['houseId'];                
+                        $statement = "INSERT INTO  `User_favorites` (`User_id` ,  `House_id` ,  `Create_Time` ) VALUES ((SELECT  `User_id` FROM `User_info` WHERE  `User_name` =  '$userName'), $houseId, (SELECT FROM_UNIXTIME( UNIX_TIMESTAMP( NOW( ) ) ,  '%Y-%m-%d %H:%i:%S' )))";
+                        $dbResult  =$db->dbExecute($statement);
+                        if ($dbResult) {
+                            $response->status   = 200;
+                            $response->msg      = "SUCCESS";
+                        }
+                    }
+                    else {
+                        /*No enough data ---> Return callback*/
+                        // COVERED
+                        $houseServiceLog->warn('houseService ::addFavoriteHouse Called Failed. No enought info passed back via POST');
+                        $response->status   = 406;
+                        $response->msg      = 'houseService: addFavoriteHouse requires enough variable';
+                    }
+                    break;
+ //---------------------------------------------------------------------------------------------------
+                case "deleteSavedhouse":   /*Perform Service -deleteSavedhouse- if it is called*/                   
+                    $houseServiceLog->info('houseService :: deleteSavedhouse Called.');
+                    if(isset($_POST['userName']) && isset($_POST['houseId'])){
+                        $userName = $_POST['userName'];
+                        $houseId = $_POST['houseId'];                      
+                        $statement = "DELETE FROM `User_favorites` WHERE `House_id` = $houseId AND `User_name` = '$userName'";
+                        $dbResult  =$db->dbExecute($statement);
+                        if ($dbResult) {
+                            $response->status   = 200;
+                            $response->msg      = "SUCCESS";
+                        }
+                    }
+                    else {
+                        /*No enough data ---> Return callback*/
+                        // COVERED
+                        $houseServiceLog->warn('houseService ::deleteSavedhouse Called Failed. No enought info passed back via POST');
+                        $response->status   = 406;
+                        $response->msg      = 'houseService: deleteSavedhouse requires enough variable';
+                    }
+                    break;
+ //---------------------------------------------------------------------------------------------------
+                case "getSavedHouses":   /*Perform Service -getSavedHouses- if it is called*/                   
+                    $houseServiceLog->info('houseService :: getSavedHouses Called.');
+                    if(isset($_POST['userName'])){
+                        $userName = $_POST['userName'];
+                        
+                        $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = '$userName') LIMIT 5";
+                        
+                        $dbResult  =$db->dbExecute($statement);
+                        if ($dbResult->num_rows > 0) {
+                            while($row = $dbResult->fetch_assoc()) {
+                                $arr[] = $row;
+                                echo (json_encode($row));
+                            }
+                            $response->status   = 200;
+                            $response->msg      = "SUCCESS";
+                            $response->foundHouse = $arr;
+                        }
+
+                    }
+                    else {
+                        /*No enough data ---> Return callback*/
+                        // COVERED
+                        $houseServiceLog->warn('houseService ::getSavedHouses Called Failed. No enought info passed back via POST');
+                        $response->status   = 406;
+                        $response->msg      = 'houseService: getSavedHouses requires enough variable';
+                    }
+                    break;
+
+  //---------------------------------------------------------------------------------------------------
                default: //COVERED
                     $houseServiceLog->warn('houseService :: '.$service.' Not Found');
                     $response->status = 404;
