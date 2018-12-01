@@ -209,7 +209,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                                 haveNextPage = false;
                             }
                         }
-                        changeModeForFavorite();
+                        changeModelForFavorite();
                     }
                 },
                 error : function(error) {
