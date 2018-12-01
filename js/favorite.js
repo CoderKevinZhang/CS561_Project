@@ -34,7 +34,7 @@ function changeModelForFavorite(){
             if (user.User_role == 1){ //seller
                 console.log(user.User_role);
                 getUploadedHouses(userName);
-                document.getElementsByClassName("fav-container").style.display = "none";
+                document.querySelector(".fav-container").style.display = "none";
             }
             else if (user.User_role == 2){ // buyer
                 //console.log('buyer');
