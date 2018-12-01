@@ -145,6 +145,7 @@ function generateItem(obj){
        
 function getNewHouses(pageNum, itemPerPage,  filtered= 0){
     var i, formData, zipCode, city, state, minPrice, maxPrice, minSquare, maxSquare, bed, bath;
+    var haveNextPage = true;
     var itemContainer = document.querySelector('.item-container');
     while (itemContainer.firstChild) {
         itemContainer.removeChild(itemContainer.firstChild);
@@ -171,7 +172,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "livingSpace": livingSpace,
                         "bed" : bed,
                         "bath": bath}  
-                       
+    /*                  
     filterVariables = {
                         "city": "Murphys", 
                         "state": "California", 
@@ -179,7 +180,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                         "livingSpace": {"min": -1, "max": 999999999},
                         "bed" : 3,
                         "bath": 3} 
-    
+    */
     console.log(filterVariables);
     /*Communicate with Server to get house info*/
     var itemContainer = document.querySelector('.item-container');
@@ -204,6 +205,8 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                             if (result.foundHouse[i]){
                                 var item = generateItem(result.foundHouse[i]);
                                 itemContainer.appendChild(item);
+                            }else{
+                                haveNextPage = false;
                             }
                         }
                     }
@@ -212,11 +215,11 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                     alert("bad request");  
                 }
             });
-
+    return haveNextPage;
 }
 
 function generatePagination(itemPerPage, pageNum, filteredSearch = 0){
-    getNewHouses(pageNum, itemPerPage, filteredSearch);
+    var haveNextPage = getNewHouses(pageNum, itemPerPage, filteredSearch);
     
     var paginationDiv = document.getElementById('pagination');
     while (paginationDiv.hasChildNodes()){
@@ -285,7 +288,7 @@ function updatePageNumbers(direction, filteredSearch){
     var currentMaxPageNumber =Number( pageLinks[pageLinks.length - 1].textContent);
     var i, currentPageNumber;
     
-    var Max = 20;
+    var Max = 200;
     for (i = 0 ; i < pageLinks.length; i++){
         if (pageLinks[i].getAttribute('class').indexOf('active') > -1){
             currentPageNumber = i + Number(currentMinPageNumber);

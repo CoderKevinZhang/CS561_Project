@@ -129,7 +129,7 @@
                                           ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
                                           HAVING H.`City`='$city' AND H.`State`='$state' 
                                           AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
-                                          AND H.`Beds`= $bed AND H.`Baths` = $bath 
+                                          AND H.`Beds` >= $bed AND H.`Baths` >= $bath 
                                           AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax limit $X, $Y";
 
                             $dbResult  =$db->dbExecute($statement);
