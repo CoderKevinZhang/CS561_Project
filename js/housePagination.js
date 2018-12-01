@@ -307,7 +307,3 @@ function filteredSearch ( ) {
     // Update Search
     generatePagination(5, 1, 1);
 }
-
-function saveYourLike () {
-    
-}
