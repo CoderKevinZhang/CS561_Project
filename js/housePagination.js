@@ -10,7 +10,7 @@ function generateItem(obj){
 	var newP = document.createElement('p');
 	var newDiv = document.createElement('div');
 	var newA = document.createElement('a');
-
+   
 	var itemElem = document.createElement('article');
 	itemElem.classList.add('item');
 	var imgContainer = newDiv;
@@ -22,7 +22,8 @@ function generateItem(obj){
 	imgContainer.appendChild(newImg);
 	itemElem.appendChild(imgContainer);
 	
-
+    
+    
 	var itemContentElem = document.createElement('div');
 	var itemTextElem = document.createElement('p');
 	var itemAElem = document.createElement('a');
@@ -108,6 +109,8 @@ function generateItem(obj){
 	var descriptionText = document.createTextNode(obj.description);
 	itemDescription.appendChild(descriptionText);
 
+    var houseId = document.createElement('p')
+    var ID = document.createTextNode(obj.House_id)
 	return itemElem;
 }
 
@@ -303,7 +306,9 @@ function updatePageNumbers(direction, filteredSearch){
 
 
 function filteredSearch ( ) {
-    // Jump to Page 1
-    // Update Search
     generatePagination(5, 1, 1);
+}
+
+function saveYourLike () {
+    
 }
