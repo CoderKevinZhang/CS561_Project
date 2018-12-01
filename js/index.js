@@ -36,6 +36,7 @@ window.addEventListener('DOMContentLoaded', function (event) {
     var user = document.getElementById('after_login_show_user_name');
     user.style.display = "block";
     document.getElementById('user_name').innerHTML = userName;
+    changeModelForFavorite();
   }
   
   
