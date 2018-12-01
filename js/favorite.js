@@ -2,6 +2,7 @@ function addFavorite(id) {
     // var userName = getCookie("username");
     $.ajax({
         type: "POST",
+        url: "../php/houseInfoHandler.php" 
         data: {
             'houseService' : 'addFavoriteHouse',
             'houseId': id,
