@@ -3708,3 +3708,140 @@
 2018-11-30 16:05:58 db::dbExecute [INFO] - 0
 2018-11-30 16:05:58 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
 2018-11-30 16:05:58 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:29:48 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:29:48 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:29:48 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:29:48 db::dbExecute [INFO] - 0
+2018-11-30 16:29:48 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:29:48 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:30:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:30:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:30:55 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:30:55 db::dbExecute [INFO] - 0
+2018-11-30 16:30:55 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:30:55 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:31:18 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:31:18 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:31:18 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:31:18 db::dbExecute [INFO] - 0
+2018-11-30 16:31:18 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:31:18 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:31:40 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:31:40 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:31:40 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:31:40 db::dbExecute [INFO] - 0
+2018-11-30 16:31:40 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:31:40 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:32:08 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:32:08 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:32:08 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:32:08 db::dbExecute [INFO] - 0
+2018-11-30 16:32:08 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:32:08 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:33:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:33:25 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:33:25 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:33:25 db::dbExecute [INFO] - 0
+2018-11-30 16:33:25 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:33:25 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:34:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:34:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:34:53 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:34:53 db::dbExecute [INFO] - 0
+2018-11-30 16:34:53 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:34:53 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:51:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:51:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:51:02 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:51:02 db::dbExecute [INFO] - 0
+2018-11-30 16:51:02 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:51:02 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:51:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:51:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:51:33 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:51:33 db::dbExecute [INFO] - 0
+2018-11-30 16:51:33 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:51:33 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:51:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:51:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:51:55 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:51:55 db::dbExecute [INFO] - 0
+2018-11-30 16:51:55 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:51:55 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:52:10 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:52:10 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:52:10 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:52:10 db::dbExecute [INFO] - 0
+2018-11-30 16:52:10 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:52:10 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:56:04 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:56:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:56:04 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:56:04 db::dbExecute [INFO] - 0
+2018-11-30 16:56:04 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:56:04 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:57:33 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:57:33 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:57:33 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:57:33 db::dbExecute [INFO] - 0
+2018-11-30 16:57:33 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:57:33 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:58:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:58:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:58:13 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:58:13 db::dbExecute [INFO] - 0
+2018-11-30 16:58:13 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:58:13 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:58:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:58:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:58:43 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:58:43 db::dbExecute [INFO] - 0
+2018-11-30 16:58:43 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:58:43 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 16:59:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 16:59:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 16:59:13 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 16:59:13 db::dbExecute [INFO] - 0
+2018-11-30 16:59:13 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 16:59:14 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 17:13:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:13:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:13:07 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 17:13:07 db::dbExecute [INFO] - 0
+2018-11-30 17:13:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 17:13:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:13:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:13:29 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 17:13:29 db::dbExecute [INFO] - 0
+2018-11-30 17:13:29 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 17:20:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:20:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:20:04 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 17:20:05 db::dbExecute [INFO] - 0
+2018-11-30 17:20:05 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 17:20:05 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 17:20:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:20:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:20:11 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 17:20:11 db::dbExecute [INFO] - 0
+2018-11-30 17:20:11 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 17:20:11 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 17:21:05 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:21:05 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:21:05 main::main [INFO] - houseService :: uploadHouseInfo Called.
+2018-11-30 17:21:05 db::dbExecute [INFO] - 0
+2018-11-30 17:21:05 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO `Houses2` (`User_id`, `Zipcode`, `Address`, `City`, `State`,`Price`,`Beds`, `Baths`, `Built`,`description`,`Space`,`Lot_space`) 
+                        VALUES((SELECT `User_id` FROM `User_info` WHERE `User_name` = '222'),'97300',
+                        '2333 osu','Corvallis', 'OR', '120000', '3','2','1982','2333','1200','1200')
+2018-11-30 17:21:05 db::dbExecute [INFO] - 0
+2018-11-30 17:21:05 db::dbExecute [INFO] - Query Success :: statement--INSERT INTO `Houses_images` (`House_id`,`User_id`, `Url`) 
+                           VALUES((SELECT `House_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),(SELECT `User_id` FROM `Houses2` ORDER BY `House_id` DESC LIMIT 1),'233')
+2018-11-30 17:21:05 main::main [INFO] - houseService :: uploadHouseInfo Send dbResponse back.
+2018-11-30 17:21:37 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 17:21:37 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 17:21:37 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 17:21:37 db::dbExecute [INFO] - 0
+2018-11-30 17:21:37 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 17:21:37 main::main [INFO] - userService :: getUserInfo Send dbResponse back.

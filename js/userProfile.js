@@ -39,8 +39,10 @@ function getUserInfo(){
                     'userName': userName,                    
                 },
                 success: function(result) {
+                    console.log(result);
                     result = JSON.parse(result);
-                    user = JSON.parse(result.msg);
+                    console.log(result.msg);
+                    user = result.msg;
                     console.log(user.User_role);
                     if (user.User_role == 1){
                         document.getElementById('sellerAction').style.display = "inline";
@@ -63,6 +65,8 @@ function getUserInfo(){
 
 function getUploadedHouses(){
     var userName = getCookie("username");
+    var itemContainer = document.getElementById('uploadedHousesPlace');
+    
     console.log(userName);
     $.ajax({
                 type: "POST",
@@ -74,6 +78,9 @@ function getUploadedHouses(){
                 success: function(result) {
                     result = JSON.parse(result);
                     console.log(result);
+                    while (itemContainer.hasChildNodes()){
+                        itemContainer.removeChild(itemContainer.firstChild);
+                    }
                     
                 },
                 error : function(error) {
@@ -84,6 +91,7 @@ function getUploadedHouses(){
 
 function getFavoriteHouses(){
     var userName = getCookie("username");
+    var itemContainer = document.getElementById('favoriteHousesPlace');
     console.log(userName);
     $.ajax({
                 type: "POST",
@@ -93,6 +101,9 @@ function getFavoriteHouses(){
                     'userName': userName,                    
                 },
                 success: function(result) {
+                    while (itemContainer.hasChildNodes()){
+                        itemContainer.removeChild(itemContainer.firstChild);
+                    }    
                 },
                 error : function(error) {
                     alert("bad request");  
@@ -100,7 +111,66 @@ function getFavoriteHouses(){
             });     
 }
 
+/*
+ * This function displays the modal for adding a photo to a user page.
+ */
+function displayAddPhotoModal() {
+
+  var backdropElem = document.getElementById('modal-backdrop');
+  var addPhotoModalElem = document.getElementById('create-item-modal');
+
+  // Show the modal and its backdrop.
+  backdropElem.classList.remove('hidden');
+  addPhotoModalElem.classList.remove('hidden');
+
+}
+
+
+/*
+ * This function closes the modal for adding a photo to a user page, clearing
+ * the values in its input elements.
+ */
+function closeAddPhotoModal() {
+
+  var backdropElem = document.getElementById('modal-backdrop');
+  var addPhotoModalElem = document.getElementById('create-item-modal');
+
+  // Hide the modal and its backdrop.
+  backdropElem.classList.add('hidden');
+  addPhotoModalElem.classList.add('hidden');
+
+  clearPhotoInputValues();
+
+}
+
+/*
+ * This function clears the values of all input elements in the photo modal.
+ */
+function clearPhotoInputValues() {
+
+  var inputElems = document.getElementsByClassName('wrap-input100 validate-input m-b-26');
+  for (var i = 0; i < inputElems.length; i++) {
+    var input = inputElems[i].querySelector('input, textarea');
+    input.value = '';
+  }
+
+}
 
 document.addEventListener('DOMContentLoaded', function(){
     getUserInfo();
+    var addPhotoButton = document.getElementById('create-item-button');
+    if (addPhotoButton) {
+        addPhotoButton.addEventListener('click', displayAddPhotoModal);
+    }
+
+    var modalCloseButton = document.querySelector('#create-item-modal .modal-close-button');
+    if (modalCloseButton) {
+        modalCloseButton.addEventListener('click', closeAddPhotoModal);
+    }
+
+    var modalCancalButton = document.querySelector('#create-item-modal .modal-cancel-button');
+    if (modalCancalButton) {
+        modalCancalButton.addEventListener('click', closeAddPhotoModal);
+    }
+
 }, false);
