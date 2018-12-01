@@ -13,34 +13,6 @@ function openTab(evt, tabName) {
 
 }
 
-// User stored cookie to get user info
-function getUserInfo(){
-    var userName = getCookie("username");
-    console.log(userName);
-    $.ajax({
-                type: "POST",
-                url: "../php/userActionHandler.php" , //url
-                data: {
-                    'userService' : 'getUserInfo', 
-                    'userName': userName,                    
-                },
-                success: function(result) {
-                    result = JSON.parse(result);
-                    console.log(result);
-                    user = JSON.parse(result.msg);
-                   
-                    document.getElementById('userName').value = user.User_name;
-                    document.getElementById('userEmail').value = user.Email;
-                    document.getElementById('userPhone').value = user.Phone;
-                    document.getElementById('userRole'). vale = user.User_role;
-                },
-                error : function(error) {
-                    alert("bad request");  
-                }
-            });    
-}
-
-
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -54,6 +26,39 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+// User stored cookie to get user info
+function getUserInfo(){
+    var userName = getCookie("username");
+    console.log(userName);
+    $.ajax({
+                type: "POST",
+                url: "../php/userActionHandler.php" , //url
+                data: {
+                    'userService' : 'getUserInfo', 
+                    'userName': userName,                    
+                },
+                success: function(result) {
+                    result = JSON.parse(result);
+                    user = JSON.parse(result.msg);
+                    console.log(user.User_role);
+                    if (user.User_role == 1){
+                        document.getElementById('sellerAction').style.display = "inline";
+                        document.getElementById('buyerAction').style.display = "none";
+                    }
+                    else if (user.User_role == 2){
+                        document.getElementById('sellerAction').style.display = "none";
+                        document.getElementById('buyerAction').style.display = "inline";
+                    }
+                    document.getElementById('userName').placeholder = user.User_name;
+                    document.getElementById('userEmail').placeholder = user.Email;
+                    document.getElementById('userPhone').placeholder = user.Phone;
+                    document.getElementById('userRole').placeholder = ( (user.User_role <2) ? 'Seller' : 'Buyer');
+                },
+                error : function(error) {
+                    alert("bad request");  
+                }
+            });    
 }
 
 function getUploadedHouses(){
