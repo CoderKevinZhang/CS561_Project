@@ -193,8 +193,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                 },
 
                 success: function(result) {
-                    result = JSON.parse(result);
-                    
+                    result = JSON.parse(result);                   
                     if (result.msg === "SUCCESS" && result.status === 200){
                         while (itemContainer.hasChildNodes()){
                              itemContainer.removeChild(itemContainer.firstChild);

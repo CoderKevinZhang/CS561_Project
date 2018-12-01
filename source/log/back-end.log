@@ -3845,3 +3845,529 @@
 2018-11-30 17:21:37 db::dbExecute [INFO] - 0
 2018-11-30 17:21:37 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
 2018-11-30 17:21:37 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:01:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:01:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:01:59 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:01:59 db::dbExecute [INFO] - 0
+2018-11-30 18:01:59 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:01:59 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:04:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:04:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:04:02 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:04:02 db::dbExecute [INFO] - 0
+2018-11-30 18:04:02 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:04:02 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:04:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:04:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:04:02 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:04:02 main::main [WARN] - houseService ::getUploadHouse Called Failed. No enought info passed back via POST
+2018-11-30 18:05:20 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:05:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:05:21 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:05:21 db::dbExecute [INFO] - 0
+2018-11-30 18:05:21 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:05:21 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:05:21 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:05:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:05:21 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:05:21 main::main [WARN] - houseService ::getUploadHouse Called Failed. No enought info passed back via POST
+2018-11-30 18:05:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:05:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:05:29 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:05:29 db::dbExecute [INFO] - 0
+2018-11-30 18:05:29 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:05:29 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:05:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:05:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:05:29 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:05:29 main::main [WARN] - houseService ::getUploadHouse Called Failed. No enought info passed back via POST
+2018-11-30 18:06:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:06:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:06:02 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:06:02 db::dbExecute [INFO] - 0
+2018-11-30 18:06:02 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:06:02 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:06:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:06:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:06:03 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:06:03 main::main [WARN] - houseService ::getUploadHouse Called Failed. No enought info passed back via POST
+2018-11-30 18:06:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:06:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:06:26 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:06:26 db::dbExecute [INFO] - 0
+2018-11-30 18:06:26 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:06:26 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:06:26 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:06:26 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:06:26 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:06:26 db::dbExecute [INFO] - 0
+2018-11-30 18:06:26 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '222') limit 0,10
+2018-11-30 18:19:31 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:19:31 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:19:31 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:19:31 db::dbExecute [INFO] - 0
+2018-11-30 18:19:31 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:19:31 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:19:32 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:19:32 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:19:32 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:19:32 db::dbExecute [INFO] - 0
+2018-11-30 18:19:32 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '222') limit 0,10
+2018-11-30 18:21:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:21:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:21:09 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:21:09 db::dbExecute [INFO] - 0
+2018-11-30 18:21:09 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:21:09 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:21:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:21:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:21:09 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:21:09 db::dbExecute [INFO] - 0
+2018-11-30 18:21:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '222') limit 0,10
+2018-11-30 18:21:24 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:21:24 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:21:24 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:21:24 db::dbExecute [INFO] - 0
+2018-11-30 18:21:24 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:21:24 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:21:25 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:21:25 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:21:25 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:21:25 db::dbExecute [INFO] - 0
+2018-11-30 18:21:25 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '222') limit 0,10
+2018-11-30 18:22:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:22:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:22:15 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:22:15 db::dbExecute [INFO] - 0
+2018-11-30 18:22:15 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = '222'
+2018-11-30 18:22:15 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:22:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:22:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:22:15 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:22:15 db::dbExecute [INFO] - 0
+2018-11-30 18:22:15 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = '222') limit 0,10
+2018-11-30 18:23:30 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:30 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:30 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:23:30 db::dbExecute [INFO] - 0
+2018-11-30 18:23:30 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:23:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:34 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:23:34 db::dbExecute [INFO] - 0
+2018-11-30 18:23:34 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:23:51 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:51 main::main [INFO] - userService :: logIn Called.
+2018-11-30 18:23:51 db::dbExecute [INFO] - 0
+2018-11-30 18:23:51 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = 'buyer' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-30 18:23:51 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-30 18:23:52 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:52 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:52 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:23:52 db::dbExecute [INFO] - 0
+2018-11-30 18:23:52 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:23:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:55 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:23:55 db::dbExecute [INFO] - 0
+2018-11-30 18:23:55 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:23:55 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:23:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:23:55 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:23:55 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:23:55 db::dbExecute [INFO] - 0
+2018-11-30 18:23:55 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'buyer') limit 0,10
+2018-11-30 18:25:58 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:25:58 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:25:58 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:25:58 db::dbExecute [INFO] - 0
+2018-11-30 18:25:58 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:25:58 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:25:58 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:25:58 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:25:58 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:25:58 db::dbExecute [INFO] - 0
+2018-11-30 18:25:58 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:27:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:13 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:27:13 db::dbExecute [INFO] - 0
+2018-11-30 18:27:13 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:27:13 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:27:13 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:13 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:13 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:27:13 db::dbExecute [INFO] - 0
+2018-11-30 18:27:13 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:27:38 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:38 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:38 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:27:38 db::dbExecute [INFO] - 0
+2018-11-30 18:27:38 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:27:38 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:27:38 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:38 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:38 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:27:38 db::dbExecute [INFO] - 0
+2018-11-30 18:27:38 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:27:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:54 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:27:54 db::dbExecute [INFO] - 0
+2018-11-30 18:27:54 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:27:54 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:27:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:27:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:27:54 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:27:54 db::dbExecute [INFO] - 0
+2018-11-30 18:27:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:28:15 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:28:15 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:28:15 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:28:15 db::dbExecute [INFO] - 0
+2018-11-30 18:28:15 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:28:15 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:28:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:28:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:28:29 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:28:29 db::dbExecute [INFO] - 0
+2018-11-30 18:28:29 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:28:29 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:28:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:28:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:28:46 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:28:46 db::dbExecute [INFO] - 0
+2018-11-30 18:28:46 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:28:46 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:28:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:28:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:28:46 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:28:46 db::dbExecute [INFO] - 0
+2018-11-30 18:28:46 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:29:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:29:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:29:28 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:29:28 db::dbExecute [INFO] - 0
+2018-11-30 18:29:28 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:29:28 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:29:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:29:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:29:28 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:29:28 db::dbExecute [INFO] - 0
+2018-11-30 18:29:28 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:31:24 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:31:24 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:31:24 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:31:24 db::dbExecute [INFO] - 0
+2018-11-30 18:31:24 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:31:29 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:31:29 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:31:29 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:31:29 db::dbExecute [INFO] - 0
+2018-11-30 18:31:30 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:31:39 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:31:39 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:31:39 main::main [INFO] - userService :: logIn Called.
+2018-11-30 18:31:39 db::dbExecute [INFO] - 0
+2018-11-30 18:31:39 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = 'Seller' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-30 18:31:39 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-30 18:31:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:31:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:31:49 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:31:49 db::dbExecute [INFO] - 0
+2018-11-30 18:31:49 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:31:49 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:31:49 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:31:49 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:31:49 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:31:49 db::dbExecute [INFO] - 0
+2018-11-30 18:31:49 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:33:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:33:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:33:01 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:33:01 db::dbExecute [INFO] - 0
+2018-11-30 18:33:01 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:33:01 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:33:01 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:33:01 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:33:01 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:33:01 db::dbExecute [INFO] - 0
+2018-11-30 18:33:01 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:33:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:33:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:33:34 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:33:34 db::dbExecute [INFO] - 0
+2018-11-30 18:33:34 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:33:34 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:33:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:33:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:33:34 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:33:34 db::dbExecute [INFO] - 0
+2018-11-30 18:33:34 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:34:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:34:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:34:09 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:34:09 db::dbExecute [INFO] - 0
+2018-11-30 18:34:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:34:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:34:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:34:11 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:34:11 db::dbExecute [INFO] - 0
+2018-11-30 18:34:11 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:34:11 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:34:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:34:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:34:11 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:34:11 db::dbExecute [INFO] - 0
+2018-11-30 18:34:11 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:34:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:34:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:34:54 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:34:54 db::dbExecute [INFO] - 0
+2018-11-30 18:34:54 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:34:54 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:35:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:35:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:35:07 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:35:07 db::dbExecute [INFO] - 0
+2018-11-30 18:35:07 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:35:07 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:35:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:35:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:35:07 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:35:07 db::dbExecute [INFO] - 0
+2018-11-30 18:35:07 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:35:50 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:35:50 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:35:50 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:35:50 db::dbExecute [INFO] - 0
+2018-11-30 18:35:50 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:35:50 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:35:50 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:35:50 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:35:50 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:35:50 db::dbExecute [INFO] - 0
+2018-11-30 18:35:50 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:37:05 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:05 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:05 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:37:05 db::dbExecute [INFO] - 0
+2018-11-30 18:37:05 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:37:21 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:21 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:37:21 db::dbExecute [INFO] - 0
+2018-11-30 18:37:21 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:37:21 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:37:21 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:21 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:21 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:37:21 db::dbExecute [INFO] - 0
+2018-11-30 18:37:21 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:37:28 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:28 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:28 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:37:28 db::dbExecute [INFO] - 0
+2018-11-30 18:37:28 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:37:51 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:51 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:51 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:37:51 db::dbExecute [INFO] - 0
+2018-11-30 18:37:51 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:37:51 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:37:53 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:37:53 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:37:53 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:37:53 db::dbExecute [INFO] - 0
+2018-11-30 18:37:53 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:38:46 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:38:46 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:38:46 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:38:46 db::dbExecute [INFO] - 0
+2018-11-30 18:38:46 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:38:46 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:39:07 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:39:07 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:39:07 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:39:07 db::dbExecute [INFO] - 0
+2018-11-30 18:39:07 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:39:07 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:39:44 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:39:44 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:39:44 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:39:44 db::dbExecute [INFO] - 0
+2018-11-30 18:39:44 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:39:44 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:39:57 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:39:57 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:39:57 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:39:57 db::dbExecute [INFO] - 0
+2018-11-30 18:39:57 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'Seller'
+2018-11-30 18:39:57 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:39:58 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:39:58 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:39:58 main::main [INFO] - houseService :: getUploadHouse Called.
+2018-11-30 18:39:58 db::dbExecute [INFO] - 0
+2018-11-30 18:39:58 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+                        ON Hi.`House_id`= H.`House_id` WHERE H.`User_id` = (SELECT U.`User_id` FROM `User_info` U WHERE U.`User_name` = 'Seller') limit 0,10
+2018-11-30 18:40:48 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:40:48 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:40:48 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:40:48 db::dbExecute [INFO] - 0
+2018-11-30 18:40:48 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:40:54 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:40:54 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:40:54 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:40:54 db::dbExecute [INFO] - 0
+2018-11-30 18:40:54 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:41:04 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:04 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:04 main::main [INFO] - userService :: logIn Called.
+2018-11-30 18:41:04 db::dbExecute [INFO] - 0
+2018-11-30 18:41:04 db::dbExecute [INFO] - Query Success :: statement--SELECT COUNT(`User_name`) AS dbResult, User_role as userRole FROM `User_info` WHERE `User_name` = 'buyer' AND AES_DECRYPT (`Password`,UNHEX(SHA2('My secret passphrase',512))) = '123' 
+2018-11-30 18:41:04 main::main [INFO] - userService :: logIn Send dbResponse back.
+2018-11-30 18:41:06 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:06 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:06 main::main [INFO] - houseService :: getHouseInfo Called.
+2018-11-30 18:41:06 db::dbExecute [INFO] - 0
+2018-11-30 18:41:06 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` HAVING 1 limit 0,5
+2018-11-30 18:41:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:09 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:41:09 db::dbExecute [INFO] - 0
+2018-11-30 18:41:09 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:41:09 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:41:09 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:09 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:09 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:41:09 db::dbExecute [INFO] - 0
+2018-11-30 18:41:09 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:41:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:34 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:41:34 db::dbExecute [INFO] - 0
+2018-11-30 18:41:34 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:41:34 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:41:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:41:34 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:41:34 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:41:34 db::dbExecute [INFO] - 0
+2018-11-30 18:41:34 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:42:02 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:42:02 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:42:02 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:42:02 db::dbExecute [INFO] - 0
+2018-11-30 18:42:02 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:42:02 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:42:03 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:42:03 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:42:03 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:42:03 db::dbExecute [INFO] - 0
+2018-11-30 18:42:03 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:42:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:42:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:42:59 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:42:59 db::dbExecute [INFO] - 0
+2018-11-30 18:42:59 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:42:59 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:42:59 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:42:59 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:42:59 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:42:59 db::dbExecute [INFO] - 0
+2018-11-30 18:42:59 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:44:55 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:44:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:44:56 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:44:56 db::dbExecute [INFO] - 0
+2018-11-30 18:44:56 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:44:56 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:44:56 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:44:56 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:44:56 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:44:56 db::dbExecute [INFO] - 0
+2018-11-30 18:44:56 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:48:34 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:48:35 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:48:35 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:48:35 db::dbExecute [INFO] - 0
+2018-11-30 18:48:35 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:48:35 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:48:35 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:48:35 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:48:35 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:48:35 db::dbExecute [INFO] - 0
+2018-11-30 18:48:35 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:49:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:49:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:49:11 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:49:11 db::dbExecute [INFO] - 0
+2018-11-30 18:49:11 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:49:11 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:49:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:49:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:49:11 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:49:11 db::dbExecute [INFO] - 0
+2018-11-30 18:49:11 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:51:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:51:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:51:43 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:51:43 db::dbExecute [INFO] - 0
+2018-11-30 18:51:43 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:51:43 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:51:43 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:51:43 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:51:43 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:51:43 db::dbExecute [INFO] - 0
+2018-11-30 18:51:43 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
+2018-11-30 18:53:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:53:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:53:11 main::main [INFO] - userService :: getUserInfo Called.
+2018-11-30 18:53:11 db::dbExecute [INFO] - 0
+2018-11-30 18:53:11 db::dbExecute [INFO] - Query Success :: statement--SELECT `User_name`,`User_role`,`Email`,`Phone` FROM `User_info` WHERE `User_name` = 'buyer'
+2018-11-30 18:53:11 main::main [INFO] - userService :: getUserInfo Send dbResponse back.
+2018-11-30 18:53:11 db::dbConnect [INFO] - Estiblishing Database Connection.
+2018-11-30 18:53:11 db::dbConnect [INFO] - Database Connection Estiblished.
+2018-11-30 18:53:11 main::main [INFO] - houseService :: getSavedHouses Called.
+2018-11-30 18:53:12 db::dbExecute [INFO] - 0
+2018-11-30 18:53:12 db::dbExecute [INFO] - Query Success :: statement--SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
+     ON Hi.`House_id`= H.`House_id` WHERE H.`House_id` IN( SELECT F.`House_id`  FROM `User_favorites` F , `User_info` U WHERE F.`User_id` = U.`User_id` AND U.`User_name` = 'buyer') LIMIT 5
