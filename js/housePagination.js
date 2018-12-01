@@ -153,7 +153,7 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
     */
     /*Read Form Data*/
     formData = document.getElementById('filter');  
-    zipCode     = formData.elements['zipCode'].value;
+    
     city        = formData.elements['city'].value;
     state       = formData.elements['state'].value;
     minPrice    = formData.elements['minPrice'].value;
@@ -164,21 +164,23 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
     bath        = formData.elements['baths'].value;
     price = {"min": minPrice, "max": maxPrice};
     livingSpace = {"min": minSquare, "max": maxPrice};
-    filterVariables = { "zipCode" : zipCode, 
+    filterVariables = {  
                         "city": city, 
                         "state": state, 
                         "price": price, 
                         "livingSpace": livingSpace,
                         "bed" : bed,
                         "bath": bath}  
-    filterVariables = { "zipCode" : 90077, 
-                        "city": "Los Angeles", 
-                        "state": " CA ", 
+                       
+    filterVariables = {
+                        "city": "Murphys", 
+                        "state": "California", 
                         "price": {"min": -1, "max": 999999999}, 
                         "livingSpace": {"min": -1, "max": 999999999},
-                        "bed" : 0,
-                        "bath": 0} 
-    console.log(filtered);
+                        "bed" : 3,
+                        "bath": 3} 
+    
+    console.log(filterVariables);
     /*Communicate with Server to get house info*/
     var itemContainer = document.querySelector('.item-container');
     $.ajax({
@@ -191,16 +193,18 @@ function getNewHouses(pageNum, itemPerPage,  filtered= 0){
                     'pageNum': pageNum,
                     'itemPerPage': itemPerPage
                 },
-
                 success: function(result) {
-                    result = JSON.parse(result);                   
+                    result = JSON.parse(result);
+                    console.log(result);
                     if (result.msg === "SUCCESS" && result.status === 200){
                         while (itemContainer.hasChildNodes()){
                              itemContainer.removeChild(itemContainer.firstChild);
                         }
                         for (var i = 0; i < itemPerPage; i++){
-                            var item = generateItem(result.foundHouse[i]);
-                            itemContainer.appendChild(item);
+                            if (result.foundHouse[i]){
+                                var item = generateItem(result.foundHouse[i]);
+                                itemContainer.appendChild(item);
+                            }
                         }
                     }
                 },
@@ -326,7 +330,11 @@ function updatePageNumbers(direction, filteredSearch){
     }
 }
 
+ $('#filter').on('submit',function(e){
+     e.preventDefault(); 
+    filteredSearch();
+ })
 
-function filteredSearch ( ) {
+function filteredSearch() {
     generatePagination(5, 1, 1);
 }

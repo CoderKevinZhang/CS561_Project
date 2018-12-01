@@ -17,7 +17,6 @@
   <body onload="generatePagination(5 ,1, 0)">
     <div class="navbar">
       <div class="navlist">
-
           <ul  style="z-index: 99">
             <li class="navitem site-title" ><a href="#"><strong> Dream Home</strong> </a></li>
             <li class="navitem navlink" id = "before_login_show_sign_in"><a href="login.html">Sign In</a></li>
@@ -35,24 +34,18 @@
         </div>
     </div>
     <header class = "banner">
-
       <div class="hero-text">
           <h1 style="font-size:50px"> Find A Dream House</h1>
-      </div> 
-
-      
+      </div>   
         <form id = 'filter' class="filter-form">
           <div class="filter-form-container" >
       		<div class = "box">
-          <label >Zipcode</label> 
-            <input id = 'zipCode' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-      		<label >City</label>  
+         <label >City</label>  
             <input id = 'city' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
       		<label >State</label>
             <div class = "custom-select">
               <select id = "state" style="background-color: white; font-size: 17px; width: 111px; margin-bottom: 8px;">     
-                <option value="" selected disabled="disabled">-select-</option>
-                <option value="Alabama">Alabama</option>
+                <option selected="selected" value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
                 <option value="Arizona">Arizona</option>
                 <option value="Arkansas">Arkansas</option>
@@ -108,25 +101,24 @@
           </div>
           <div class = "box">
       		  <label> MinPrice</label> 
-            <input id = 'minPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+            <input id = 'minPrice' type="text" class="text" value="0" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
   <!--         </div>
           <div class = "box"> -->
-      		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"><br>
+      		<label> MaxPrice</label>  <input id = 'maxPrice' type="text" class="text" value="99999999" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"><br>
           </div>
           <div class = "box">
       		<label> MinSquare</label> 
-            <input id = 'minSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+            <input id = 'minSquare' type="text" class="text" value="0" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
     <!--   		</div>
           <div class = "box"> -->
           <label> MaxSquare</label>  
-            <input id = 'maxSquare' type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="margin-left: 5px;"><br>
+            <input id = 'maxSquare' type="text" class="text" value="5000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" style="margin-left: 5px;"><br>
           </div>
           <div class = "box">
       		<label> beds</label>
           <div class = "custom-select"> 
             <select id="beds" style="background-color: white; font-size: 17px">
-        		  <option value="" selected disabled="disabled">-select-</option>
-        		  <option value="1">1</option>
+        		  <option selected="selected" value="1">1</option>
         		  <option value="2">2</option>
         		  <option value="3">3</option>
               <option value="4">4+</option>
@@ -136,21 +128,21 @@
       		<label> baths</label> 
           <div class = "custom-select">
             <select id="baths" style="background-color: white; font-size: 17px">
-        		  <option value="0" selected disabled="disabled">-select-</option>
-        		  <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4+</option>
-      		  </select>
+                <option selected = "selected" value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4+</option>
+      		</select>
           </div>
           </div>
-        <div class = "filter-form-footer">
-          <button class = "filter-form-submit">Search</button>
-        </div>   		  
+            <button class = "filter-form-submit">Search</button>
     	  </form>
-
+          <div class = "filter-form-footer">
+            
+          </div> 
+         
       </div>
-
+        
 
  </header>
  
@@ -194,9 +186,7 @@
   </div> 
 </body>
 
-<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.runtime.js"></script>
-  <script src="/itemTemplate.js"></script>
-  <script src="/itemPhotoTemplate.js"></script> -->
+
   <script src="../../vendor/jquery/jquery-3.2.1.min.js"></script>
   <script src="../../vendor/animsition/js/animsition.min.js"></script>
   <script src="../../vendor/bootstrap/js/popper.js"></script>
