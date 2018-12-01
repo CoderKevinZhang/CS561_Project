@@ -127,7 +127,7 @@
 
                             $statement = "SELECT H.`House_id`, H.`Address`,H.`City`,H.`State`,H.`Zipcode`,H.`Price`,H.`Beds`,H.`Baths`,H.`Built`,H.`Space`, H.`description`, Hi.`Url` FROM `Houses2` H  INNER JOIN  `Houses_images` Hi
                                           ON Hi.`House_id`= H.`House_id` GROUP BY H.`House_id` 
-                                          HAVING H.`City`='$city' AND H.`State`='$state' AND H.`Zipcode`=$zipCode 
+                                          HAVING H.`City`='$city' AND H.`State`='$state' 
                                           AND H.`Price`>=$priceMin AND H.`Price`<=$priceMax
                                           AND H.`Beds`= $bed AND H.`Baths` = $bath 
                                           AND H.`Space`>=$livingSpaceMin AND H.`Space`<=$livingSpaceMax limit $X, $Y";
