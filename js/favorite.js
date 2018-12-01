@@ -31,8 +31,14 @@ function changeModelForFavorite(){
             result = JSON.parse(result);
             user = result.msg;
 
-            if (user.User_role == 1 || userName == ''){ //seller
-                document.querySelector(".fav-container").style.display = "none";
+            if (user.User_role == 1 || userName == ""){ //seller
+                console.log("userRole:", user.User_role);
+                var items = document.querySelectorAll(".item");
+
+                for(i = 0; i< items.length; i++){
+                   console.log("item[i]",items[i].childNodes[2])
+                   items[i].childNodes[2].style.display = "none";
+                }
             }
             else if (user.User_role == 2){ // buyer
                 //console.log('buyer');
